@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>In</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="-420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="-480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="-380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_Not.dig</elementName>
+      <elementAttributes/>
+      <pos x="140" y="-480"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="100" y="-420"/>
+      <p2 x="120" y="-420"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-380"/>
+      <p2 x="220" y="-380"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="-480"/>
+      <p2 x="220" y="-480"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-480"/>
+      <p2 x="140" y="-480"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-480"/>
+      <p2 x="120" y="-420"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-420"/>
+      <p2 x="120" y="-380"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
