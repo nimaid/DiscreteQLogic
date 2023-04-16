@@ -218,20 +218,6 @@
       <pos x="260" y="-620"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-      </elementAttributes>
-      <pos x="-380" y="-680"/>
-    </visualElement>
-    <visualElement>
       <elementName>nm_Inverter8.dig</elementName>
       <elementAttributes>
         <entry>
@@ -240,20 +226,6 @@
         </entry>
       </elementAttributes>
       <pos x="-280" y="-720"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-      </elementAttributes>
-      <pos x="-260" y="-520"/>
     </visualElement>
     <visualElement>
       <elementName>nm_Inverter8.dig</elementName>
@@ -293,26 +265,6 @@
           <shapeType>LAYOUT</shapeType>
         </entry>
       </elementAttributes>
-      <pos x="-360" y="-720"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_mux8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="-240" y="-560"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_mux8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
       <pos x="80" y="-700"/>
     </visualElement>
     <visualElement>
@@ -321,10 +273,6 @@
         <entry>
           <string>Label</string>
           <string>c_in</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -347,6 +295,26 @@
       </elementAttributes>
       <pos x="80" y="-380"/>
     </visualElement>
+    <visualElement>
+      <elementName>nm_zero8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-360" y="-720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_zero8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-240" y="-560"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -362,20 +330,12 @@
       <p2 x="320" y="-520"/>
     </wire>
     <wire>
-      <p1 x="-260" y="-520"/>
-      <p2 x="-240" y="-520"/>
-    </wire>
-    <wire>
       <p1 x="-40" y="-520"/>
       <p2 x="-20" y="-520"/>
     </wire>
     <wire>
       <p1 x="220" y="-680"/>
       <p2 x="240" y="-680"/>
-    </wire>
-    <wire>
-      <p1 x="-380" y="-680"/>
-      <p2 x="-360" y="-680"/>
     </wire>
     <wire>
       <p1 x="40" y="-680"/>
