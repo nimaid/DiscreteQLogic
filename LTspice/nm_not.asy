@@ -4,7 +4,7 @@ LINE Normal -16 16 -16 -16
 LINE Normal 24 0 -16 16
 LINE Normal -16 -16 24 0
 CIRCLE Normal 32 4 24 -4
-WINDOW 0 8 -16 Bottom 2
+WINDOW 0 8 -16 Bottom 0
 SYMATTR Prefix X
 SYMATTR Value NOT
 SYMATTR Value2 NOT
