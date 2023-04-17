@@ -1,6 +1,5 @@
 Version 4
 SymbolType BLOCK
-LINE Normal 0 -31 0 -32
 LINE Normal -9 -16 -16 -16
 LINE Normal -9 16 -16 16
 LINE Normal 0 32 -16 32
