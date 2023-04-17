@@ -86,7 +86,7 @@ It is possible to use an AOI2X2 gate and 2 NOT gates to make an extremely elegan
 
 To understand why this works, think about the AOI gate as "a gate that will set it's output to 0 only when a set of inputs is all 1". In this way, we can analyze the truth table of the XOR gate to find which input conditions result in a 0 and test for them with sets of AND gates that have their inputs set to 1 in those conditions.
 
-XOR gate truth tabe:
+XOR gate truth table:
 ```
 ┌───┬───┬─────┐
 │ A │ B │ Out │
