@@ -12,7 +12,7 @@ For this list, I will use some shorthand notation to refer to the total transist
 
 Unless otherwise stated, all transistors are N-type.
 
-Resistor values should be chosen based on acceptable power dissipation and speed requirements. If the resistors are large (on the order of 10kΩ+), then power dissipation will be very low (the resistor lets less current through to ground), but the response time of the gate will be slower (it takes longer to charge up the stray capacitance in the wires). Conversely, smaller values will yield higher power usage, but faster response times.
+Resistor values should be chosen based on acceptable power dissipation and speed requirements. If the resistors are large (on the order of 10kΩ+), then power dissipation will be very low (the resistor lets less current through to ground), but the response time of the gate will be much slower. This is due to an inherent weakness in NMOS where it takes longer to charge up the combined gate capacitance of the MOSFETs and the stray capacitance in the wires though a larger resistor. Conversely, smaller values will yield higher power usage, but faster response times.
 
 ### NOT (1Q1R)
 <details>
