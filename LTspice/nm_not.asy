@@ -6,7 +6,6 @@ LINE Normal -16 -16 24 0
 LINE Normal 0 -9 0 -16
 CIRCLE Normal 32 4 24 -4
 TEXT 0 -11 Top 0 +
-WINDOW 0 8 16 Top 0
 PIN -16 0 NONE 8
 PINATTR PinName In
 PINATTR SpiceOrder 1

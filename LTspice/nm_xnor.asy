@@ -10,7 +10,6 @@ ARC Normal 24 -32 -40 32 -8 32 -8 -32
 ARC Normal -8 -32 -24 32 -16 32 -16 -32
 ARC Normal -11 -32 -27 32 -19 32 -19 -32
 TEXT 0 -32 Top 0 +
-WINDOW 0 0 32 Top 0
 PIN -16 16 NONE 8
 PINATTR PinName In2
 PINATTR SpiceOrder 1
