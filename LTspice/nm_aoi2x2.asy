@@ -1,0 +1,34 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -16 -8 -32 -8
+LINE Normal -16 -40 -32 -40
+LINE Normal -16 40 -32 40
+LINE Normal -32 -8 -32 -40
+LINE Normal -32 40 -32 8
+LINE Normal -16 8 -32 8
+LINE Normal 16 -22 16 -32
+CIRCLE Normal 40 4 48 -4
+ARC Normal 0 -40 -32 -8 -16 -8 -16 -40
+ARC Normal 0 8 -32 40 -16 40 -16 8
+ARC Normal 8 -24 -8 24 0 24 0 -24
+ARC Normal 40 -24 -40 24 0 24 0 -24
+TEXT 16 -22 Top 0 +
+WINDOW 0 0 40 Top 0
+PIN -32 -16 NONE 8
+PINATTR PinName InA2
+PINATTR SpiceOrder 1
+PIN 48 0 NONE 8
+PINATTR PinName Out
+PINATTR SpiceOrder 2
+PIN 16 -32 NONE 8
+PINATTR PinName COM
+PINATTR SpiceOrder 3
+PIN -32 -32 NONE 8
+PINATTR PinName InA1
+PINATTR SpiceOrder 4
+PIN -32 16 NONE 8
+PINATTR PinName InB1
+PINATTR SpiceOrder 5
+PIN -32 32 NONE 8
+PINATTR PinName InB2
+PINATTR SpiceOrder 6
