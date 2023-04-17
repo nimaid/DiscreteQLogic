@@ -1,12 +1,20 @@
 Version 4
 SymbolType BLOCK
-RECTANGLE Normal -48 -40 64 40
-PIN -48 -16 LEFT 8
-PINATTR PinName en
-PINATTR SpiceOrder 1
-PIN -48 16 LEFT 8
+LINE Normal -16 16 -16 -16
+LINE Normal 32 0 -16 16
+LINE Normal -16 -16 32 0
+LINE Normal 0 -10 0 -16
+LINE Normal 0 10 0 32
+TEXT 0 -11 Top 0 +
+PIN -16 0 NONE 8
 PINATTR PinName In
-PINATTR SpiceOrder 2
-PIN 64 0 RIGHT 8
+PINATTR SpiceOrder 1
+PIN 32 0 NONE 8
 PINATTR PinName Out
+PINATTR SpiceOrder 2
+PIN 0 -16 NONE 8
+PINATTR PinName COM
 PINATTR SpiceOrder 3
+PIN 0 32 NONE 8
+PINATTR PinName en
+PINATTR SpiceOrder 4
