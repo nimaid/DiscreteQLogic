@@ -1,16 +1,18 @@
 Version 4
-SymbolType CELL
+SymbolType BLOCK
 LINE Normal -16 16 -16 -16
 LINE Normal 24 0 -16 16
 LINE Normal -16 -16 24 0
+LINE Normal 0 -9 0 -16
 CIRCLE Normal 32 4 24 -4
-WINDOW 0 8 -16 Bottom 0
-SYMATTR Prefix X
-SYMATTR Value NOT
-SYMATTR Value2 NOT
+TEXT 0 -11 Top 0 +
+WINDOW 0 8 16 Top 0
 PIN -16 0 NONE 8
 PINATTR PinName In
 PINATTR SpiceOrder 1
 PIN 32 0 NONE 8
 PINATTR PinName Out
 PINATTR SpiceOrder 2
+PIN 0 -16 NONE 8
+PINATTR PinName COM
+PINATTR SpiceOrder 3
