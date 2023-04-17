@@ -29,18 +29,54 @@ The NOR gate is almost exactly the same as the NAND gate, except the second tran
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor.PNG" width="400px" />
 
-### n-way NAND and NOR (nQ1R)
-It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. While this method uses the same number of transistors as chaining the 2-way gates, but it does use significantly fewer resistors. We do this be applying the same logic that took us from a NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put n tranistors, where n is the number of inputs we want.
+### n-way NAND and NOR (\{n\}Q1R)
+It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. While this method uses the same number of transistors as chaining the 2-way gates, but it does use significantly fewer resistors. We do this be applying the same logic that took us from a NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put `n` transistors, where `n` is the number of inputs we want.
 
 Here is an example of 8-way NAND and NOR gates, respectively.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand8.PNG" height="400px" />
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor8.PNG" width="400px" />
 
-### AND and OR
-The best way to made AND and OR gates happens to be the most straightforward. All we have to do is add a NOT gate after the NAND and NOR gates, as shown.
+### AND and OR (3Q2R)
+The best way to make AND and OR gates happens to be the most straightforward. All we have to do is add a NOT gate after the NAND and NOR gates, as shown.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_and.PNG" width="400px" />
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_or.PNG" width="400px" />
+
+### AOI[aXbX...] (\{a+b+...\}Q1R)
+The AOI (And-Or-Invert) gate is a bit unusual at first glance, and it is not as well known as the other gates. However, it is essential for building efficient NMOS circuits. This gate acts on "sets" of inputs, and processes them as follows:
+- It first runs each "set" of inputs through an `n`-way AND gate, where `n` is the number of inputs in that set.
+- The results from all of the AND gates are run through an `m`-way OR gate, where `m` is the number of sets.
+- Finally, the output of the OR gate is run through a NOT gate (also called an inverter).
+
+AOI gates are defined by a series of numbers, which specify exactly how many sets of inputs there are, and how many inputs are in each set. Each set can have a different number of inputs, and you can have an many sets as you like. This is in the format `aXbXcX...`, where `a`, `b`, `c`, etc. specify how many inputs each set has, in order. So a `2X3X1` AOI gate would have 2 inputs to the first AND gate, 3 inputs in the second AND gate, and the third set has 1 input going directly to the OR gate stage (because AND only makes sense with 2 or more inputs).
+
+Here is an example of an AOI2X2 gate using conventional combinational logic.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/aoi2x2_function.PNG" width="400px" />
+
+So why do we care about this odd gate as a single unit? Why can't we just use combinations of AND and NOR gates whenever we need to do these types of operations? The answer is that all of these logical operations can be easily implemented in a single NMOS logic block that uses far fewer transistors and resistors to achieve the same behavior.
+
+Here is that same AIO2x2 gate in NMOS logic, using 4Q1R.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2.PNG" width="400px" />
+
+The way this works is actually very clever. First, observe that this is still arranged with a pullup resistor and transistors that, on some combinations of inputs, shorts to ground. This is the same idea as the NOT gate, and this is where the "inversion" comes from.
+
+Second, observe that there are 2 parallel paths to ground, just like the NOR gate. The only difference is that instead of each path has 2 transistors in series, which is exactly the same method used to construct the NAND gate. Indeed, when either set of series transistors is conducting, the output will be shorted to ground, providing the AND functionality for each set.
+
+Finally, observe that because the sets of series transistors are in parallel with each other, the compound effect of ORing the results of the 2 AND operations is realized.
+
+Here is an example of a 2X1 AOI gate.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2.PNG" width="400px" />
+
+And just to make sure it makes sense, here is a 2X2X2X2 AOI gate.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2x2x2.PNG" width="400px" />
+
+As you can see, you can customize the number of sets and their respective input count to fit your specific needs.
+
+The final transistor count of each AOI gate will be exactly equal to the total number of inputs, and each AOI gate will only ever use a single resistor.
 
 ### WIP
