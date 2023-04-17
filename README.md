@@ -14,8 +14,9 @@ Unless otherwise stated, all transistors are N-type.
 
 Resistor values should be chosen based on acceptable power dissipation and speed requirements. If the resistors are large (on the order of 10kΩ+), then power dissipation will be very low (the resistor lets less current through to ground), but the response time of the gate will be slower (it takes longer to charge up the stray capacitance in the wires). Conversely, smaller values will yield higher power usage, but faster response times.
 
+### NOT (1Q1R)
 <details>
-<summary>NOT (1Q1R)</summary>
+<summary>Details</summary>
 
 The simplest gate to construct is a NOT gate (also known as an inverter). This is simply a pullup resistor with a transistor configured to short the output to ground when voltage is applied to it's gate. Make sure you understand how this gate works, because this fundamental principal is the foundation which allows the systematic construction of every other NMOS gate.
 
@@ -24,16 +25,29 @@ The simplest gate to construct is a NOT gate (also known as an inverter). This i
 </details>
 
 ### NAND (2Q1R)
+<details>
+<summary>Details</summary>
+
 The next step up in complexity is the NAND gate. This is essentially just a NOT gate with an extra transistor in series to ground. This has the effect of only shorting the output to ground if *both* transistors are conducting. This results in the behavior of a NAND gate.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand.PNG" width="400px" />
 
+</details>
+
 ### NOR (2Q1R)
+<details>
+<summary>Details</summary>
+
 The NOR gate is almost exactly the same as the NAND gate, except the second transistor is connected in parallel as opposed to series. This has the effect of shorting the output to ground if *either* transistors are conducting. This results in the behavior of a NOR gate.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor.PNG" width="400px" />
 
+</details>
+
 ### n-way NAND and NOR (\{n\}Q1R)
+<details>
+<summary>Details</summary>
+
 It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. While this method uses the same number of transistors as chaining the 2-way gates, but it does use significantly fewer resistors. We do this be applying the same logic that took us from a NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put `n` transistors, where `n` is the number of inputs we want.
 
 Here is an example of 8-way NAND and NOR gates, respectively.
@@ -41,13 +55,23 @@ Here is an example of 8-way NAND and NOR gates, respectively.
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand8.PNG" height="400px" />
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor8.PNG" width="400px" />
 
+</details>
+
 ### AND and OR (3Q2R)
+<details>
+<summary>Details</summary>
+
 The best way to make AND and OR gates happens to be the most straightforward. All we have to do is add a NOT gate after the NAND and NOR gates, as shown.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_and.PNG" width="400px" />
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_or.PNG" width="400px" />
 
+</details>
+
 ### AOI[aXbX...] (\{a+b+...\}Q1R)
+<details>
+<summary>Details</summary>
+
 The AOI (And-Or-Invert) gate is a bit unusual at first glance, and it is not as well known as the other gates. However, it is essential for building efficient NMOS circuits. This gate acts on "sets" of inputs, and processes them as follows:
 - It first runs each "set" of inputs through an `n`-way AND gate, where `n` is the number of inputs in that set.
 - The results from all of the AND gates are run through an `m`-way OR gate, where `m` is the number of sets.
@@ -83,7 +107,12 @@ As you can see, you can customize the number of sets and their respective input 
 
 The final transistor count of each AOI gate will be exactly equal to the total number of inputs, and each AOI gate will only ever use a single resistor.
 
+</details>
+
 ### XOR (6Q3R)
+<details>
+<summary>Details</summary>
+
 It is possible to use an AOI2X2 gate and 2 NOT gates to make an extremely elegant XOR gate, as shown below.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xor.PNG" width="400px" />
@@ -107,12 +136,22 @@ XOR gate truth table:
 
 We can see that the output is only 0 when both inputs are the same. Therefore, the first AND gate in the AOI2X2 is fed with both inputs directly, so that the output will go to 0 when both inputs are 1. Next, we need the output to also be 0 when both inputs are 0, and we can do this by simply inverting both inputs before feeding them into the second AND gate. Now we have a gate that outputs 0 when the inputs are either both 1 or both 0, and outputs 1 otherwise. This is an XOR gate!
 
+</details>
+
 ### XNOR (6Q3R)
+<details>
+<summary>Details</summary>
+
 We can implement the XNOR gate without using the classic XOR + NOT gate setup. To do so, we simply re-order the NOT gates in our XOR gate design so that the output goes to 0 in each case where the inputs are different, as opposed to the same.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xnor.PNG" width="400px" />
 
+</details>
+
 ### Enabler / 3-State Driver (16Q9R)
+<details>
+<summary>Details</summary>
+
 This component is a bit unique, as it is the only one to use a P-channel MOSFET. This circuit takes 2 inputs, `In` (input) and `en` (enable). When `en` is 1, the output is equal to `In`. However, when `en` is 0, the output is in a state known as "high impedance". This is a state that is neither a 0 (Ground) or 1 (VCC), but instead the output is electrically disconnected entirely.
 
 This is extremely useful when you want to have 2 signals occupy the same wire at different times. To understand the reason why, lets take an example case where we connect the outputs of 2 AND gates to each other directly. If the first was outputting 1 (VCC) and the second was outputting 0 (Ground), then there would be a short-circuit through that wire and those 2 AND gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
@@ -122,5 +161,7 @@ Here is a circuit that implements this behavior. Note that the top transistor is
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
 
 When both MOSFETS are open, the output is in a high-impedance (disconnected) state. When one is on and the other is off, the output will be shorted to either VCC or Ground. The combinational logic to the left uses this behavior in order to realize the functionality of an enabler / 3-state driver.
+
+</details>
 
 ### WIP
