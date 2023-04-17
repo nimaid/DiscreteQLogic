@@ -91,7 +91,7 @@ Here is an example of an AOI2X2 gate using conventional combinational logic.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/aoi2x2_function.PNG" width="400px" />
 
-So why do we care about this odd gate as a single unit? Why can't we just use combinations of AND and NOR gates whenever we need to do these types of operations? The answer is that all of these logical operations can be easily implemented in a single NMOS logic block that uses far fewer transistors and resistors to achieve the same behavior.
+So why do we care about this odd gate as a single unit? Why don't we just use combinations of AND and NOR gates whenever we need to do these types of operations? The answer is that all of these logical operations can be easily implemented in a single NMOS logic block that uses far fewer transistors and resistors to achieve the same behavior.
 
 Here is that same AIO2x2 gate in NMOS logic, using 4Q1R.
 
