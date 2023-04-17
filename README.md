@@ -79,4 +79,28 @@ As you can see, you can customize the number of sets and their respective input 
 
 The final transistor count of each AOI gate will be exactly equal to the total number of inputs, and each AOI gate will only ever use a single resistor.
 
+# XOR (6Q3R)
+It is possible to use an AOI2X2 gate and 2 NOT gates to make an extremely elegant XOR gate, as shown below.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xor.PNG" width="400px" />
+
+To understand why this works, think about the AOI gate as "a gate that will set it's output to 0 only when a set of inputs is all 1". In this way, we can analyze the truth table of the XOR gate to find which input conditions result in a 0 and test for them with sets of AND gates that have their inputs set to 1 in those conditions.
+
+```
+┌───┬───┬─────┐
+│ A │ B │ Out │
+╞═══╪═══╪═════╡
+│ 0 │ 0 │  0  │
+├───┼───┼─────┤
+│ 0 │ 1 │  1  │
+├───┼───┼─────┤
+│ 1 │ 0 │  1  │
+├───┼───┼─────┤
+│ 1 │ 1 │  0  │
+└───┴───┴─────┘
+```
+
+We can see that the output is only 0 when both inputs are the same. Therefore, the first AND gate in the AOI2X2 is fed with both inputs directly, so that the output will go to 0 when both inputs are 1. Next, we need the output to also be 0 when both inputs are 0, and we can do this by simply inverting both inputs before feeding them into the second AND gate. Now we have a gate that outputs 0 when the inputs are either both 1 or both 0, and outputs 1 otherwise. This is a XOR gate!
+
+
 ### WIP
