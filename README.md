@@ -75,7 +75,7 @@ And just to make sure it makes sense, here is a 2X2X2X2 AOI gate.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2x2x2.PNG" width="400px" />
 
-As you can see, you can customize the number of sets and their respective input count to fit your specific needs.
+As you can see, you can customize the number of sets and their respective input count to fit your specific needs in the same way you can customize the number of inputs to a NAND or NOR gate.
 
 The final transistor count of each AOI gate will be exactly equal to the total number of inputs, and each AOI gate will only ever use a single resistor.
 
