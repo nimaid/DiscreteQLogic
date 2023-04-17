@@ -11,7 +11,7 @@
           <string>In_1</string>
         </entry>
       </elementAttributes>
-      <pos x="-100" y="-460"/>
+      <pos x="-60" y="-460"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -22,10 +22,10 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>s</string>
+          <string>sel</string>
         </entry>
       </elementAttributes>
-      <pos x="-80" y="-360"/>
+      <pos x="-40" y="-360"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -35,12 +35,12 @@
           <string>In_2</string>
         </entry>
       </elementAttributes>
-      <pos x="-100" y="-400"/>
+      <pos x="-60" y="-400"/>
     </visualElement>
     <visualElement>
       <elementName>nm_Not.dig</elementName>
       <elementAttributes/>
-      <pos x="-60" y="-440"/>
+      <pos x="-20" y="-440"/>
     </visualElement>
     <visualElement>
       <elementName>nm_AOI2-2.dig</elementName>
@@ -73,32 +73,32 @@
       <p2 x="220" y="-420"/>
     </wire>
     <wire>
-      <p1 x="0" y="-440"/>
+      <p1 x="40" y="-440"/>
       <p2 x="60" y="-440"/>
     </wire>
     <wire>
-      <p1 x="-80" y="-440"/>
-      <p2 x="-60" y="-440"/>
+      <p1 x="-40" y="-440"/>
+      <p2 x="-20" y="-440"/>
     </wire>
     <wire>
-      <p1 x="-100" y="-460"/>
-      <p2 x="60" y="-460"/>
-    </wire>
-    <wire>
-      <p1 x="-80" y="-380"/>
+      <p1 x="-40" y="-380"/>
       <p2 x="60" y="-380"/>
     </wire>
     <wire>
-      <p1 x="-100" y="-400"/>
+      <p1 x="-60" y="-460"/>
+      <p2 x="60" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="-400"/>
       <p2 x="60" y="-400"/>
     </wire>
     <wire>
-      <p1 x="-80" y="-440"/>
-      <p2 x="-80" y="-380"/>
+      <p1 x="-40" y="-440"/>
+      <p2 x="-40" y="-380"/>
     </wire>
     <wire>
-      <p1 x="-80" y="-380"/>
-      <p2 x="-80" y="-360"/>
+      <p1 x="-40" y="-380"/>
+      <p2 x="-40" y="-360"/>
     </wire>
   </wires>
   <measurementOrdering/>
