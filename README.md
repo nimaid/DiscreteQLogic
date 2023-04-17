@@ -61,7 +61,7 @@ Here is that same AIO2x2 gate in NMOS logic, using 4Q1R.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2.PNG" width="400px" />
 
-The way this works is actually very clever. First, observe that this is still arranged with a pullup resistor and transistors that, on some combinations of inputs, shorts to ground. This is the same idea as the NOT gate, and this is where the "inversion" comes from.
+The way this works is actually very clever. First, observe that this is still arranged with a pullup resistor and transistors that, with some combinations of inputs, shorts to ground. This is the same idea as the NOT gate, and this is where the "inversion" comes from.
 
 Second, observe that there are 2 parallel paths to ground, just like the NOR gate. The only difference is that instead of each path has 2 transistors in series, which is exactly the same method used to construct the NAND gate. Indeed, when either set of series transistors is conducting, the output will be shorted to ground, providing the AND functionality for each set.
 
