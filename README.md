@@ -104,7 +104,7 @@ XOR gate truth tabe:
 We can see that the output is only 0 when both inputs are the same. Therefore, the first AND gate in the AOI2X2 is fed with both inputs directly, so that the output will go to 0 when both inputs are 1. Next, we need the output to also be 0 when both inputs are 0, and we can do this by simply inverting both inputs before feeding them into the second AND gate. Now we have a gate that outputs 0 when the inputs are either both 1 or both 0, and outputs 1 otherwise. This is an XOR gate!
 
 # XNOR (6Q3R)
-We can implement the XNOR gate without using the classic XOR + NOT gate setup. To do so, we simply re-order the NOT gates in our XOR gate design so that the output goes to 0 when the inputs are different, as opposed to the same.
+We can implement the XNOR gate without using the classic XOR + NOT gate setup. To do so, we simply re-order the NOT gates in our XOR gate design so that the output goes to 0 in each case where the inputs are different, as opposed to the same.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xnor.PNG" width="400px" />
 
