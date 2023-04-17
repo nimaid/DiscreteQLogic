@@ -49,7 +49,7 @@ The AOI (And-Or-Invert) gate is a bit unusual at first glance, and it is not as 
 - The results from all of the AND gates are run through an `m`-way OR gate, where `m` is the number of sets.
 - Finally, the output of the OR gate is run through a NOT gate (also called an inverter).
 
-AOI gates are defined by a series of numbers, which specify exactly how many sets of inputs there are, and how many inputs are in each set. Each set can have a different number of inputs, and you can have an many sets as you like. This is in the format `aXbXcX...`, where `a`, `b`, `c`, etc. specify how many inputs each set has, in order. So a `2X3X1` AOI gate would have 2 inputs to the first AND gate, 3 inputs in the second AND gate, and the third set has 1 input going directly to the OR gate stage (because AND only makes sense with 2 or more inputs).
+AOI gates are defined by a series of numbers, which specify exactly how many sets of inputs there are, and how many inputs are in each set. Each set can have a different number of inputs, and you can have an many sets as you like. This is in the format `aXbXcX...`, where `a`, `b`, `c`, etc. specify how many inputs each set has, in order. So a `2X3X1` AOI gate would have 3 sets with 2 inputs going to the first AND gate, 3 inputs going to the second AND gate, and the third set has only 1 input that goes directly to the OR gate stage (because AND only makes sense with 2 or more inputs).
 
 Here is an example of an AOI2X2 gate using conventional combinational logic.
 
