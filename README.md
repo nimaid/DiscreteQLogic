@@ -108,4 +108,15 @@ We can implement the XNOR gate without using the classic XOR + NOT gate setup. T
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xnor.PNG" width="400px" />
 
+### Enabler / 3-State Driver (16Q9R)
+This component is a bit unique, as it is the only one to use a P-channel MOSFET. This circuit takes 2 inputs, `In` (input) and `en` (enable). When `en` is 1, the output is equal to `In`. However, when `en` is 0, the output is in a state known as "high impedance". This is a state that is neither a 0 (Ground) or 1 (VCC), but instead it electrically disconnects the output entirely.
+
+This is extremely useful when you want to have 2 signals occupy the same wire at different times. If you hooked up, say, the outputs of 2 AND gates to each other directly, then if the first was outputting 1 (VCC) and the second was outputting 0 (Ground), then there would be a short-circuit through that wire and those gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
+
+Here is a circuit that implements this behavior. Note that the top transistor is P-channel, while the lower one is N-channel. This means the circuit uses 15 N-channel MOSFETS and 1 P-channel MOSFET.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
+
+When both MOSFETS are open, the output is in a high-impedance (disconnected) state. When one is on and the other is off, the output will be shorted to either VCC or Ground. The combinational logic to the left uses this behavior in order to realize the functionality of an enabler / 3-state driver.
+
 ### WIP
