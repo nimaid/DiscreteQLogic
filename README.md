@@ -48,9 +48,9 @@ The NOR gate is almost exactly the same as the NAND gate, except the second tran
 <details>
 <summary>Details</summary>
 
-It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. While this method uses the same number of transistors as chaining the 2-way gates, but it does use significantly fewer resistors. We do this be applying the same logic that took us from a NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put `n` transistors, where `n` is the number of inputs we want.
+It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. This method uses fewer transistors and resistors than simply chaining the 2-way gates together. We do this be applying the same logic that took us from a 1-way NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put `n` transistors, where `n` is the number of inputs we want.
 
-Here is an example of 8-way NAND gate.
+Here is an 8-way NAND gate.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand8.PNG" height="400px" />
 
