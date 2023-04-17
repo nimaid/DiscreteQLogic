@@ -33,7 +33,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>In_1</string>
+          <string>In_A1</string>
         </entry>
       </elementAttributes>
       <pos x="600" y="340"/>
@@ -48,7 +48,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>In_2</string>
+          <string>In_A2</string>
         </entry>
       </elementAttributes>
       <pos x="600" y="400"/>
@@ -56,58 +56,32 @@
     <visualElement>
       <elementName>NFET</elementName>
       <elementAttributes/>
-      <pos x="740" y="300"/>
+      <pos x="760" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>In_3</string>
+          <string>In_B1</string>
         </entry>
       </elementAttributes>
-      <pos x="720" y="340"/>
+      <pos x="740" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>NFET</elementName>
       <elementAttributes/>
-      <pos x="740" y="360"/>
+      <pos x="760" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>In_4</string>
+          <string>In_B2</string>
         </entry>
       </elementAttributes>
-      <pos x="720" y="400"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Testcase</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Testdata</string>
-          <testData>
-            <dataString>In_1 In_2 In_3 In_4 Out
-
-loop(x, 3)
-	loop(y, 3)
-		bits(2,x) bits(2,y) 1
-	end loop
-end loop
-
-loop(x, 4)
-	bits(2,x) 1 1 0
-end loop
-
-loop(y, 4)
-	1 1 bits(2,y) 0
-end loop</dataString>
-          </testData>
-        </entry>
-      </elementAttributes>
-      <pos x="540" y="240"/>
+      <pos x="740" y="400"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -120,24 +94,24 @@ end loop</dataString>
       <p2 x="620" y="400"/>
     </wire>
     <wire>
-      <p1 x="720" y="400"/>
-      <p2 x="740" y="400"/>
+      <p1 x="740" y="400"/>
+      <p2 x="760" y="400"/>
     </wire>
     <wire>
       <p1 x="600" y="340"/>
       <p2 x="620" y="340"/>
     </wire>
     <wire>
-      <p1 x="720" y="340"/>
-      <p2 x="740" y="340"/>
+      <p1 x="740" y="340"/>
+      <p2 x="760" y="340"/>
     </wire>
     <wire>
       <p1 x="640" y="440"/>
-      <p2 x="760" y="440"/>
+      <p2 x="780" y="440"/>
     </wire>
     <wire>
       <p1 x="640" y="280"/>
-      <p2 x="760" y="280"/>
+      <p2 x="780" y="280"/>
     </wire>
     <wire>
       <p1 x="640" y="340"/>
@@ -164,16 +138,16 @@ end loop</dataString>
       <p2 x="640" y="300"/>
     </wire>
     <wire>
-      <p1 x="760" y="340"/>
-      <p2 x="760" y="360"/>
+      <p1 x="780" y="340"/>
+      <p2 x="780" y="360"/>
     </wire>
     <wire>
-      <p1 x="760" y="400"/>
-      <p2 x="760" y="440"/>
+      <p1 x="780" y="400"/>
+      <p2 x="780" y="440"/>
     </wire>
     <wire>
-      <p1 x="760" y="280"/>
-      <p2 x="760" y="300"/>
+      <p1 x="780" y="280"/>
+      <p2 x="780" y="300"/>
     </wire>
   </wires>
   <measurementOrdering/>
