@@ -28,3 +28,13 @@ The next step up in complexity is the NAND gate. This is essentially just a NOT 
 The NOR gate is almost exactly the same as the NAND gate, except the second transistor is connected in parallel as opposed to series. This has the effect of shorting the output to ground if *either* transistors are conducting. This results in the behavior of a NOR gate.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor.PNG" width="400px" />
+
+### n-way NAND and NOR (nQ1R)
+It is possible to efficiently make NAND and NOR gates that have more than 2 inputs without chaining together the above units. While this method uses the same number of transistors as chaining the 2-way gates, but it does use significantly fewer resistors. We do this be applying the same logic that took us from a NOT gate to 2-way NAND and NOR gates, but instead of putting only 2 transistors in either series or parallel, we put n tranistors, where n is the number of inputs we want.
+
+Here is an example of 8-way NAND and NOR gates, respectively.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand8.PNG" height="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor8.PNG" width="400px" />
+
+### WIP
