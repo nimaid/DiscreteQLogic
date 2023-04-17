@@ -69,7 +69,7 @@ Finally, observe that because the sets of series transistors are in parallel wit
 
 Here is an example of a 2X1 AOI gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x1.PNG" width="400px" />
 
 And just to make sure it makes sense, here is a 2X2X2X2 AOI gate.
 
