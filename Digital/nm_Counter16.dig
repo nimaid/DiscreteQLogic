@@ -72,11 +72,6 @@
       <pos x="100" y="-340"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_FullAdder16.dig</elementName>
-      <elementAttributes/>
-      <pos x="0" y="-260"/>
-    </visualElement>
-    <visualElement>
       <elementName>Const</elementName>
       <elementAttributes>
         <entry>
@@ -100,6 +95,11 @@
         </entry>
       </elementAttributes>
       <pos x="300" y="-240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder16.dig</elementName>
+      <elementAttributes/>
+      <pos x="0" y="-260"/>
     </visualElement>
   </visualElements>
   <wires>

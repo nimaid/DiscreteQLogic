@@ -340,7 +340,7 @@
       <pos x="-160" y="-20"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Or8.dig</elementName>
+      <elementName>nm_or8.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -350,7 +350,17 @@
       <pos x="320" y="-720"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Or8.dig</elementName>
+      <elementName>nm_nor8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="-480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_or8.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -360,7 +370,12 @@
       <pos x="320" y="-260"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nor6.dig</elementName>
+      <elementName>nm_nor9.dig</elementName>
+      <elementAttributes/>
+      <pos x="320" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nor6.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -370,7 +385,7 @@
       <pos x="320" y="200"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nor8.dig</elementName>
+      <elementName>nm_nor8.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -378,21 +393,6 @@
         </entry>
       </elementAttributes>
       <pos x="320" y="380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nor9.dig</elementName>
-      <elementAttributes/>
-      <pos x="320" y="0"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nor8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="320" y="-480"/>
     </visualElement>
   </visualElements>
   <wires>

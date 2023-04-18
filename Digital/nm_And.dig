@@ -4,11 +4,6 @@
   <attributes/>
   <visualElements>
     <visualElement>
-      <elementName>nm_Nand.dig</elementName>
-      <elementAttributes/>
-      <pos x="480" y="220"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -39,7 +34,12 @@
       <pos x="460" y="260"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
+      <elementName>nm_nand.dig</elementName>
+      <elementAttributes/>
+      <pos x="480" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="560" y="240"/>
     </visualElement>

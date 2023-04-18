@@ -54,44 +54,44 @@
       <pos x="360" y="300"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nand3.dig</elementName>
+      <elementName>Delay</elementName>
       <elementAttributes/>
-      <pos x="560" y="180"/>
+      <pos x="420" y="460"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nand3.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nand3.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="440"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nand3.dig</elementName>
-      <elementAttributes/>
-      <pos x="720" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="400" y="500"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nand.dig</elementName>
+      <elementName>nm_nand.dig</elementName>
       <elementAttributes/>
       <pos x="560" y="40"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nand.dig</elementName>
+      <elementName>nm_nand.dig</elementName>
       <elementAttributes/>
       <pos x="720" y="160"/>
     </visualElement>
     <visualElement>
-      <elementName>Delay</elementName>
+      <elementName>nm_nand3.dig</elementName>
       <elementAttributes/>
-      <pos x="420" y="460"/>
+      <pos x="560" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand3.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand3.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand3.dig</elementName>
+      <elementAttributes/>
+      <pos x="720" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="400" y="500"/>
     </visualElement>
   </visualElements>
   <wires>

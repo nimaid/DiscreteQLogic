@@ -4,16 +4,6 @@
   <attributes/>
   <visualElements>
     <visualElement>
-      <elementName>nm_And8x1.dig</elementName>
-      <elementAttributes/>
-      <pos x="700" y="360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="620" y="400"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -58,6 +48,16 @@
         </entry>
       </elementAttributes>
       <pos x="780" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and8x1.dig</elementName>
+      <elementAttributes/>
+      <pos x="700" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="620" y="400"/>
     </visualElement>
   </visualElements>
   <wires>

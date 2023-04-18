@@ -194,16 +194,6 @@
       <pos x="400" y="-420"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Nor8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="320" y="-640"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -216,46 +206,6 @@
         </entry>
       </elementAttributes>
       <pos x="260" y="-620"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Inverter8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="-280" y="-720"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Inverter8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="-160" y="-560"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_And8x.dig</elementName>
-      <elementAttributes/>
-      <pos x="-20" y="-700"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder8.dig</elementName>
-      <elementAttributes/>
-      <pos x="-20" y="-560"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Inverter8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="160" y="-700"/>
     </visualElement>
     <visualElement>
       <elementName>nm_mux8.dig</elementName>
@@ -314,6 +264,56 @@
         </entry>
       </elementAttributes>
       <pos x="-240" y="-560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_inverter8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-280" y="-720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_inverter8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-160" y="-560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and8x.dig</elementName>
+      <elementAttributes/>
+      <pos x="-20" y="-700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder8.dig</elementName>
+      <elementAttributes/>
+      <pos x="-20" y="-560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_inverter8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="160" y="-700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nor8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="-640"/>
     </visualElement>
   </visualElements>
   <wires>

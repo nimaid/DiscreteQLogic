@@ -54,46 +54,6 @@
       <pos x="320" y="-460"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="-480"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="-380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="-280"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="-180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="-80"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="20"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="120"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="60" y="220"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -116,6 +76,46 @@
         </entry>
       </elementAttributes>
       <pos x="280" y="-460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="220"/>
     </visualElement>
   </visualElements>
   <wires>

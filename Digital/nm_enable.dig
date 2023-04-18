@@ -34,11 +34,6 @@
       <pos x="-100" y="-380"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Xor.dig</elementName>
-      <elementAttributes/>
-      <pos x="120" y="-440"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -49,26 +44,6 @@
       <pos x="-100" y="-440"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
-      <elementAttributes/>
-      <pos x="120" y="-320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="20" y="-440"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="-80" y="-380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_And.dig</elementName>
-      <elementAttributes/>
-      <pos x="20" y="-380"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -77,6 +52,31 @@
         </entry>
       </elementAttributes>
       <pos x="240" y="-360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="20" y="-440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="-80" y="-380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and.dig</elementName>
+      <elementAttributes/>
+      <pos x="20" y="-380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="120" y="-440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and.dig</elementName>
+      <elementAttributes/>
+      <pos x="120" y="-320"/>
     </visualElement>
   </visualElements>
   <wires>

@@ -44,12 +44,12 @@
       <pos x="660" y="320"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Xor.dig</elementName>
+      <elementName>nm_xor.dig</elementName>
       <elementAttributes/>
       <pos x="580" y="200"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
+      <elementName>nm_and.dig</elementName>
       <elementAttributes/>
       <pos x="580" y="300"/>
     </visualElement>

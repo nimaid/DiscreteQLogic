@@ -34,16 +34,6 @@
       <pos x="460" y="180"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="240"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_Nor8.dig</elementName>
-      <elementAttributes/>
-      <pos x="480" y="160"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -102,6 +92,16 @@
         </entry>
       </elementAttributes>
       <pos x="460" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nor8.dig</elementName>
+      <elementAttributes/>
+      <pos x="480" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="240"/>
     </visualElement>
   </visualElements>
   <wires>

@@ -142,11 +142,6 @@
       <pos x="940" y="1660"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Counter8.dig</elementName>
-      <elementAttributes/>
-      <pos x="1180" y="1280"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -301,9 +296,14 @@
       <pos x="1280" y="1280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_DFF.dig</elementName>
+      <elementName>nm_dff.dig</elementName>
       <elementAttributes/>
       <pos x="1240" y="1460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_counter8.dig</elementName>
+      <elementAttributes/>
+      <pos x="1180" y="1280"/>
     </visualElement>
   </visualElements>
   <wires>

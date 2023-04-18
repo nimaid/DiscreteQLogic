@@ -66,11 +66,6 @@
       <pos x="220" y="520"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="180"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -99,41 +94,6 @@
       <pos x="240" y="340"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="280"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="480"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="580"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="680"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="780"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_FullAdder.dig</elementName>
-      <elementAttributes/>
-      <pos x="600" y="880"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -142,6 +102,46 @@
         </entry>
       </elementAttributes>
       <pos x="840" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="680"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_adder.dig</elementName>
+      <elementAttributes/>
+      <pos x="600" y="880"/>
     </visualElement>
   </visualElements>
   <wires>

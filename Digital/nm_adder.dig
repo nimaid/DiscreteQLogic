@@ -54,17 +54,17 @@
       <pos x="740" y="240"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_HalfAdder.dig</elementName>
+      <elementName>nm_halfadder.dig</elementName>
       <elementAttributes/>
       <pos x="780" y="160"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_HalfAdder.dig</elementName>
+      <elementName>nm_halfadder.dig</elementName>
       <elementAttributes/>
       <pos x="900" y="160"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Or.dig</elementName>
+      <elementName>nm_or.dig</elementName>
       <elementAttributes/>
       <pos x="920" y="240"/>
     </visualElement>
