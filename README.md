@@ -184,4 +184,14 @@ The 2 MOSFETs in-between the others (the ones connected to `Out`) are also a P-c
 
 </details>
 
+### Inverted Enabler / 3-State Driver (5Q1R)
+<details>
+<summary>Details</summary>
+
+As discussed in the previous section, the input to the enabler / 3-state driver first goes through a NOT gate, in order to counteract the inverting nature of the CMOS-like architecture of the output section. However, sometimes we need to both invert an output and also add an enabler to it. In other situations (like with a DFF), you have both an inverted an non-inverted input to choose from without adding any extra components. In both of these situations, using an enabler that `omits` the inverter on the input can substitute for a NOT gate + enabler, while saving 2Q and 2R.
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enablen.PNG" width="400px" />
+
+</details>
+
 ### WIP
