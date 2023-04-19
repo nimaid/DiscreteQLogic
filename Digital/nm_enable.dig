@@ -4,26 +4,6 @@
   <attributes/>
   <visualElements>
     <visualElement>
-      <elementName>NFET</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-340"/>
-    </visualElement>
-    <visualElement>
-      <elementName>PFET</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Ground</elementName>
-      <elementAttributes/>
-      <pos x="220" y="-220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>VDD</elementName>
-      <elementAttributes/>
-      <pos x="220" y="-500"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -31,7 +11,7 @@
           <string>In</string>
         </entry>
       </elementAttributes>
-      <pos x="60" y="-480"/>
+      <pos x="80" y="-480"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -41,7 +21,7 @@
           <string>en</string>
         </entry>
       </elementAttributes>
-      <pos x="60" y="-420"/>
+      <pos x="80" y="-440"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -51,97 +31,35 @@
           <string>Out</string>
         </entry>
       </elementAttributes>
-      <pos x="240" y="-360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_not.dig</elementName>
-      <elementAttributes/>
-      <pos x="100" y="-420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>PFET</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-480"/>
-    </visualElement>
-    <visualElement>
-      <elementName>NFET</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-280"/>
+      <pos x="260" y="-460"/>
     </visualElement>
     <visualElement>
       <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="100" y="-480"/>
     </visualElement>
+    <visualElement>
+      <elementName>nm_enablen.dig</elementName>
+      <elementAttributes/>
+      <pos x="180" y="-480"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="160" y="-420"/>
-      <p2 x="200" y="-420"/>
+      <p1 x="80" y="-440"/>
+      <p2 x="180" y="-440"/>
     </wire>
     <wire>
-      <p1 x="60" y="-420"/>
-      <p2 x="80" y="-420"/>
+      <p1 x="240" y="-460"/>
+      <p2 x="260" y="-460"/>
     </wire>
     <wire>
-      <p1 x="80" y="-420"/>
-      <p2 x="100" y="-420"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-360"/>
-      <p2 x="240" y="-360"/>
-    </wire>
-    <wire>
-      <p1 x="80" y="-300"/>
-      <p2 x="200" y="-300"/>
+      <p1 x="80" y="-480"/>
+      <p2 x="100" y="-480"/>
     </wire>
     <wire>
       <p1 x="160" y="-480"/>
       <p2 x="180" y="-480"/>
-    </wire>
-    <wire>
-      <p1 x="60" y="-480"/>
-      <p2 x="100" y="-480"/>
-    </wire>
-    <wire>
-      <p1 x="180" y="-480"/>
-      <p2 x="200" y="-480"/>
-    </wire>
-    <wire>
-      <p1 x="180" y="-240"/>
-      <p2 x="200" y="-240"/>
-    </wire>
-    <wire>
-      <p1 x="80" y="-420"/>
-      <p2 x="80" y="-300"/>
-    </wire>
-    <wire>
-      <p1 x="180" y="-480"/>
-      <p2 x="180" y="-240"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-380"/>
-      <p2 x="220" y="-360"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-300"/>
-      <p2 x="220" y="-280"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-440"/>
-      <p2 x="220" y="-420"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-500"/>
-      <p2 x="220" y="-480"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-240"/>
-      <p2 x="220" y="-220"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="-360"/>
-      <p2 x="220" y="-340"/>
     </wire>
   </wires>
   <measurementOrdering/>

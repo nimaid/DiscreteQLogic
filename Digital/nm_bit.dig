@@ -41,7 +41,7 @@
           <string>Out</string>
         </entry>
       </elementAttributes>
-      <pos x="380" y="-200"/>
+      <pos x="380" y="-180"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -52,11 +52,6 @@
         </entry>
       </elementAttributes>
       <pos x="120" y="-140"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_enable.dig</elementName>
-      <elementAttributes/>
-      <pos x="300" y="-220"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -73,6 +68,11 @@
       <elementAttributes/>
       <pos x="180" y="-220"/>
     </visualElement>
+    <visualElement>
+      <elementName>nm_enablen.dig</elementName>
+      <elementAttributes/>
+      <pos x="300" y="-200"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -84,8 +84,8 @@
       <p2 x="180" y="-180"/>
     </wire>
     <wire>
-      <p1 x="260" y="-180"/>
-      <p2 x="300" y="-180"/>
+      <p1 x="360" y="-180"/>
+      <p2 x="380" y="-180"/>
     </wire>
     <wire>
       <p1 x="120" y="-100"/>
@@ -96,8 +96,8 @@
       <p2 x="180" y="-200"/>
     </wire>
     <wire>
-      <p1 x="360" y="-200"/>
-      <p2 x="380" y="-200"/>
+      <p1 x="240" y="-200"/>
+      <p2 x="300" y="-200"/>
     </wire>
     <wire>
       <p1 x="280" y="-120"/>
@@ -116,15 +116,15 @@
       <p2 x="280" y="-220"/>
     </wire>
     <wire>
-      <p1 x="280" y="-220"/>
-      <p2 x="300" y="-220"/>
+      <p1 x="260" y="-160"/>
+      <p2 x="300" y="-160"/>
     </wire>
     <wire>
       <p1 x="160" y="-180"/>
       <p2 x="160" y="-100"/>
     </wire>
     <wire>
-      <p1 x="260" y="-180"/>
+      <p1 x="260" y="-160"/>
       <p2 x="260" y="-140"/>
     </wire>
     <wire>
