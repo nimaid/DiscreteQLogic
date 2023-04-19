@@ -170,7 +170,7 @@ Before showing you the enabler circuit, it will be useful to first understand ho
 
 The top transistor is P-channel, and the bottom one is N-channel. In the configuration shown, the N-channel MOSFET will conduct (to ground) when VCC (1) is applied to it's gate, and will act like an open switch when it is grounded (0). This works just like in the N-channel NOT gate. However, the P-channel MOSFET behaves in exactly the opposite way. When VCC (1) is applied to it's gate, it acts like an open switch, and it conducts (to VCC) when the gate is grounded (0).
 
-With this understanding, we can see that when `In` is 0, the upper P-channel MOSFET will be conducting to VCC (1), and the lower N-channel MOSFET will be disconnected, resulting in `Out` being only connected to VCC, and therefore a 1. Conversely, when `In` is 1, the P-channel MOSFET will be open and the N-channel one will be shorting to ground, therefore resulting in a 0. This is the fundamental idea behind CMOS, and it is used in the construction of the enabler circuit.
+With this understanding, we can see that when `In` is 0, the upper P-channel MOSFET will be conducting to VCC (1), and the lower N-channel MOSFET will be disconnected, resulting in `Out` being only connected to VCC, and therefore a 1. Conversely, when `In` is 1, the P-channel MOSFET will be open and the N-channel one will be conducting to ground, therefore resulting in a 0. This is the fundamental idea behind CMOS, and it is used in the construction of the enabler circuit.
 
 Now, we are ready to look at the enabler circuit:
 
