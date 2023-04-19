@@ -156,19 +156,31 @@ We can implement the XNOR gate without using the classic XOR + NOT gate setup. T
 
 </details>
 
-### Enabler / 3-State Driver (16Q9R)
+### Enabler / 3-State Driver (6Q2R)
 <details>
 <summary>Details</summary>
 
-This component is a bit unique, as it is the only one to use a P-channel MOSFET. This circuit takes 2 inputs, `In` (input) and `en` (enable). When `en` is 1, the output is equal to `In`. However, when `en` is 0, the output is in a state known as "high impedance". This is a state that is neither a 0 (Ground) or 1 (VCC), but instead the output is electrically disconnected entirely.
+This component is a bit unique, as it is the only one which *requires* P-channel MOSFETs. This circuit takes 2 inputs, `In` (input) and `en` (enable). When `en` is 1, the output is equal to `In`. However, when `en` is 0, the output is in a state known as "high impedance". This is a state that is neither a 0 (ground) or 1 (VCC), but instead the output is electrically disconnected entirely.
 
-This is extremely useful when you want to have 2 signals occupy the same wire at different times. To understand the reason why, lets take an example case where we connect the outputs of 2 AND gates to each other directly. If the first was outputting 1 (VCC) and the second was outputting 0 (Ground), then there would be a short-circuit through that wire and those 2 AND gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
+This is extremely useful when you want to have 2 signals occupy the same wire at different times. To understand the reason why, lets take an example case where we connect the outputs of 2 AND gates to each other directly. If the first was outputting 1 (VCC) and the second was outputting 0 (ground), then there would be a short-circuit through that wire and those 2 AND gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
 
-Here is a circuit that implements this behavior. Note that the top transistor is P-channel, while the lower one is N-channel. This means the circuit uses 15 N-channel MOSFETS and 1 P-channel MOSFET.
+Before showing you the enabler circuit, it will be useful to first understand how a CMOS-based NOT gate works:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/cm_not.PNG" width="400px" />
+
+The top transistor is P-channel, and the bottom one is N-channel. In the configuration shown, the N-channel MOSFET will conduct when VCC (1) is applied to it's gate, and will act like an open switch when it is grounded (0). This works just like in the N-channel NOT gate. However, the P-channel MOSFET behaves in exactly the opposite way. When VCC (1) is applied to it's gate, it acts like an open switch, and it conducts when the gate is grounded (0).
+
+With this understanding, we can see that when `In` is 0, the upper P-channel MOSFET will be conducting to VCC (1), and the lower N-channel MOSFET will be disconnected, resulting in `Out` being only connected to VCC, and therefore a 1. Conversely, when `In` is 1, the P-channel MOSFET will be open and the N-channel one will be shorting to ground, therefore resulting in a 0. This is the fundamental idea behind CMOS, and it is used in the construction of the enabler circuit.
+
+Now, we are ready to look at the enabler circuit:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
 
-When both MOSFETS are open, the output is in a high-impedance (disconnected) state. When one is on and the other is off, the output will be shorted to either VCC or Ground. The combinational logic to the left uses this behavior in order to realize the functionality of an enabler / 3-state driver.
+The top 2 transistors are P-channel, while the lower two are N-channel. *(This means the circuit uses 4 N-channel MOSFETs and 2 P-channel MOSFETs.)*
+
+First, note how to topmost (P-channel) and bottommost (N-channel) MOSFETs both have their gates connected directly, just like the CMOS NOT gate. This means that if those other 2 MOSFETs weren't in the way, this circuit would act similar to the CMOS NOT gate. However, note there is a NOT gate (NMOS) between `In` and those 2 gates. This means that those 2 transistors would actually act like an "inverted NOT gate", which is just a buffer (0 in, 0 out; 1 in, 1 out). Alone this is not very useful to us, but those 2 MOSFETs in-between these ones and `Out` are what actually make this circuit work for us like I described.
+
+The 2 MOSFETs connected to `Out` are also a P-channel/N-channel pair, but with a critical change from the NOT gate. Instead of both of their gates being directly connected, the upper-middle P-channel MOSFET has it's gate input inverted by a NOT gate. This means that when `en` is 1, `both` MOSFETs will conduct, but when `In` is 0, `neither` MOSFET will conduct (both act like an open switch). This means that when `en` is 1, the effect of the topmost and bottommost MOSFETs are uninterrupted and `Out` is equal to `In`, but when it is 0, `Out` is completely disconnected from either VCC or ground. This results in the desired behavior of an enabler.
 
 </details>
 
