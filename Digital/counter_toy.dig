@@ -140,20 +140,6 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Overflow</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1320" y="1460"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Size</string>
-          <int>0</int>
-        </entry>
-        <entry>
-          <string>Label</string>
           <string>Out_0</string>
         </entry>
       </elementAttributes>
@@ -272,11 +258,6 @@
       <pos x="1280" y="1280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_dff_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="1240" y="1460"/>
-    </visualElement>
-    <visualElement>
       <elementName>nm_counter8_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="1180" y="1280"/>
@@ -368,20 +349,12 @@
       <p2 x="1040" y="1480"/>
     </wire>
     <wire>
-      <p1 x="1140" y="1480"/>
-      <p2 x="1240" y="1480"/>
-    </wire>
-    <wire>
       <p1 x="1300" y="1420"/>
       <p2 x="1320" y="1420"/>
     </wire>
     <wire>
       <p1 x="1080" y="1420"/>
       <p2 x="1100" y="1420"/>
-    </wire>
-    <wire>
-      <p1 x="1220" y="1420"/>
-      <p2 x="1260" y="1420"/>
     </wire>
     <wire>
       <p1 x="1300" y="1360"/>
@@ -412,20 +385,8 @@
       <p2 x="1180" y="1300"/>
     </wire>
     <wire>
-      <p1 x="1240" y="1300"/>
-      <p2 x="1260" y="1300"/>
-    </wire>
-    <wire>
       <p1 x="940" y="1620"/>
       <p2 x="1120" y="1620"/>
-    </wire>
-    <wire>
-      <p1 x="1300" y="1460"/>
-      <p2 x="1320" y="1460"/>
-    </wire>
-    <wire>
-      <p1 x="1220" y="1460"/>
-      <p2 x="1240" y="1460"/>
     </wire>
     <wire>
       <p1 x="1300" y="1400"/>
@@ -468,10 +429,6 @@
       <p2 x="1140" y="1660"/>
     </wire>
     <wire>
-      <p1 x="1160" y="1500"/>
-      <p2 x="1240" y="1500"/>
-    </wire>
-    <wire>
       <p1 x="1120" y="1320"/>
       <p2 x="1120" y="1620"/>
     </wire>
@@ -493,15 +450,7 @@
     </wire>
     <wire>
       <p1 x="1140" y="1300"/>
-      <p2 x="1140" y="1480"/>
-    </wire>
-    <wire>
-      <p1 x="1140" y="1480"/>
       <p2 x="1140" y="1660"/>
-    </wire>
-    <wire>
-      <p1 x="1220" y="1420"/>
-      <p2 x="1220" y="1460"/>
     </wire>
     <wire>
       <p1 x="1080" y="1420"/>
@@ -517,10 +466,6 @@
     </wire>
     <wire>
       <p1 x="1160" y="1340"/>
-      <p2 x="1160" y="1500"/>
-    </wire>
-    <wire>
-      <p1 x="1160" y="1500"/>
       <p2 x="1160" y="1700"/>
     </wire>
     <wire>
@@ -530,10 +475,6 @@
     <wire>
       <p1 x="1260" y="1240"/>
       <p2 x="1260" y="1280"/>
-    </wire>
-    <wire>
-      <p1 x="1260" y="1300"/>
-      <p2 x="1260" y="1420"/>
     </wire>
   </wires>
   <measurementOrdering/>
