@@ -56,7 +56,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>reset</string>
+          <string>reset*</string>
         </entry>
       </elementAttributes>
       <pos x="0" y="-300"/>
@@ -77,11 +77,6 @@
       <pos x="-20" y="-220"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_byte.dig</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-420"/>
-    </visualElement>
-    <visualElement>
       <elementName>nm_mux8.dig</elementName>
       <elementAttributes/>
       <pos x="100" y="-340"/>
@@ -100,6 +95,11 @@
       <elementName>nm_adder8.dig</elementName>
       <elementAttributes/>
       <pos x="0" y="-260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_byte_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="200" y="-420"/>
     </visualElement>
   </visualElements>
   <wires>

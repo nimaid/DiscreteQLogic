@@ -32,7 +32,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>reset</string>
+          <string>reset*</string>
         </entry>
       </elementAttributes>
       <pos x="420" y="100"/>
@@ -118,12 +118,12 @@
       <pos x="620" y="-180"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_reg8.dig</elementName>
+      <elementName>nm_reg8_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="500" y="-180"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_reg8.dig</elementName>
+      <elementName>nm_reg8_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="500" y="-60"/>
     </visualElement>

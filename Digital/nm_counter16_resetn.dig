@@ -12,7 +12,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>8</int>
+          <int>16</int>
         </entry>
       </elementAttributes>
       <pos x="0" y="-420"/>
@@ -36,7 +36,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>8</int>
+          <int>16</int>
         </entry>
       </elementAttributes>
       <pos x="300" y="-420"/>
@@ -56,17 +56,22 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>reset</string>
+          <string>reset*</string>
         </entry>
       </elementAttributes>
       <pos x="0" y="-300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_mux16.dig</elementName>
+      <elementAttributes/>
+      <pos x="100" y="-340"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
       <elementAttributes>
         <entry>
           <string>Bits</string>
-          <int>8</int>
+          <int>16</int>
         </entry>
       </elementAttributes>
       <pos x="-20" y="-240"/>
@@ -75,16 +80,6 @@
       <elementName>NotConnected</elementName>
       <elementAttributes/>
       <pos x="-20" y="-220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_byte.dig</elementName>
-      <elementAttributes/>
-      <pos x="200" y="-420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_mux8.dig</elementName>
-      <elementAttributes/>
-      <pos x="100" y="-340"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -97,9 +92,14 @@
       <pos x="300" y="-240"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_adder8.dig</elementName>
+      <elementName>nm_adder16.dig</elementName>
       <elementAttributes/>
       <pos x="0" y="-260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_byte2_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="200" y="-420"/>
     </visualElement>
   </visualElements>
   <wires>

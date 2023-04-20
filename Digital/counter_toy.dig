@@ -8,11 +8,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Reset</string>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="1" z="false"/>
+          <string>Reset*</string>
         </entry>
       </elementAttributes>
       <pos x="940" y="1700"/>
@@ -296,12 +292,12 @@
       <pos x="1280" y="1280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_dff.dig</elementName>
+      <elementName>nm_dff_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="1240" y="1460"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_counter8.dig</elementName>
+      <elementName>nm_counter8_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="1180" y="1280"/>
     </visualElement>

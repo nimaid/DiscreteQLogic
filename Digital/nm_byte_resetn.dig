@@ -32,7 +32,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>reset</string>
+          <string>reset*</string>
         </entry>
       </elementAttributes>
       <pos x="260" y="520"/>
@@ -76,46 +76,6 @@
       <pos x="880" y="-220"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="-220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="-120"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="-20"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="80"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="280"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="380"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_dff.dig</elementName>
-      <elementAttributes/>
-      <pos x="460" y="480"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -138,6 +98,46 @@
         </entry>
       </elementAttributes>
       <pos x="920" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="-220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="460" y="480"/>
     </visualElement>
   </visualElements>
   <wires>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="-220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>reset*</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="-100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Out</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>en</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>V</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_enablen.dig</elementName>
+      <elementAttributes/>
+      <pos x="300" y="-200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_dff_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="180" y="-220"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="120" y="-180"/>
+      <p2 x="140" y="-180"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="-180"/>
+      <p2 x="180" y="-180"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="-180"/>
+      <p2 x="380" y="-180"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-100"/>
+      <p2 x="160" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="-200"/>
+      <p2 x="180" y="-200"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="-200"/>
+      <p2 x="300" y="-200"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-120"/>
+      <p2 x="380" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-140"/>
+      <p2 x="260" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-220"/>
+      <p2 x="180" y="-220"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="-220"/>
+      <p2 x="280" y="-220"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-160"/>
+      <p2 x="300" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="-180"/>
+      <p2 x="160" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-160"/>
+      <p2 x="260" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-220"/>
+      <p2 x="280" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="-200"/>
+      <p2 x="140" y="-180"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
