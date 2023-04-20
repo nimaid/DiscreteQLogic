@@ -8,16 +8,6 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Reset*</string>
-        </entry>
-      </elementAttributes>
-      <pos x="940" y="1700"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
           <string>In_0</string>
         </entry>
       </elementAttributes>
@@ -126,16 +116,6 @@
         </entry>
       </elementAttributes>
       <pos x="1180" y="1240"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>Update</string>
-        </entry>
-      </elementAttributes>
-      <pos x="940" y="1660"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -300,6 +280,30 @@
       <elementName>nm_counter8_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="1180" y="1280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Reset</string>
+        </entry>
+        <entry>
+          <string>activeLow</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="940" y="1700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Update</string>
+        </entry>
+      </elementAttributes>
+      <pos x="940" y="1660"/>
     </visualElement>
   </visualElements>
   <wires>
