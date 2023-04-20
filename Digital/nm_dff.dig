@@ -47,11 +47,15 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>r</string>
         </entry>
       </elementAttributes>
-      <pos x="620" y="320"/>
+      <pos x="760" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>Delay</elementName>
@@ -60,13 +64,23 @@
     </visualElement>
     <visualElement>
       <elementName>nm_not.dig</elementName>
-      <elementAttributes/>
-      <pos x="640" y="320"/>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>nm_dff_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="740" y="240"/>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="740" y="220"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -77,14 +91,6 @@
     <wire>
       <p1 x="620" y="240"/>
       <p2 x="740" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="620" y="320"/>
-      <p2 x="640" y="320"/>
-    </wire>
-    <wire>
-      <p1 x="700" y="320"/>
-      <p2 x="720" y="320"/>
     </wire>
     <wire>
       <p1 x="800" y="260"/>
@@ -103,20 +109,20 @@
       <p2 x="640" y="280"/>
     </wire>
     <wire>
-      <p1 x="720" y="280"/>
-      <p2 x="740" y="280"/>
-    </wire>
-    <wire>
       <p1 x="680" y="280"/>
       <p2 x="700" y="280"/>
     </wire>
     <wire>
-      <p1 x="720" y="280"/>
-      <p2 x="720" y="320"/>
-    </wire>
-    <wire>
       <p1 x="820" y="260"/>
       <p2 x="820" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="360"/>
+      <p2 x="760" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="280"/>
+      <p2 x="760" y="300"/>
     </wire>
     <wire>
       <p1 x="700" y="260"/>

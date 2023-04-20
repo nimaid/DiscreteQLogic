@@ -688,7 +688,7 @@
           <intFormat>bin</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="-360" y="720"/>
+      <pos x="-340" y="720"/>
     </visualElement>
     <visualElement>
       <elementName>nm_enable8.dig</elementName>
@@ -1051,7 +1051,7 @@
     </wire>
     <wire>
       <p1 x="-380" y="720"/>
-      <p2 x="-360" y="720"/>
+      <p2 x="-340" y="720"/>
     </wire>
     <wire>
       <p1 x="-680" y="720"/>

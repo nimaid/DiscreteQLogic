@@ -8,20 +8,10 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>D</string>
+          <string>T</string>
         </entry>
       </elementAttributes>
-      <pos x="420" y="220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>clk</string>
-        </entry>
-      </elementAttributes>
-      <pos x="420" y="260"/>
+      <pos x="880" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -31,7 +21,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="600" y="220"/>
+      <pos x="1060" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -41,40 +31,27 @@
           <string>Q*</string>
         </entry>
       </elementAttributes>
-      <pos x="600" y="260"/>
+      <pos x="1060" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
           <string>Label</string>
-          <string>r</string>
+          <string>D_load</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="360"/>
+      <pos x="880" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
-        <entry>
           <string>Label</string>
-          <string>s</string>
+          <string>D</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="100"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Delay</elementName>
-      <elementAttributes/>
-      <pos x="440" y="220"/>
+      <pos x="880" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>nm_not.dig</elementName>
@@ -84,81 +61,127 @@
           <rotation rotation="1"/>
         </entry>
       </elementAttributes>
-      <pos x="520" y="340"/>
+      <pos x="1000" y="380"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_not.dig</elementName>
+      <elementName>nm_nand.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="960" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand.dig</elementName>
       <elementAttributes>
         <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
       </elementAttributes>
-      <pos x="520" y="120"/>
+      <pos x="1000" y="80"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_dff_asyncn.dig</elementName>
+      <elementName>nm_tff_asyncn.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
           <shapeType>LAYOUT</shapeType>
         </entry>
       </elementAttributes>
-      <pos x="500" y="200"/>
+      <pos x="960" y="160"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="440" y="240"/>
-      <p2 x="500" y="240"/>
+      <p1 x="900" y="400"/>
+      <p2 x="1000" y="400"/>
     </wire>
     <wire>
-      <p1 x="560" y="240"/>
-      <p2 x="580" y="240"/>
+      <p1 x="920" y="320"/>
+      <p2 x="960" y="320"/>
     </wire>
     <wire>
-      <p1 x="420" y="260"/>
-      <p2 x="440" y="260"/>
+      <p1 x="1020" y="180"/>
+      <p2 x="1060" y="180"/>
     </wire>
     <wire>
-      <p1 x="580" y="260"/>
-      <p2 x="600" y="260"/>
+      <p1 x="880" y="180"/>
+      <p2 x="960" y="180"/>
     </wire>
     <wire>
-      <p1 x="420" y="220"/>
-      <p2 x="440" y="220"/>
+      <p1 x="880" y="260"/>
+      <p2 x="920" y="260"/>
     </wire>
     <wire>
-      <p1 x="480" y="220"/>
-      <p2 x="500" y="220"/>
+      <p1 x="1020" y="200"/>
+      <p2 x="1040" y="200"/>
     </wire>
     <wire>
-      <p1 x="560" y="220"/>
-      <p2 x="600" y="220"/>
+      <p1 x="900" y="40"/>
+      <p2 x="1000" y="40"/>
     </wire>
     <wire>
-      <p1 x="580" y="240"/>
-      <p2 x="580" y="260"/>
+      <p1 x="1040" y="220"/>
+      <p2 x="1060" y="220"/>
     </wire>
     <wire>
-      <p1 x="520" y="340"/>
-      <p2 x="520" y="360"/>
+      <p1 x="880" y="220"/>
+      <p2 x="900" y="220"/>
     </wire>
     <wire>
-      <p1 x="520" y="100"/>
-      <p2 x="520" y="120"/>
+      <p1 x="920" y="60"/>
+      <p2 x="960" y="60"/>
     </wire>
     <wire>
-      <p1 x="520" y="180"/>
-      <p2 x="520" y="200"/>
+      <p1 x="1040" y="200"/>
+      <p2 x="1040" y="220"/>
     </wire>
     <wire>
-      <p1 x="520" y="260"/>
-      <p2 x="520" y="280"/>
+      <p1 x="960" y="60"/>
+      <p2 x="960" y="80"/>
     </wire>
     <wire>
-      <p1 x="440" y="240"/>
-      <p2 x="440" y="260"/>
+      <p1 x="960" y="300"/>
+      <p2 x="960" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="900" y="40"/>
+      <p2 x="900" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="900" y="220"/>
+      <p2 x="900" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="220"/>
+      <p2 x="980" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="140"/>
+      <p2 x="980" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="1000" y="380"/>
+      <p2 x="1000" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="1000" y="300"/>
+      <p2 x="1000" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="1000" y="40"/>
+      <p2 x="1000" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="60"/>
+      <p2 x="920" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="260"/>
+      <p2 x="920" y="320"/>
     </wire>
   </wires>
   <measurementOrdering/>
