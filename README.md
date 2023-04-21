@@ -262,9 +262,9 @@ And here is a 1-2 SR latch (5Q2R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff.PNG" width="400px" />
 
-[TODO: Explain how the 2 new SR latches replace the 2 NAND gates on the `!s` and `!r` inputs, and how this makes it edge-triggered instead of a simple opaque latch.. Also explain how the lower left NAND gate effectively replaces the NOT gate in the gated D latch.]
+[TODO: Explain how the 2 new SR latches replace the 2 NAND gates on the `!s` and `!r` inputs, and how this makes it edge-triggered instead of a simple opaque latch. Also explain how the lower left NAND gate effectively replaces the NOT gate in the gated D latch.]
 
-[TODO: Explain that because the SR latches start up in an undefined state, we need some way to reliably set and reset the flop-flops manually. Explain that by adding more imputs to the NAND gates allows us to do this, and introduce the final asynchronous DFF.]
+[TODO: Explain that because the SR latches start up in an undefined state, we need some way to reliably set and reset the flop-flops manually. Explain that by adding more inputs to the NAND gates allows us to do this, and introduce the final asynchronous DFF.]
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff_async.PNG" width="400px" />
 
@@ -280,11 +280,19 @@ If you need a DFF that has non-inverted set and reset inputs, you will need to a
 
 </details>
 
-### [WIP] Reset-Only D Flip-Flop (!16Q6R/17Q7R)
+### Reset-Only D Flip-Flop (!16Q6R/17Q7R)
 <details>
 <summary>Details</summary>
 
-[TODO]
+Often, you don't need to be able to preset a DFF asynchronously. Often, you only need to reset it once when the circuit starts up, and you always want it to be reset to 0. In this case, you can replace a few 3-way NAND gates with 2-way ones, thereby saving some components.
+
+Here is the schematic for such a DFF (16Q6R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_resetnn.PNG" width="400px" />
+
+As with the fully asynchronous DFF, the reset input is inverted. To get a non-inverted reset input, use a NOT gate (17Q7R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff.PNG" width="400px" />
 
 </details>
 
