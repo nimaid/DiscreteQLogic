@@ -226,17 +226,17 @@ Here is the SR latch in the logic simulator, using our NMOS components:
 
 </details>
 
-### [WIP] Multi-Input SR Latch [a-b-...] (\{\{1 + a + b + ...\}*2\}Q2R)
+### [WIP] Multi-Input SR Latch [a-b-...] (\{2 + a + b + ...\}Q2R)
 <details>
 <summary>Details</summary>
 
 [TODO: Introduce the concept of a multi-input SR latch, and explain how it could be useful to have 2 signals as input for `!s` and/or `!r`. Explain the numbering convention briefly, saying it is just like the AOI gate. Also explain how to calculate the transistor count.]
 
-Here is a 2-2 SR latch:
+Here is a 2-2 SR latch (6Q2R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr2-2.PNG" width="400px" />
 
-And here is a 1-2 SR latch:
+And here is a 1-2 SR latch (5Q2R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr1-2.PNG" width="400px" />
 
