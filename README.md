@@ -8,7 +8,7 @@ However, for DIY projects where one wishes to do the bare minimum of soldering, 
 
 *(I have been making a library of these parts for both Digital and LTspice, in order to simulate them before building them. You can find these libraries in their respective subfolders of this repository.)*
 
-For this list, I will use some shorthand notation to refer to the total transistor and resistor counts for each part. This shorthand will follow the format `xQyR`, where `x` is the total transistor count and `y` is the total resistor count. So, for example, an XOR gate which was labeled `6Q3R` would require 6 transistors and 3 resistors to build.
+For this list, I will use some shorthand notation to refer to the total transistor and resistor counts for each part. This shorthand will follow the format `xQyR`, where `x` is the total transistor count and `y` is the total resistor count. So, for example, an XOR gate which was labeled `6Q3R` would require 6 transistors and 3 resistors to build. Sometimes, you may see this count listed in the format `(!aQbR/xQyR)`. This means the simplest (lowest part count) version of the circuit has it's input(s) or output(s) inverted (the `!` means `NOT` or inversion). *This inverted version uses `a` transistors and `b` resistors.* In order to use the gate in it's non-inverted state, one or more NOT gates is needed, which increases the total part count per gate. *This non-inverted version uses `x` transistors and `y` resistors.* If you are using many of these gates with shared inputs (like a clock signal), it is more economical to invert that signal *once* before it then goes into each of the inverted variants of the gate. In addition, sometimes you get inverted outputs for free (like with latches and flip-flops), so you actually don't even need NOT gates a lot of the time! This can save a *TON* of components when building things like multi-bit registers or enablers, where the savings add up with more bits.
 
 Unless otherwise stated, all transistors are N-type.
 
@@ -156,7 +156,7 @@ We can implement the XNOR gate without using the classic XOR + NOT gate setup. T
 
 </details>
 
-### Enabler / 3-State Driver (6Q2R)
+### Enabler / 3-State Driver (!5Q1R/6Q2R)
 <details>
 <summary>Details</summary>
 
@@ -172,25 +172,21 @@ The top transistor is P-channel, and the bottom one is N-channel. In the configu
 
 With this understanding, we can see that when `In` is 0, the upper P-channel MOSFET will be conducting to VCC (1), and the lower N-channel MOSFET will be disconnected, resulting in `Out` being only connected to VCC, and therefore a 1. Conversely, when `In` is 1, the P-channel MOSFET will be open and the N-channel one will be conducting to ground, therefore resulting in a 0. This is the fundamental idea behind CMOS, and it is used in the construction of the enabler circuit.
 
-Now, we are ready to look at the enabler circuit:
-
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
-
-The top 2 transistors are P-channel, while the lower two are N-channel. *(This means the circuit uses 4 N-channel MOSFETs and 2 P-channel MOSFETs.)*
-
-First, note how to topmost (P-channel) and bottommost (N-channel) MOSFETs both have their gates connected directly, just like the CMOS NOT gate. This means that if those other 2 MOSFETs weren't in the way, this circuit would act similar to the CMOS NOT gate. However, note there is a NOT gate (NMOS) between `In` and those 2 gates. This means that those 2 transistors would actually act like an "inverted NOT gate", which is just a buffer (0 in, 0 out; 1 in, 1 out). Alone this is not very useful to us, but those 2 MOSFETs in-between these ones and `Out` are what actually make this circuit work for us like I described.
-
-The 2 MOSFETs in-between the others (the ones connected to `Out`) are also a P-channel/N-channel pair, but with a critical change from the NOT gate. Instead of both of their gates being directly connected, the upper-middle P-channel MOSFET has it's gate input inverted by a NOT gate. This means that when `en` is 1, *both* MOSFETs will conduct, but when `In` is 0, *neither* MOSFET will conduct (both act like an open switch). This means that when `en` is 1, the effect of the topmost and bottommost MOSFETs are uninterrupted and `Out` is equal to `In`, but when it is 0, `Out` is completely disconnected from either VCC or ground. This results in the desired behavior of an enabler.
-
-</details>
-
-### Inverted Enabler / 3-State Driver (5Q1R)
-<details>
-<summary>Details</summary>
-
-As discussed in the previous section, the input to the enabler / 3-state driver first goes through a NOT gate, in order to counteract the inverting nature of the CMOS-like architecture of the output section. However, sometimes we need to both invert an output and also add an enabler to it. In other situations (like with a DFF), you have both an inverted an non-inverted input to choose from without adding any extra components. In both of these situations, using an enabler that *omits* the inverter on the input can substitute for a NOT gate + enabler, while saving at least 1Q and 1R.
+Now, we are ready to look at the *inverted* enabler circuit (5Q1R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enablen.PNG" width="400px" />
+
+The top 2 transistors are P-channel, while the lower two are N-channel. *(This means the circuit uses 3 N-channel MOSFETs and 2 P-channel MOSFETs.)*
+
+First, note how to topmost (P-channel) and bottommost (N-channel) MOSFETs both have their gates connected directly to `In`, just like the CMOS NOT gate. This means that if those other 2 MOSFETs weren't in the way, this circuit would act similar to the CMOS NOT gate. Alone this isn't very helpful, but those 2 MOSFETs in-between these ones and `Out` are what actually make this circuit work for us like I described.
+
+The 2 MOSFETs in-between the others (the ones connected to `Out`) are also a P-channel/N-channel pair, but with a critical change from the NOT gate. Instead of both of their gates being directly connected, the upper-middle P-channel MOSFET has it's gate input inverted by a NOT gate. This means that when `en` is 1, *both* MOSFETs will conduct, but when `In` is 0, *neither* MOSFET will conduct (both act like an open switch). This means that when `en` is 1, the effect of the topmost and bottommost MOSFETs are uninterrupted and `Out` is equal to `!In`, but when it is 0, `Out` is completely disconnected from either VCC or ground. This results in the desired behavior of an enabler, but with the input inverted.
+
+In situations where an inverted input signal is already available without adding a NOT gate (like the inverted output on a latch or flip-flop), you can simply using this inverted version of the enabler and remove a few components from the design. However, there are times where you simply need an enabler with a non-inverted input. In these situations, you have to bite the bullet and add a NOT gate, as shown below.
+
+Non-inverted Enabler (6Q2R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
 
 </details>
 
