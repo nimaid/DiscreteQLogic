@@ -8,7 +8,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>In</string>
+          <string>In*</string>
         </entry>
       </elementAttributes>
       <pos x="20" y="-440"/>
