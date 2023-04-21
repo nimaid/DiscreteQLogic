@@ -220,6 +220,10 @@ Note that the AOI2-2 gate is almost exactly what we nee to replace the 2 AND gat
 
 [TODO]
 
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dmux.PNG" width="400px" />
+
+[TODO]
+
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dmuxn.PNG" width="400px" />
 
 [TODO]
