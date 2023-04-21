@@ -82,11 +82,6 @@
       <pos x="540" y="280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_aoi2x2.dig</elementName>
-      <elementAttributes/>
-      <pos x="660" y="140"/>
-    </visualElement>
-    <visualElement>
       <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="740" y="180"/>
@@ -95,6 +90,11 @@
       <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="580" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_aoi2-2.dig</elementName>
+      <elementAttributes/>
+      <pos x="660" y="140"/>
     </visualElement>
   </visualElements>
   <wires>
