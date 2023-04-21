@@ -192,11 +192,39 @@ Non-inverted Enabler (6Q2R):
 
 </details>
 
-### [TODO] Multiplexer (!5Q2R/6Q3R)
+### Multiplexer (!5Q2R/6Q3R) [WIP] 
+<details>
+<summary>Details</summary>
 
-### [TODO] Demultiplexer (!5Q3R/6Q4R) 
+[TODO: Explain the MUX API and why it is useful for routing signals.]
 
-### [WIP] RS Latch and SR Latch (4Q2R)
+Here is an efficient implementation of a multiplexer *with an inverted output* using an AOI2-2 gate (5Q2R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_muxn.PNG" width="400px" />
+
+[TODO: Explain how the AND stage of the AOI gate only allows the respective `In` signals through if the other input to the AND gate is on. Explain that because of the NOT gate, only 1 of the AND gate swill allow it's signal to pass to the internal OR gate, effectively discarding the signal not selected by `sel`. Note how because only 1 signal is let through, the output of the OR gate will be equal to the selected signal. Finally, note the unfortunate side-effect of having the output inverted.]
+
+Sometimes you can leverage the inverting nature of this circuit to avoid using a NOT gate to invert the inputs/output. However, if you need a non-inverting multiplexer, you must use a NOT gate on the output, as shown (6Q3R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_mux.PNG" width="400px" />
+
+</details>
+
+### Demultiplexer (!5Q3R/6Q4R) [WIP]
+<details>
+<summary>Details</summary>
+
+[TODO]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dmuxn.PNG" width="400px" />
+
+[TODO]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dmux.PNG" width="400px" />
+
+</details>
+
+### RS Latch and SR Latch (4Q2R) [WIP]
 <details>
 <summary>Details</summary>
 
@@ -226,7 +254,7 @@ Here is the SR latch in the logic simulator, using our NMOS components:
 
 </details>
 
-### [WIP] Multi-Input SR Latch [a-b-...] (\{2 + a + b + ...\}Q2R)
+### Multi-Input SR Latch [a-b-...] (\{2 + a + b + ...\}Q2R) [WIP]
 <details>
 <summary>Details</summary>
 
@@ -242,7 +270,7 @@ And here is a 1-2 SR latch (5Q2R):
 
 </details>
 
-### [WIP] Asynchronous D Flip-Flop (!18Q6R/20Q8R)
+### Asynchronous D Flip-Flop (!18Q6R/20Q8R) [WIP]
 <details>
 <summary>Details</summary>
 
