@@ -184,7 +184,7 @@ First, note how to topmost (P-channel) and bottommost (N-channel) MOSFETs both h
 
 Those 2 middle MOSFETs are also a P-channel/N-channel pair, but with a single critical change from the CMOS NOT gate. Instead of both of their gates being directly connected, the upper-middle P-channel MOSFET has it's gate input inverted by a NOT gate. This means that when `en` is 1, *both* MOSFETs will conduct, but when `In` is 0, *neither* MOSFET will conduct (both act like an open switch). This means that when `en` is 1, the effect of the topmost and bottommost MOSFETs are uninterrupted and `Out` is equal to `!In`. However, when `en` is 0, `Out` is completely disconnected from both VCC and ground, *regardless* of the state of topmost and bottommost MOSFETs. This results in the desired behavior of an enabler, but with the input inverted.
 
-In situations where an inverted input signal is already available without adding a NOT gate (like the inverted output on a latch or flip-flop), you can simply using this inverted version of the enabler and remove a few components from the design. However, there are times where you simply need an enabler with a non-inverted input. In these situations, you have to bite the bullet and add a NOT gate, as shown below.
+In situations where an inverted input signal is already available without adding a NOT gate (like the inverted output on a latch or flip-flop), you can simply use this inverted version of the enabler and remove a few components from the design. However, there are often times where you can' get away with that, and absolutely need an enabler with a non-inverted input. In these situations, you have to bite the bullet and add a NOT gate, as shown below.
 
 Non-inverted Enabler (6Q2R):
 
