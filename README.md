@@ -198,13 +198,17 @@ Non-inverted Enabler (6Q2R):
 
 [TODO: Explain the MUX API and why it is useful for routing signals.]
 
+This functionality can be accomplished with the following combinational logic:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/muxn.PNG" width="400px" />
+
+[TODO: Explain how the AND gates only allow the respective `In` signal through if the other input to the AND gate is on. Explain that because of the NOT gate, only 1 of the AND gates will allow it's signal to pass to the OR gate, effectively discarding the signal not selected by `sel`. Note how because only 1 signal is let through, the output of the OR gate will be equal to the selected signal, which is the desired behavior.]
+
 Here is an efficient implementation of a multiplexer *with an inverted output* using an AOI2-2 gate (5Q2R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_muxn.PNG" width="400px" />
 
-[TODO: Explain how the AND stage of the AOI gate only allows the respective `In` signals through if the other input to the AND gate is on. Explain that because of the NOT gate, only 1 of the AND gate swill allow it's signal to pass to the internal OR gate, effectively discarding the signal not selected by `sel`. Note how because only 1 signal is let through, the output of the OR gate will be equal to the selected signal. Finally, note the unfortunate side-effect of having the output inverted.]
-
-Sometimes you can leverage the inverting nature of this circuit to avoid using a NOT gate to invert the inputs/output. However, if you need a non-inverting multiplexer, you must use a NOT gate on the output, as shown (6Q3R):
+Note that the AOI2-2 gate is almost exactly what we nee to replace the 2 AND gates and 1 OR gate. The only issue is that the output of the OR gate is inverted. Sometimes you can leverage the inverting nature of this circuit to avoid using a NOT gate to invert the inputs/output. However, if you need a non-inverting multiplexer, you must use a NOT gate on the output, as shown (6Q3R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_mux.PNG" width="400px" />
 
