@@ -208,7 +208,7 @@ RS Latch Diagram:
 
 [TODO: Add a breakdown of why it works, step-by step. Also explain metastable (invalid) configurations. Also explain that the circuit starts up in a "random" state.]
 
-Here is the equivalent circuit in the logic simulator, using our NMOS components:
+Here is the RS latch the logic simulator, using our NMOS components:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_rs.PNG" width="400px" />
 
@@ -220,7 +220,7 @@ SR Latch Diagram:
 
 [TODO: Add a step-by-step breakdown that references the RS latch breakdown. Explain that this also starts up in a "random" state.]
 
-Here is the equivalent circuit in the logic simulator, using our NMOS components:
+Here is the SR latch in the logic simulator, using our NMOS components:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr.PNG" width="400px" />
 
