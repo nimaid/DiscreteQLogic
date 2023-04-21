@@ -248,7 +248,7 @@ And here is a 1-2 SR latch (5Q2R):
 
 [TODO: Explain the DFF API, and why it is so useful and fundamental to digital design. Introduce the clock and quantized time. Emphasize that the DFF will only switch state once per clock cycle (on the rising edge), and that it will *only* update it's state at the moment of the next rising edge of the clock. Explain that this behavior is deceptively complex to implement.]
 
-[TODO: Explain that to make a DFF, we will have to start from simple building blocks and build on that to solve specific issues with the circuit. Explain that the SR latch winds up being more useful here than the SR, and that the reader will see why soon.]
+[TODO: Explain that to make a DFF, we will have to start from simple building blocks and build on that to solve specific issues with the circuit. Explain that the SR latch winds up being more useful here than the RS, and that the reader will see why soon.]
 
 [TODO: Explain that to start, we need to control an SR latch with an enable signal. Explain the difference between transparent and opaque latches. Introduce the gated SR latch.]
 
