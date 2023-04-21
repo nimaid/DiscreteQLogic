@@ -200,15 +200,20 @@ Non-inverted Enabler (6Q2R):
 <details>
 <summary>Details</summary>
 
-RS Latch:
+RS Latch Diagram:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/rs_latch.PNG" width="400px" />
 
+Circuit:
+
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_rs.PNG" width="400px" />
 
-SR Latch:
+
+SR Latch Diagram:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch.PNG" width="400px" />
+
+Circuit:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr.PNG" width="400px" />
 
