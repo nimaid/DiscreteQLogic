@@ -200,7 +200,7 @@ Non-inverted Enabler (6Q2R):
 
 This functionality can be accomplished with the following combinational logic:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/muxn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/mux.PNG" width="400px" />
 
 [TODO: Explain how the AND gates only allow the respective `In` signal through if the other input to the AND gate is on. Explain that because of the NOT gate, only 1 of the AND gates will allow it's signal to pass to the OR gate, effectively discarding the signal not selected by `sel`. Note how because only 1 signal is let through, the output of the OR gate will be equal to the selected signal, which is the desired behavior.]
 
