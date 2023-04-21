@@ -288,7 +288,7 @@ Often, you don't need to be able to preset a DFF asynchronously. Often, you only
 
 Here is the schematic for such a DFF (16Q6R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_resetnn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_resetn.PNG" width="400px" />
 
 As with the fully asynchronous DFF, the reset input is inverted. To get a non-inverted reset input, use a NOT gate (17Q7R):
 
