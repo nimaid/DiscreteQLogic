@@ -34,17 +34,17 @@
       <pos x="840" y="280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
+      <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="900" y="240"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
+      <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="900" y="320"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_AOI2-2.dig</elementName>
+      <elementName>nm_aoi2-2.dig</elementName>
       <elementAttributes/>
       <pos x="1000" y="240"/>
     </visualElement>

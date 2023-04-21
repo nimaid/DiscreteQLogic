@@ -76,7 +76,7 @@ OR:
 
 </details>
 
-### AOI[aXbX...] (\{a+b+...\}Q1R)
+### AOI[a-b-...] (\{a + b + ...\}Q1R)
 <details>
 <summary>Details</summary>
 
@@ -85,17 +85,17 @@ The AOI (And-Or-Invert) gate is a bit unusual at first glance, and it is not as 
 - The results from all of the AND gates are run through an `m`-way OR gate, where `m` is the number of sets.
 - Finally, the output of the OR gate is run through a NOT gate (also called an inverter).
 
-AOI gates are defined by a series of numbers, which specify exactly how many sets of inputs there are, and how many inputs are in each set. Each set can have a different number of inputs, and you can have an many sets as you like. This is in the format `aXbXcX...`, where `a`, `b`, `c`, etc. specify how many inputs each set has, in order. So a `2X3X1` AOI gate would have 3 sets with 2 inputs going to the first AND gate, 3 inputs going to the second AND gate, and the third set has only 1 input that goes directly to the OR gate stage (because AND only makes sense with 2 or more inputs).
+AOI gates are defined by a series of numbers, which specify exactly how many sets of inputs there are, and how many inputs are in each set. Each set can have a different number of inputs, and you can have an many sets as you like. This is in the format `a-b-c-...`, where `a`, `b`, `c`, etc. specify how many inputs each set has, in order. So a `2-3-1` AOI gate would have 3 sets with 2 inputs going to the first AND gate, 3 inputs going to the second AND gate, and the third set has only 1 input that goes directly to the OR gate stage (because AND only makes sense with 2 or more inputs).
 
-Here is an example of an AOI2X2 gate using conventional combinational logic.
+Here is an example of an AOI2-2 gate using conventional combinational logic.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/aoi2x2_function.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/aoi2-2_function.PNG" width="400px" />
 
 So why do we care about this odd gate as a single unit? Why don't we just use combinations of AND and NOR gates whenever we need to do these types of operations? The answer is that all of these logical operations can be easily implemented in a single NMOS logic block that uses far fewer transistors and resistors to achieve the same behavior.
 
-Here is that same AIO2x2 gate in NMOS logic, using 4Q1R.
+Here is that same AIO2-2 gate in NMOS logic, using 4Q1R.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-2.PNG" width="400px" />
 
 The way this works is actually very clever. First, observe that this is still arranged with a pullup resistor and transistors that, with some combinations of inputs, shorts to ground. This is the same idea as the NOT gate, and this is where the "inversion" comes from.
 
@@ -103,13 +103,13 @@ Second, observe that there are 2 parallel paths to ground, just like the NOR gat
 
 Finally, observe that because the sets of series transistors are in parallel with each other, the compound effect of ORing the results of the 2 AND operations is realized.
 
-Here is an example of a 2X1 AOI gate.
+Here is an example of a 2-1 AOI gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x1.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-1.PNG" width="400px" />
 
-And just to make sure it makes sense, here is a 2X2X2X2 AOI gate.
+And just to make sure it makes sense, here is a 2-2-2-2 AOI gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2x2x2x2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-2-2-2.PNG" width="400px" />
 
 As you can see, you can customize the number of sets and their respective input count to fit your specific needs in the same way you can customize the number of inputs to a NAND or NOR gate.
 
@@ -121,7 +121,7 @@ The final transistor count of each AOI gate will be exactly equal to the total n
 <details>
 <summary>Details</summary>
 
-It is possible to use an AOI2X2 gate and 2 NOT gates to make an extremely elegant XOR gate, as shown below.
+It is possible to use an AOI2-2 gate and 2 NOT gates to make an extremely elegant XOR gate, as shown below.
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xor.PNG" width="400px" />
 
@@ -142,7 +142,7 @@ XOR gate truth table:
 └───┴───┴─────┘
 ```
 
-We can see that the output is only 0 when both inputs are the same. Therefore, the first AND gate in the AOI2X2 is fed with both inputs directly, so that the output will go to 0 when both inputs are 1. Next, we need the output to also be 0 when both inputs are 0, and we can do this by simply inverting both inputs before feeding them into the second AND gate. Now we have a gate that outputs 0 when the inputs are either both 1 or both 0, and outputs 1 otherwise. This is an XOR gate!
+We can see that the output is only 0 when both inputs are the same. Therefore, the first AND gate in the AOI2-2 is fed with both inputs directly, so that the output will go to 0 when both inputs are 1. Next, we need the output to also be 0 when both inputs are 0, and we can do this by simply inverting both inputs before feeding them into the second AND gate. Now we have a gate that outputs 0 when the inputs are either both 1 or both 0, and outputs 1 otherwise. This is an XOR gate!
 
 </details>
 
