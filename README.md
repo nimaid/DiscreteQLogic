@@ -164,7 +164,7 @@ We can implement the XNOR gate without using the classic XOR + NOT gate setup. T
 
 This component is a bit unique, as it is the only one which *requires* a few P-channel MOSFETs in addition to N-channel ones. This circuit takes 2 inputs, `In` (input) and `en` (enable). When `en` is 1, the output is equal to `In`. However, when `en` is 0, the output is in a state known as "high impedance". This is a state that is neither a 0 (ground) or 1 (VCC), but instead the output is electrically disconnected entirely.
 
-This is extremely useful when you want to have 2 signals occupy the same wire at different times. To understand the reason why, lets take an example case where we connect the outputs of 2 AND gates to each other directly. If the first was outputting 1 (VCC) and the second was outputting 0 (ground), then there would be a short-circuit through that wire and those 2 AND gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
+This is extremely useful when you want to have 2 signals occupy the same wire at different times (the most common example being a data bus inside a computer). To understand the reason why we need a special part for this, lets take an example case where we connect the outputs of 2 AND gates to each other directly. If the first was outputting 1 (VCC) and the second was outputting 0 (ground), then there would be a short-circuit through that wire and those 2 AND gates, which would cause the device to malfunction and likely sustain damage. By putting enablers between the outputs and their shared wire, and by *only enabling a single output at a time*, you can avoid such a disaster.
 
 Before showing you the enabler circuit, it will be useful to first understand how a CMOS-based NOT gate works:
 
@@ -189,6 +189,28 @@ In situations where an inverted input signal is already available without adding
 Non-inverted Enabler (6Q2R):
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
+
+</details>
+
+### [TODO] Multiplexer (!5Q2R/6Q3R)
+
+### [TODO] Demultiplexer (!5Q3R/6Q4R) 
+
+### [WIP] RS Latch and SR Latch (4Q2R)
+<details>
+<summary>Details</summary>
+
+RS Latch:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/rs_latch.PNG" width="400px" />
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_rs.PNG" width="400px" />
+
+SR Latch:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch.PNG" width="400px" />
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr.PNG" width="400px" />
 
 </details>
 
