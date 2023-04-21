@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>gtz</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-500" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>gez</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-260" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>nez</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-380" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>zr</string>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-540" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ng</string>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-540" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>ltz</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>eqz</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-560" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="-440" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="-440" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nor.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-480" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>lez</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-320" y="140"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-540" y="0"/>
+      <p2 x="-480" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="0"/>
+      <p2 x="-300" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-480" y="0"/>
+      <p2 x="-440" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-540" y="-40"/>
+      <p2 x="-520" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="-40"/>
+      <p2 x="-340" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-520" y="-40"/>
+      <p2 x="-440" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-560" y="40"/>
+      <p2 x="-520" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="40"/>
+      <p2 x="-340" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-480" y="40"/>
+      <p2 x="-440" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="40"/>
+      <p2 x="-260" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-500" y="120"/>
+      <p2 x="-500" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="-40"/>
+      <p2 x="-340" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="40"/>
+      <p2 x="-340" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-260" y="40"/>
+      <p2 x="-260" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-520" y="-40"/>
+      <p2 x="-520" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-520" y="40"/>
+      <p2 x="-520" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-440" y="40"/>
+      <p2 x="-440" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="0"/>
+      <p2 x="-300" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="40"/>
+      <p2 x="-300" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="40"/>
+      <p2 x="-380" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-480" y="0"/>
+      <p2 x="-480" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-480" y="40"/>
+      <p2 x="-480" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="120"/>
+      <p2 x="-320" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-560" y="40"/>
+      <p2 x="-560" y="140"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
