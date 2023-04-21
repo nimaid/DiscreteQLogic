@@ -8,20 +8,20 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>s*</string>
+          <string>s</string>
         </entry>
       </elementAttributes>
-      <pos x="700" y="160"/>
+      <pos x="700" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>r*</string>
+          <string>r</string>
         </entry>
       </elementAttributes>
-      <pos x="700" y="340"/>
+      <pos x="700" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -31,7 +31,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="820" y="240"/>
+      <pos x="820" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -41,15 +41,15 @@
           <string>Q*</string>
         </entry>
       </elementAttributes>
-      <pos x="820" y="320"/>
+      <pos x="820" y="260"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_nand.dig</elementName>
+      <elementName>nm_nor.dig</elementName>
       <elementAttributes/>
       <pos x="720" y="160"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_nand.dig</elementName>
+      <elementName>nm_nor.dig</elementName>
       <elementAttributes/>
       <pos x="720" y="300"/>
     </visualElement>
@@ -60,16 +60,8 @@
       <p2 x="800" y="320"/>
     </wire>
     <wire>
-      <p1 x="800" y="320"/>
-      <p2 x="820" y="320"/>
-    </wire>
-    <wire>
       <p1 x="700" y="240"/>
       <p2 x="800" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="800" y="240"/>
-      <p2 x="820" y="240"/>
     </wire>
     <wire>
       <p1 x="700" y="160"/>
@@ -78,6 +70,10 @@
     <wire>
       <p1 x="680" y="260"/>
       <p2 x="800" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="260"/>
+      <p2 x="820" y="260"/>
     </wire>
     <wire>
       <p1 x="780" y="180"/>
@@ -96,12 +92,20 @@
       <p2 x="720" y="300"/>
     </wire>
     <wire>
+      <p1 x="800" y="220"/>
+      <p2 x="820" y="220"/>
+    </wire>
+    <wire>
       <p1 x="800" y="180"/>
-      <p2 x="800" y="240"/>
+      <p2 x="800" y="220"/>
     </wire>
     <wire>
       <p1 x="800" y="260"/>
       <p2 x="800" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="220"/>
+      <p2 x="800" y="240"/>
     </wire>
     <wire>
       <p1 x="680" y="200"/>

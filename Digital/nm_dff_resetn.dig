@@ -58,7 +58,7 @@
       <pos x="480" y="460"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_srn1-2.dig</elementName>
+      <elementName>nm_sr1-2.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -68,7 +68,7 @@
       <pos x="560" y="180"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_srn2-2.dig</elementName>
+      <elementName>nm_sr2-2.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -78,7 +78,7 @@
       <pos x="560" y="300"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_srn1-2.dig</elementName>
+      <elementName>nm_sr1-2.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
