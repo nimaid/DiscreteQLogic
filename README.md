@@ -200,22 +200,91 @@ Non-inverted Enabler (6Q2R):
 <details>
 <summary>Details</summary>
 
+The RS latch is the basic form of memory. [TODO: Add API definition and explain why it's useful.]
+
 RS Latch Diagram:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/rs_latch.PNG" width="400px" />
 
-Circuit:
+[TODO: Add a breakdown of why it works, step-by step. Also explain metastable (invalid) configurations. Also explain that the circuit starts up in a "random" state.]
+
+Here is the equivalent circuit in the logic simulator, using our NMOS components:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_rs.PNG" width="400px" />
 
+The SR latch is very similar to the RS latch, but it is made of NAND gates instead of NOR gates. In addition, it's inputs are both inverted (active low) and flipped (set on top and reset on bottom). [TODO: Add full API definition and explain why it's useful, especially compared to the RS latch. Note now the inverted inputs are actually useful later on.]
 
 SR Latch Diagram:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch.PNG" width="400px" />
 
-Circuit:
+[TODO: Add a step-by-step breakdown that references the RS latch breakdown. Explain that this also starts up in a "random" state.]
+
+Here is the equivalent circuit in the logic simulator, using our NMOS components:
 
 <img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr.PNG" width="400px" />
+
+</details>
+
+### [WIP] Multi-Input SR Latch [a-b-...] (\{\{1 + a + b + ...\}*2\}Q2R)
+<details>
+<summary>Details</summary>
+
+[TODO: Introduce the concept of a multi-input SR latch, and explain how it could be useful to have 2 signals as input for `!s` and/or `!r`. Explain the numbering convention briefly, saying it is just like the AOI gate. Also explain how to calculate the transistor count.]
+
+Here is a 2-2 SR latch:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr2-2.PNG" width="400px" />
+
+And here is a 1-2 SR latch:
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr1-2.PNG" width="400px" />
+
+</details>
+
+### [WIP] Asynchronous D Flip-Flop (!18Q6R/20Q8R)
+<details>
+<summary>Details</summary>
+
+[TODO: Explain the DFF API, and why it is so useful and fundamental to digital design. Emphasize that it will only switch state once per clock cycle, regardless of how long the clock is held high, and how this behavior is deceptively hard to implement.]
+
+[TODO: Explain that to make a DFF, we will have to start from simple building blocks and build on that to solve specific issues with the circuit. Explain that the SR latch winds up being more useful here than the SR, and that the reader will see why soon.]
+
+[TODO: Explain that to start, we need to control an SR latch with an enable signal. Explain the difference between transparent and opaque latches. Introduce the gated SR latch.]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch_gated.PNG" width="400px" />
+
+[TODO: Explain that in order to store a data bit coming in, we need to send exactly opposite signals to `!s` and `!r`. Explain that a NOT gate does this, and the result is called a gated D latch.]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/d_latch_gated.PNG" width="400px" />
+
+[TODO: Explain that while enable is high, then the output will always be allowed to change with the input. Explain that this can cause issues with oscillation (racing) inside of complex logic circuits like counters. Explain what an edge-triggered device is, and why this solves the problem of racing. Introduce the basic D flip-flop.]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff.PNG" width="400px" />
+
+[TODO: Explain how the 2 new SR latches replace the 2 NAND gates on the `!s` and `!r` inputs, and how this makes it edge-triggered instead of a simple opaque latch.. Also explain how the lower left NAND gate effectively replaces the NOT gate in the gated D latch.]
+
+[TODO: Explain that because the SR latches start up in an undefined state, we need some way to reliably set and reset the flop-flops manually. Explain that by adding more imputs to the NAND gates allows us to do this, and introduce the final asynchronous DFF.]
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff_async.PNG" width="400px" />
+
+[TODO: Explain how the set and reset inputs work, and that they are inverted.]
+
+Here is the equivalent circuit in the logic simulator, using our NMOS components (18Q6R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_asyncn.PNG" width="400px" />
+
+If you need a DFF that has non-inverted set and reset inputs, you will need to add NOT gates as shown (20Q8R):
+
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_async.PNG" width="400px" />
+
+</details>
+
+### [WIP] Reset-Only D Flip-Flop (!16Q6R/17Q7R)
+<details>
+<summary>Details</summary>
+
+[TODO]
 
 </details>
 
