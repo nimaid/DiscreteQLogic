@@ -246,7 +246,7 @@ And here is a 1-2 SR latch (5Q2R):
 <details>
 <summary>Details</summary>
 
-[TODO: Explain the DFF API, and why it is so useful and fundamental to digital design. Emphasize that it will only switch state once per clock cycle, regardless of how long the clock is held high, and how this behavior is deceptively hard to implement.]
+[TODO: Explain the DFF API, and why it is so useful and fundamental to digital design. Introduce the clock and quantized time. Emphasize that the DFF will only switch state once per clock cycle (on the rising edge), and that it will *only* update it's state at the moment of the next rising edge of the clock. Explain that this behavior is deceptively complex to implement.]
 
 [TODO: Explain that to make a DFF, we will have to start from simple building blocks and build on that to solve specific issues with the circuit. Explain that the SR latch winds up being more useful here than the SR, and that the reader will see why soon.]
 
