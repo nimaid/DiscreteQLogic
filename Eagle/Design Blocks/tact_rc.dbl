@@ -5,7 +5,7 @@
 <description>A tactile button used as a digital input. Simple RC debouncing is used.</description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="727 x 374 mil"/>
+<attribute name="BOARDSIZE" value="238 x 304 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -262,17 +262,6 @@
 <smd name="2" x="2.275" y="0" dx="0.7618" dy="2.1118" layer="1"/>
 <text x="0" y="2.0049" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="TP_THM_1.6_S" urn="urn:adsk.eagle:footprint:10068193/3" library_version="16">
-<pad name="TP" x="0" y="0" drill="1.6"/>
-<text x="-1.2192" y="1.778" size="1.27" layer="25">&gt;NAME</text>
-<circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
-</package>
-<package name="TP06R" urn="urn:adsk.eagle:footprint:40085925/2" library_version="16">
-<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="0.6" dy="0.6" layer="1" roundness="100" cream="no"/>
-<text x="-0.3" y="0.4001" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="SW4_PTS815_SJM_250_SMTR_LFS_CN" urn="urn:adsk.eagle:package:40086501/2" type="model" library_version="16">
@@ -328,17 +317,6 @@
 <packageinstance name="C1808"/>
 </packageinstances>
 </package3d>
-<package3d name="TP_THM_1.6_S" urn="urn:adsk.eagle:package:10068194/4" type="model" library_version="16">
-<packageinstances>
-<packageinstance name="TP_THM_1.6_S"/>
-</packageinstances>
-</package3d>
-<package3d name="TP06R" urn="urn:adsk.eagle:package:40085947/3" type="model" library_version="16">
-<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="TP06R"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
 <symbol name="SW-NO-MOM" urn="urn:adsk.eagle:symbol:40086553/1" library_version="16">
@@ -377,12 +355,6 @@
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="TESTPOINT" urn="urn:adsk.eagle:symbol:3741478/2" library_version="16">
-<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="2.54" size="1.778" layer="95" rot="R180" align="bottom-right">&gt;NAME</text>
-<pin name="S" x="0" y="0" visible="off" length="short" direction="pas"/>
-<circle x="4.318" y="0" radius="0.508" width="0.254" layer="94"/>
 </symbol>
 <symbol name="GND" urn="urn:adsk.eagle:symbol:40086620/1" library_version="16">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
@@ -514,35 +486,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP" urn="urn:adsk.eagle:component:40086357/3" prefix="TP" library_version="16">
-<gates>
-<gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="THT-PEG" package="TP_THM_1.6_S">
-<connects>
-<connect gate="G$1" pin="S" pad="TP"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10068194/4"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PAD6" package="TP06R">
-<connects>
-<connect gate="G$1" pin="S" pad="TP"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40085947/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" urn="urn:adsk.eagle:component:40086622/1" prefix="GND" library_version="16">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -584,7 +527,6 @@
 <part name="S1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SWITCH-NO-MOM" device="PTS815SJM250SMTRLFS" package3d_urn="urn:adsk.eagle:package:40086501/2"/>
 <part name="R1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="RES" device="0603" package3d_urn="urn:adsk.eagle:package:7587835/4" value="10k"/>
 <part name="C1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="CAP" device="0603" package3d_urn="urn:adsk.eagle:package:7587834/2" value="0.1u"/>
-<part name="O" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="PAD6" package3d_urn="urn:adsk.eagle:package:40085947/3"/>
 <part name="GND1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="GND" device=""/>
 <part name="P+1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="VCC" device=""/>
 <part name="R2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="RES" device="0603" package3d_urn="urn:adsk.eagle:package:7587835/4" value="10k"/>
@@ -612,9 +554,6 @@
 <instance part="C1" gate="G$1" x="22.86" y="17.78" smashed="yes">
 <attribute name="VALUE" x="18.796" y="14.859" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="18.796" y="17.399" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="O" gate="G$1" x="27.94" y="22.86" smashed="yes">
-<attribute name="NAME" x="27.94" y="25.4" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
 <instance part="GND1" gate="1" x="7.62" y="5.08" smashed="yes">
 <attribute name="VALUE" x="5.08" y="2.54" size="1.778" layer="96"/>
@@ -666,10 +605,9 @@
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="O" gate="G$1" pin="S"/>
 <wire x1="20.32" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="20.32" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <junction x="22.86" y="22.86"/>
 </segment>
@@ -826,7 +764,6 @@
 <wire x1="0" y1="7.493" x2="5.842" y2="7.493" width="0.1524" layer="21"/>
 <wire x1="5.842" y1="7.493" x2="5.842" y2="0" width="0.1524" layer="21"/>
 <wire x1="5.842" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
-<text x="0.127" y="3.556" size="0.6096" layer="21" rot="R270">BUTTON</text>
 </plain>
 <libraries>
 <library name="ellajameson-core" urn="urn:adsk.eagle:library:3740209">
@@ -875,12 +812,6 @@
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="TP06R" urn="urn:adsk.eagle:footprint:40085925/2" library_version="16">
-<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="0.6" dy="0.6" layer="1" roundness="100" cream="no"/>
-<text x="-0.3" y="0.4001" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="SW4_PTS815_SJM_250_SMTR_LFS_CN" urn="urn:adsk.eagle:package:40086501/2" type="model" library_version="16">
@@ -899,12 +830,6 @@
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.80 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="C0603"/>
-</packageinstances>
-</package3d>
-<package3d name="TP06R" urn="urn:adsk.eagle:package:40085947/3" type="model" library_version="16">
-<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="TP06R"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1102,20 +1027,15 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="S1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SW4_PTS815_SJM_250_SMTR_LFS_CN" package3d_urn="urn:adsk.eagle:package:40086501/2" value="" x="2.921" y="5.715" smashed="yes">
-<attribute name="NAME" x="0.508" y="3.5814" size="0.4064" layer="27" ratio="6" rot="SR90"/>
-</element>
+<element name="S1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SW4_PTS815_SJM_250_SMTR_LFS_CN" package3d_urn="urn:adsk.eagle:package:40086501/2" value="" x="2.921" y="5.715" smashed="yes"/>
 <element name="R1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="R0603" package3d_urn="urn:adsk.eagle:package:7587835/4" value="10k" x="2.159" y="2.921" smashed="yes">
-<attribute name="NAME" x="1.524" y="3.556" size="0.4064" layer="25"/>
+<attribute name="NAME" x="0.635" y="2.667" size="0.4064" layer="25" rot="R90"/>
 </element>
 <element name="C1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="C0603" package3d_urn="urn:adsk.eagle:package:7587834/2" value="0.1u" x="2.159" y="0.889" smashed="yes" rot="R180">
-<attribute name="NAME" x="0.762" y="1.524" size="0.4064" layer="25"/>
-</element>
-<element name="O" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP06R" package3d_urn="urn:adsk.eagle:package:40085947/3" value="TPPAD6" x="4.064" y="0.508" smashed="yes">
-<attribute name="NAME" x="4.526" y="0.2731" size="0.4064" layer="25"/>
+<attribute name="NAME" x="0.635" y="0.508" size="0.4064" layer="25" rot="R90"/>
 </element>
 <element name="R2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="R0603" package3d_urn="urn:adsk.eagle:package:7587835/4" value="10k" x="4.699" y="2.413" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.064" y="1.778" size="0.4064" layer="25" rot="R90"/>
+<attribute name="NAME" x="4.318" y="0.381" size="0.4064" layer="25"/>
 </element>
 </elements>
 <signals>
@@ -1156,12 +1076,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="1"/>
-<contactref element="O" pad="TP"/>
 <contactref element="C1" pad="1"/>
 <wire x1="3.009" y1="0.889" x2="3.683" y2="1.563" width="0.3048" layer="1"/>
 <wire x1="3.683" y1="1.563" x2="4.699" y2="1.563" width="0.3048" layer="1"/>
-<wire x1="3.009" y1="0.889" x2="3.39" y2="0.508" width="0.3048" layer="1"/>
-<wire x1="3.39" y1="0.508" x2="4.064" y2="0.508" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
