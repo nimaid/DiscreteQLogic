@@ -142,7 +142,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZGY0M2Ex" projecturn="a.cGVyc29uYWw6dWUyZGY0M2ExIzIwMjMwNDIzNjMzMDQzOTMx" f3durn="urn:adsk.wipprod:dm.lineage:ybcwFhw2S7Sfdtd4-gzlww" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="1db840a5-98d3-4e7d-85f6-a23ffed6f32b" lastsyncedrevisionid="1db840a5-98d3-4e7d-85f6-a23ffed6f32b" lastboardhashguid="bef7e1ad-5c55-d750-7e5d-8705426f756e" lastpushedtime="2023-04-23T10:13:12Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZGY0M2Ex" projecturn="a.cGVyc29uYWw6dWUyZGY0M2ExIzIwMjMwNDIzNjMzMDQzOTMx" f3durn="urn:adsk.wipprod:dm.lineage:ybcwFhw2S7Sfdtd4-gzlww" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="f31d95c2-6e6c-43ea-9a38-7bbd6f00d494" lastsyncedrevisionid="f31d95c2-6e6c-43ea-9a38-7bbd6f00d494" lastboardhashguid="2676ebf1-fcec-93e5-5a46-b84a1f36b5c3" lastpushedtime="2023-04-23T10:42:46Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="0" y2="99.06" width="0.0762" layer="20"/>
 <wire x1="0" y1="99.06" x2="77.47" y2="99.06" width="0.0762" layer="20"/>
@@ -1440,7 +1440,6 @@ design rules under a new name.</description>
 <element name="GATE18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="3.302" y="5.842" smashed="yes"/>
 <element name="DRAINA18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="6.477" y="14.986" smashed="yes"/>
 <element name="SOURCEA18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="6.604" y="7.62" smashed="yes"/>
-<element name="JS18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="4.826" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="6.985" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="6.477" y="13.716" smashed="yes"/>
 <element name="DRAINC18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="6.477" y="12.446" smashed="yes"/>
@@ -1456,7 +1455,6 @@ design rules under a new name.</description>
 <element name="GATE19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="8.89" y="5.842" smashed="yes"/>
 <element name="DRAINA19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="12.065" y="14.986" smashed="yes"/>
 <element name="SOURCEA19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="12.192" y="7.62" smashed="yes"/>
-<element name="JS19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="10.414" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="12.573" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="12.065" y="13.716" smashed="yes"/>
 <element name="DRAINC19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="12.065" y="12.446" smashed="yes"/>
@@ -1472,7 +1470,6 @@ design rules under a new name.</description>
 <element name="GATE20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="14.478" y="5.842" smashed="yes"/>
 <element name="DRAINA20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="17.653" y="14.986" smashed="yes"/>
 <element name="SOURCEA20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="17.78" y="7.62" smashed="yes"/>
-<element name="JS20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="16.002" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="18.161" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="17.653" y="13.716" smashed="yes"/>
 <element name="DRAINC20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="17.653" y="12.446" smashed="yes"/>
@@ -1488,7 +1485,6 @@ design rules under a new name.</description>
 <element name="GATE21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="20.066" y="5.842" smashed="yes"/>
 <element name="DRAINA21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="23.241" y="14.986" smashed="yes"/>
 <element name="SOURCEA21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="23.368" y="7.62" smashed="yes"/>
-<element name="JS21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="21.59" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="23.749" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="23.241" y="13.716" smashed="yes"/>
 <element name="DRAINC21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="23.241" y="12.446" smashed="yes"/>
@@ -1504,7 +1500,6 @@ design rules under a new name.</description>
 <element name="GATE22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="25.654" y="5.842" smashed="yes"/>
 <element name="DRAINA22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="28.829" y="14.986" smashed="yes"/>
 <element name="SOURCEA22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="28.956" y="7.62" smashed="yes"/>
-<element name="JS22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="27.178" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="29.337" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="28.829" y="13.716" smashed="yes"/>
 <element name="DRAINC22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="28.829" y="12.446" smashed="yes"/>
@@ -1520,7 +1515,6 @@ design rules under a new name.</description>
 <element name="GATE23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="31.242" y="5.842" smashed="yes"/>
 <element name="DRAINA23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="34.417" y="14.986" smashed="yes"/>
 <element name="SOURCEA23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="34.544" y="7.62" smashed="yes"/>
-<element name="JS23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="32.766" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="34.925" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="34.417" y="13.716" smashed="yes"/>
 <element name="DRAINC23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="34.417" y="12.446" smashed="yes"/>
@@ -1536,7 +1530,6 @@ design rules under a new name.</description>
 <element name="GATE24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="36.83" y="5.842" smashed="yes"/>
 <element name="DRAINA24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="40.005" y="14.986" smashed="yes"/>
 <element name="SOURCEA24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="40.132" y="7.62" smashed="yes"/>
-<element name="JS24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="38.354" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="40.513" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="40.005" y="13.716" smashed="yes"/>
 <element name="DRAINC24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="40.005" y="12.446" smashed="yes"/>
@@ -1552,7 +1545,6 @@ design rules under a new name.</description>
 <element name="GATE25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="42.418" y="5.842" smashed="yes"/>
 <element name="DRAINA25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="45.593" y="14.986" smashed="yes"/>
 <element name="SOURCEA25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="45.72" y="7.62" smashed="yes"/>
-<element name="JS25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="43.942" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="46.101" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="45.593" y="13.716" smashed="yes"/>
 <element name="DRAINC25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="45.593" y="12.446" smashed="yes"/>
@@ -2208,7 +2200,6 @@ design rules under a new name.</description>
 <element name="GATE2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="48.006" y="5.842" smashed="yes"/>
 <element name="DRAINA2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="51.181" y="14.986" smashed="yes"/>
 <element name="SOURCEA2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="51.308" y="7.62" smashed="yes"/>
-<element name="JS2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="49.53" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="51.689" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="51.181" y="13.716" smashed="yes"/>
 <element name="DRAINC2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="51.181" y="12.446" smashed="yes"/>
@@ -2224,7 +2215,6 @@ design rules under a new name.</description>
 <element name="GATE3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="53.594" y="5.842" smashed="yes"/>
 <element name="DRAINA3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="56.769" y="14.986" smashed="yes"/>
 <element name="SOURCEA3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="56.896" y="7.62" smashed="yes"/>
-<element name="JS3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="55.118" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="57.277" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="56.769" y="13.716" smashed="yes"/>
 <element name="DRAINC3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="56.769" y="12.446" smashed="yes"/>
@@ -2400,7 +2390,6 @@ design rules under a new name.</description>
 <element name="GATE14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="59.182" y="5.842" smashed="yes"/>
 <element name="DRAINA14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="62.357" y="14.986" smashed="yes"/>
 <element name="SOURCEA14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="62.484" y="7.62" smashed="yes"/>
-<element name="JS14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="60.706" y="3.683" smashed="yes" rot="R90"/>
 <element name="JD14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="62.865" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="62.357" y="13.716" smashed="yes"/>
 <element name="DRAINC14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="62.357" y="12.446" smashed="yes"/>
@@ -2416,8 +2405,6 @@ design rules under a new name.</description>
 <element name="GATE15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="64.77" y="5.842" smashed="yes"/>
 <element name="DRAINA15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="14.986" smashed="yes"/>
 <element name="SOURCEA15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="7.62" smashed="yes"/>
-<element name="JS15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="3.683" smashed="yes" rot="R90"/>
-<element name="JD15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="9.398" smashed="yes" rot="R180"/>
 <element name="DRAINB15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="13.716" smashed="yes"/>
 <element name="DRAINC15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="12.446" smashed="yes"/>
 <element name="DRAIND15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="11.176" smashed="yes"/>
@@ -2449,7 +2436,6 @@ design rules under a new name.</description>
 <element name="DRAINA16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="28.321" smashed="yes"/>
 <element name="SOURCEA16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="20.955" smashed="yes"/>
 <element name="JS16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="17.018" smashed="yes" rot="R90"/>
-<element name="JD16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="22.733" smashed="yes" rot="R180"/>
 <element name="DRAINB16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="27.051" smashed="yes"/>
 <element name="DRAINC16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="25.781" smashed="yes"/>
 <element name="DRAIND16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="24.511" smashed="yes"/>
@@ -2481,7 +2467,6 @@ design rules under a new name.</description>
 <element name="DRAINA67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="41.656" smashed="yes"/>
 <element name="SOURCEA67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="34.29" smashed="yes"/>
 <element name="JS67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="30.353" smashed="yes" rot="R90"/>
-<element name="JD67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="36.068" smashed="yes" rot="R180"/>
 <element name="DRAINB67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="40.386" smashed="yes"/>
 <element name="DRAINC67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="39.116" smashed="yes"/>
 <element name="DRAIND67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="37.846" smashed="yes"/>
@@ -2513,7 +2498,6 @@ design rules under a new name.</description>
 <element name="DRAINA69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="54.991" smashed="yes"/>
 <element name="SOURCEA69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="47.625" smashed="yes"/>
 <element name="JS69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="43.688" smashed="yes" rot="R90"/>
-<element name="JD69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="49.403" smashed="yes" rot="R180"/>
 <element name="DRAINB69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="53.721" smashed="yes"/>
 <element name="DRAINC69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="52.451" smashed="yes"/>
 <element name="DRAIND69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="51.181" smashed="yes"/>
@@ -2545,7 +2529,6 @@ design rules under a new name.</description>
 <element name="DRAINA71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="68.326" smashed="yes"/>
 <element name="SOURCEA71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="60.96" smashed="yes"/>
 <element name="JS71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="57.023" smashed="yes" rot="R90"/>
-<element name="JD71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="62.738" smashed="yes" rot="R180"/>
 <element name="DRAINB71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="67.056" smashed="yes"/>
 <element name="DRAINC71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="65.786" smashed="yes"/>
 <element name="DRAIND71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="64.516" smashed="yes"/>
@@ -2577,7 +2560,6 @@ design rules under a new name.</description>
 <element name="DRAINA73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="81.661" smashed="yes"/>
 <element name="SOURCEA73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="68.072" y="74.295" smashed="yes"/>
 <element name="JS73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="66.294" y="70.358" smashed="yes" rot="R90"/>
-<element name="JD73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="68.453" y="76.073" smashed="yes" rot="R180"/>
 <element name="DRAINB73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="80.391" smashed="yes"/>
 <element name="DRAINC73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="79.121" smashed="yes"/>
 <element name="DRAIND73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="67.945" y="77.851" smashed="yes"/>
@@ -3782,15 +3764,11 @@ design rules under a new name.</description>
 <contactref element="JN18" pad="2"/>
 <contactref element="Q18" pad="2"/>
 <contactref element="SOURCEA18" pad="TP"/>
-<contactref element="JS18" pad="2"/>
 <contactref element="SOURCEB18" pad="TP"/>
 <contactref element="SOURCEC18" pad="TP"/>
 <contactref element="SOURCED18" pad="TP"/>
 <wire x1="5.141" y1="7.79" x2="5.461" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="5.461" y1="7.47" x2="5.461" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="4.826" y1="4.191" x2="5.08" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="5.08" y1="4.191" x2="5.461" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="5.461" y1="4.572" x2="5.461" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="5.141" y1="7.79" x2="6.434" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="6.434" y1="7.79" x2="6.604" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="6.604" y1="7.62" x2="6.604" y2="6.35" width="0.3048" layer="1"/>
@@ -3845,15 +3823,11 @@ design rules under a new name.</description>
 <contactref element="JN19" pad="2"/>
 <contactref element="Q19" pad="2"/>
 <contactref element="SOURCEA19" pad="TP"/>
-<contactref element="JS19" pad="2"/>
 <contactref element="SOURCEB19" pad="TP"/>
 <contactref element="SOURCEC19" pad="TP"/>
 <contactref element="SOURCED19" pad="TP"/>
 <wire x1="10.729" y1="7.79" x2="11.049" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="11.049" y1="7.47" x2="11.049" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="10.414" y1="4.191" x2="10.668" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="10.668" y1="4.191" x2="11.049" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="11.049" y1="4.572" x2="11.049" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="10.729" y1="7.79" x2="12.022" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="12.022" y1="7.79" x2="12.192" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="12.192" y1="7.62" x2="12.192" y2="6.35" width="0.3048" layer="1"/>
@@ -3908,15 +3882,11 @@ design rules under a new name.</description>
 <contactref element="JN20" pad="2"/>
 <contactref element="Q20" pad="2"/>
 <contactref element="SOURCEA20" pad="TP"/>
-<contactref element="JS20" pad="2"/>
 <contactref element="SOURCEB20" pad="TP"/>
 <contactref element="SOURCEC20" pad="TP"/>
 <contactref element="SOURCED20" pad="TP"/>
 <wire x1="16.317" y1="7.79" x2="16.637" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="16.637" y1="7.47" x2="16.637" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="16.002" y1="4.191" x2="16.256" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="16.256" y1="4.191" x2="16.637" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="16.637" y1="4.572" x2="16.637" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="16.317" y1="7.79" x2="17.61" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="17.61" y1="7.79" x2="17.78" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="6.35" width="0.3048" layer="1"/>
@@ -3971,15 +3941,11 @@ design rules under a new name.</description>
 <contactref element="JN21" pad="2"/>
 <contactref element="Q21" pad="2"/>
 <contactref element="SOURCEA21" pad="TP"/>
-<contactref element="JS21" pad="2"/>
 <contactref element="SOURCEB21" pad="TP"/>
 <contactref element="SOURCEC21" pad="TP"/>
 <contactref element="SOURCED21" pad="TP"/>
 <wire x1="21.905" y1="7.79" x2="22.225" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="22.225" y1="7.47" x2="22.225" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="4.191" x2="21.844" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="21.844" y1="4.191" x2="22.225" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="22.225" y1="4.572" x2="22.225" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="21.905" y1="7.79" x2="23.198" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="23.198" y1="7.79" x2="23.368" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="23.368" y1="7.62" x2="23.368" y2="6.35" width="0.3048" layer="1"/>
@@ -4035,15 +4001,11 @@ design rules under a new name.</description>
 <contactref element="JN22" pad="2"/>
 <contactref element="Q22" pad="2"/>
 <contactref element="SOURCEA22" pad="TP"/>
-<contactref element="JS22" pad="2"/>
 <contactref element="SOURCEB22" pad="TP"/>
 <contactref element="SOURCEC22" pad="TP"/>
 <contactref element="SOURCED22" pad="TP"/>
 <wire x1="27.493" y1="7.79" x2="27.813" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="27.813" y1="7.47" x2="27.813" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="27.178" y1="4.191" x2="27.432" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="4.191" x2="27.813" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="27.813" y1="4.572" x2="27.813" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="27.493" y1="7.79" x2="28.786" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="28.786" y1="7.79" x2="28.956" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="28.956" y1="7.62" x2="28.956" y2="6.35" width="0.3048" layer="1"/>
@@ -4098,15 +4060,11 @@ design rules under a new name.</description>
 <contactref element="JN23" pad="2"/>
 <contactref element="Q23" pad="2"/>
 <contactref element="SOURCEA23" pad="TP"/>
-<contactref element="JS23" pad="2"/>
 <contactref element="SOURCEB23" pad="TP"/>
 <contactref element="SOURCEC23" pad="TP"/>
 <contactref element="SOURCED23" pad="TP"/>
 <wire x1="33.081" y1="7.79" x2="33.401" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="33.401" y1="7.47" x2="33.401" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="32.766" y1="4.191" x2="33.02" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="33.02" y1="4.191" x2="33.401" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="33.401" y1="4.572" x2="33.401" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="33.081" y1="7.79" x2="34.374" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="34.374" y1="7.79" x2="34.544" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="34.544" y1="7.62" x2="34.544" y2="6.35" width="0.3048" layer="1"/>
@@ -4162,15 +4120,11 @@ design rules under a new name.</description>
 <contactref element="JN24" pad="2"/>
 <contactref element="Q24" pad="2"/>
 <contactref element="SOURCEA24" pad="TP"/>
-<contactref element="JS24" pad="2"/>
 <contactref element="SOURCEB24" pad="TP"/>
 <contactref element="SOURCEC24" pad="TP"/>
 <contactref element="SOURCED24" pad="TP"/>
 <wire x1="38.669" y1="7.79" x2="38.989" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="38.989" y1="7.47" x2="38.989" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="38.354" y1="4.191" x2="38.608" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="38.608" y1="4.191" x2="38.989" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="38.989" y1="4.572" x2="38.989" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="38.669" y1="7.79" x2="39.962" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="39.962" y1="7.79" x2="40.132" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="40.132" y1="7.62" x2="40.132" y2="6.35" width="0.3048" layer="1"/>
@@ -4225,15 +4179,11 @@ design rules under a new name.</description>
 <contactref element="JN25" pad="2"/>
 <contactref element="Q25" pad="2"/>
 <contactref element="SOURCEA25" pad="TP"/>
-<contactref element="JS25" pad="2"/>
 <contactref element="SOURCEB25" pad="TP"/>
 <contactref element="SOURCEC25" pad="TP"/>
 <contactref element="SOURCED25" pad="TP"/>
 <wire x1="44.257" y1="7.79" x2="44.577" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="44.577" y1="7.47" x2="44.577" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="43.942" y1="4.191" x2="44.196" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="44.196" y1="4.191" x2="44.577" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="44.577" y1="4.572" x2="44.577" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="44.257" y1="7.79" x2="45.55" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="45.55" y1="7.79" x2="45.72" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="45.72" y1="7.62" x2="45.72" y2="6.35" width="0.3048" layer="1"/>
@@ -6773,15 +6723,11 @@ design rules under a new name.</description>
 <contactref element="JN2" pad="2"/>
 <contactref element="Q2" pad="2"/>
 <contactref element="SOURCEA2" pad="TP"/>
-<contactref element="JS2" pad="2"/>
 <contactref element="SOURCEB2" pad="TP"/>
 <contactref element="SOURCEC2" pad="TP"/>
 <contactref element="SOURCED2" pad="TP"/>
 <wire x1="49.845" y1="7.79" x2="50.165" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="50.165" y1="7.47" x2="50.165" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="49.53" y1="4.191" x2="49.784" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="49.784" y1="4.191" x2="50.165" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="50.165" y1="4.572" x2="50.165" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="49.845" y1="7.79" x2="51.138" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="51.138" y1="7.79" x2="51.308" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="51.308" y1="7.62" x2="51.308" y2="6.35" width="0.3048" layer="1"/>
@@ -6836,15 +6782,11 @@ design rules under a new name.</description>
 <contactref element="JN3" pad="2"/>
 <contactref element="Q3" pad="2"/>
 <contactref element="SOURCEA3" pad="TP"/>
-<contactref element="JS3" pad="2"/>
 <contactref element="SOURCEB3" pad="TP"/>
 <contactref element="SOURCEC3" pad="TP"/>
 <contactref element="SOURCED3" pad="TP"/>
 <wire x1="55.433" y1="7.79" x2="55.753" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="55.753" y1="7.47" x2="55.753" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="55.118" y1="4.191" x2="55.372" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="55.372" y1="4.191" x2="55.753" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="55.753" y1="4.572" x2="55.753" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="55.433" y1="7.79" x2="56.726" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="56.726" y1="7.79" x2="56.896" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="56.896" y1="7.62" x2="56.896" y2="6.35" width="0.3048" layer="1"/>
@@ -7523,15 +7465,11 @@ design rules under a new name.</description>
 <contactref element="JN14" pad="2"/>
 <contactref element="Q14" pad="2"/>
 <contactref element="SOURCEA14" pad="TP"/>
-<contactref element="JS14" pad="2"/>
 <contactref element="SOURCEB14" pad="TP"/>
 <contactref element="SOURCEC14" pad="TP"/>
 <contactref element="SOURCED14" pad="TP"/>
 <wire x1="61.021" y1="7.79" x2="61.341" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="61.341" y1="7.47" x2="61.341" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="60.706" y1="4.191" x2="60.96" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="60.96" y1="4.191" x2="61.341" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="61.341" y1="4.572" x2="61.341" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="61.021" y1="7.79" x2="62.314" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="62.314" y1="7.79" x2="62.484" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="62.484" y1="7.62" x2="62.484" y2="6.35" width="0.3048" layer="1"/>
@@ -7558,7 +7496,6 @@ design rules under a new name.</description>
 <contactref element="D15" pad="C"/>
 <contactref element="Q15" pad="3"/>
 <contactref element="DRAINA15" pad="TP"/>
-<contactref element="JD15" pad="2"/>
 <wire x1="65.024" y1="11.43" x2="65.151" y2="11.43" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="11.43" x2="66.687" y2="11.43" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="11.43" x2="66.802" y2="11.315" width="0.3048" layer="1"/>
@@ -7572,9 +7509,6 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="12.446" x2="67.945" y2="11.176" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="14.986" x2="67.945" y2="13.716" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="13.716" x2="67.945" y2="12.446" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="9.99" x2="66.591" y2="9.99" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="9.398" x2="67.945" y2="9.398" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="9.99" x2="67.183" y2="9.398" width="0.3048" layer="1"/>
 <contactref element="JD14" pad="1"/>
 <contactref element="JS16" pad="1"/>
 <wire x1="67.945" y1="14.986" x2="66.421" y2="16.51" width="0.3048" layer="1"/>
@@ -7586,15 +7520,11 @@ design rules under a new name.</description>
 <contactref element="JN15" pad="2"/>
 <contactref element="Q15" pad="2"/>
 <contactref element="SOURCEA15" pad="TP"/>
-<contactref element="JS15" pad="2"/>
 <contactref element="SOURCEB15" pad="TP"/>
 <contactref element="SOURCEC15" pad="TP"/>
 <contactref element="SOURCED15" pad="TP"/>
 <wire x1="66.609" y1="7.79" x2="66.929" y2="7.47" width="0.3048" layer="1"/>
 <wire x1="66.929" y1="7.47" x2="66.929" y2="5.842" width="0.3048" layer="1"/>
-<wire x1="66.294" y1="4.191" x2="66.548" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="66.548" y1="4.191" x2="66.929" y2="4.572" width="0.3048" layer="1"/>
-<wire x1="66.929" y1="4.572" x2="66.929" y2="5.842" width="0.3048" layer="1"/>
 <wire x1="66.609" y1="7.79" x2="67.902" y2="7.79" width="0.3048" layer="1"/>
 <wire x1="67.902" y1="7.79" x2="68.072" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="68.072" y1="7.62" x2="68.072" y2="6.35" width="0.3048" layer="1"/>
@@ -7684,7 +7614,6 @@ design rules under a new name.</description>
 <contactref element="D16" pad="C"/>
 <contactref element="Q16" pad="3"/>
 <contactref element="DRAINA16" pad="TP"/>
-<contactref element="JD16" pad="2"/>
 <wire x1="65.024" y1="24.765" x2="65.151" y2="24.765" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="24.765" x2="66.687" y2="24.765" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="24.765" x2="66.802" y2="24.65" width="0.3048" layer="1"/>
@@ -7698,9 +7627,6 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="25.781" x2="67.945" y2="24.511" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="28.321" x2="67.945" y2="27.051" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="27.051" x2="67.945" y2="25.781" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="23.325" x2="66.591" y2="23.325" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="22.733" x2="67.945" y2="22.733" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="23.325" x2="67.183" y2="22.733" width="0.3048" layer="1"/>
 <contactref element="JD17" pad="1"/>
 <contactref element="JS67" pad="1"/>
 <wire x1="67.945" y1="28.321" x2="66.421" y2="29.845" width="0.3048" layer="1"/>
@@ -7810,7 +7736,6 @@ design rules under a new name.</description>
 <contactref element="D67" pad="C"/>
 <contactref element="Q67" pad="3"/>
 <contactref element="DRAINA67" pad="TP"/>
-<contactref element="JD67" pad="2"/>
 <wire x1="65.024" y1="38.1" x2="65.151" y2="38.1" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="38.1" x2="66.687" y2="38.1" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="38.1" x2="66.802" y2="37.985" width="0.3048" layer="1"/>
@@ -7824,16 +7749,12 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="39.116" x2="67.945" y2="37.846" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="41.656" x2="67.945" y2="40.386" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="40.386" x2="67.945" y2="39.116" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="36.66" x2="66.04" y2="36.66" width="0.3048" layer="1"/>
-<wire x1="66.04" y1="36.66" x2="66.591" y2="36.66" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="36.068" x2="67.945" y2="36.068" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="36.66" x2="67.183" y2="36.068" width="0.3048" layer="1"/>
 <contactref element="JD66" pad="1"/>
 <contactref element="JS69" pad="1"/>
-<wire x1="63.373" y1="36.068" x2="65.448" y2="36.068" width="0.3048" layer="1"/>
-<wire x1="65.448" y1="36.068" x2="66.04" y2="36.66" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="41.656" x2="66.421" y2="43.18" width="0.3048" layer="1"/>
 <wire x1="66.421" y1="43.18" x2="66.294" y2="43.18" width="0.3048" layer="1"/>
+<wire x1="63.373" y1="36.068" x2="65.067" y2="36.068" width="0.3048" layer="1"/>
+<wire x1="65.067" y1="36.068" x2="65.659" y2="36.66" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$267">
 <contactref element="JN67" pad="2"/>
@@ -7937,7 +7858,6 @@ design rules under a new name.</description>
 <contactref element="D69" pad="C"/>
 <contactref element="Q69" pad="3"/>
 <contactref element="DRAINA69" pad="TP"/>
-<contactref element="JD69" pad="2"/>
 <wire x1="65.024" y1="51.435" x2="65.151" y2="51.435" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="51.435" x2="66.687" y2="51.435" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="51.435" x2="66.802" y2="51.32" width="0.3048" layer="1"/>
@@ -7951,9 +7871,6 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="52.451" x2="67.945" y2="51.181" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="54.991" x2="67.945" y2="53.721" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="53.721" x2="67.945" y2="52.451" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="49.995" x2="66.591" y2="49.995" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="49.403" x2="67.945" y2="49.403" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="49.995" x2="67.183" y2="49.403" width="0.3048" layer="1"/>
 <contactref element="JD68" pad="1"/>
 <contactref element="JS71" pad="1"/>
 <wire x1="63.373" y1="49.403" x2="65.067" y2="49.403" width="0.3048" layer="1"/>
@@ -8063,7 +7980,6 @@ design rules under a new name.</description>
 <contactref element="D71" pad="C"/>
 <contactref element="Q71" pad="3"/>
 <contactref element="DRAINA71" pad="TP"/>
-<contactref element="JD71" pad="2"/>
 <wire x1="65.024" y1="64.77" x2="65.151" y2="64.77" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="64.77" x2="66.687" y2="64.77" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="64.77" x2="66.802" y2="64.655" width="0.3048" layer="1"/>
@@ -8077,9 +7993,6 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="65.786" x2="67.945" y2="64.516" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="68.326" x2="67.945" y2="67.056" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="67.056" x2="67.945" y2="65.786" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="63.33" x2="66.591" y2="63.33" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="62.738" x2="67.945" y2="62.738" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="63.33" x2="67.183" y2="62.738" width="0.3048" layer="1"/>
 <contactref element="JD70" pad="1"/>
 <contactref element="JS73" pad="1"/>
 <wire x1="63.373" y1="62.738" x2="65.067" y2="62.738" width="0.3048" layer="1"/>
@@ -8186,7 +8099,6 @@ design rules under a new name.</description>
 <contactref element="D73" pad="C"/>
 <contactref element="Q73" pad="3"/>
 <contactref element="DRAINA73" pad="TP"/>
-<contactref element="JD73" pad="2"/>
 <wire x1="65.024" y1="78.105" x2="65.151" y2="78.105" width="0.3048" layer="1"/>
 <wire x1="65.151" y1="78.105" x2="66.687" y2="78.105" width="0.3048" layer="1"/>
 <wire x1="66.687" y1="78.105" x2="66.802" y2="77.99" width="0.3048" layer="1"/>
@@ -8200,9 +8112,6 @@ design rules under a new name.</description>
 <wire x1="67.945" y1="79.121" x2="67.945" y2="77.851" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="81.661" x2="67.945" y2="80.391" width="0.3048" layer="1"/>
 <wire x1="67.945" y1="80.391" x2="67.945" y2="79.121" width="0.3048" layer="1"/>
-<wire x1="65.659" y1="76.665" x2="66.591" y2="76.665" width="0.3048" layer="1"/>
-<wire x1="67.183" y1="76.073" x2="67.945" y2="76.073" width="0.3048" layer="1"/>
-<wire x1="66.591" y1="76.665" x2="67.183" y2="76.073" width="0.3048" layer="1"/>
 <contactref element="JD72" pad="1"/>
 <wire x1="63.373" y1="76.073" x2="65.067" y2="76.073" width="0.3048" layer="1"/>
 <wire x1="65.067" y1="76.073" x2="65.659" y2="76.665" width="0.3048" layer="1"/>

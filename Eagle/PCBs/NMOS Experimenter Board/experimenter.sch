@@ -599,7 +599,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC18" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -617,7 +616,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC19" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -635,7 +633,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC20" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -653,7 +650,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC21" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -671,7 +667,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC22" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -689,7 +684,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC23" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -707,7 +701,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC24" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -725,7 +718,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC25" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1463,7 +1455,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1481,7 +1472,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC3" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1679,7 +1669,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="JD14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC14" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1697,8 +1686,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GATE15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINA15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
-<part name="JS15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND15" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1734,7 +1721,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="DRAINA16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="JS16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND16" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1770,7 +1756,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="DRAINA67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="JS67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND67" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1806,7 +1791,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="DRAINA69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="JS69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND69" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1842,7 +1826,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="DRAINA71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="JS71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND71" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -1878,7 +1861,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="DRAINA73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="SOURCEA73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="JS73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
-<part name="JD73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 <part name="DRAINB73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAINC73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 <part name="DRAIND73" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
@@ -2356,9 +2338,6 @@ Transistor Cell</text>
 <instance part="SOURCEA18" gate="G$1" x="35.56" y="195.58" smashed="yes">
 <attribute name="NAME" x="35.56" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS18" gate="1" x="33.02" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.48" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD18" gate="1" x="50.8" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="50.8" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -2412,9 +2391,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA19" gate="G$1" x="83.82" y="195.58" smashed="yes">
 <attribute name="NAME" x="83.82" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS19" gate="1" x="81.28" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="JD19" gate="1" x="99.06" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="99.06" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
@@ -2470,9 +2446,6 @@ Transistor Cell</text>
 <instance part="SOURCEA20" gate="G$1" x="132.08" y="195.58" smashed="yes">
 <attribute name="NAME" x="132.08" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS20" gate="1" x="129.54" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="127" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD20" gate="1" x="147.32" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="147.32" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -2526,9 +2499,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA21" gate="G$1" x="180.34" y="195.58" smashed="yes">
 <attribute name="NAME" x="180.34" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS21" gate="1" x="177.8" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="175.26" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="JD21" gate="1" x="195.58" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.58" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
@@ -2584,9 +2554,6 @@ Transistor Cell</text>
 <instance part="SOURCEA22" gate="G$1" x="228.6" y="195.58" smashed="yes">
 <attribute name="NAME" x="228.6" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS22" gate="1" x="226.06" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="223.52" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD22" gate="1" x="243.84" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="243.84" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -2640,9 +2607,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA23" gate="G$1" x="276.86" y="195.58" smashed="yes">
 <attribute name="NAME" x="276.86" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS23" gate="1" x="274.32" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="271.78" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="JD23" gate="1" x="292.1" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="292.1" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
@@ -2698,9 +2662,6 @@ Transistor Cell</text>
 <instance part="SOURCEA24" gate="G$1" x="325.12" y="195.58" smashed="yes">
 <attribute name="NAME" x="325.12" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS24" gate="1" x="322.58" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="320.04" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD24" gate="1" x="340.36" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="340.36" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -2754,9 +2715,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA25" gate="G$1" x="373.38" y="195.58" smashed="yes">
 <attribute name="NAME" x="373.38" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS25" gate="1" x="370.84" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="368.3" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="JD25" gate="1" x="388.62" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="388.62" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
@@ -5092,9 +5050,6 @@ Transistor Cell</text>
 <instance part="SOURCEA2" gate="G$1" x="421.64" y="195.58" smashed="yes">
 <attribute name="NAME" x="421.64" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS2" gate="1" x="419.1" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="416.56" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD2" gate="1" x="436.88" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="436.88" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -5148,9 +5103,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA3" gate="G$1" x="469.9" y="195.58" smashed="yes">
 <attribute name="NAME" x="469.9" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS3" gate="1" x="467.36" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="464.82" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="JD3" gate="1" x="485.14" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="485.14" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
@@ -5776,9 +5728,6 @@ Transistor Cell</text>
 <instance part="SOURCEA14" gate="G$1" x="518.16" y="195.58" smashed="yes">
 <attribute name="NAME" x="518.16" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="JS14" gate="1" x="515.62" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="513.08" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="JD14" gate="1" x="533.4" y="236.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="533.4" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
@@ -5832,12 +5781,6 @@ Transistor Cell</text>
 </instance>
 <instance part="SOURCEA15" gate="G$1" x="566.42" y="195.58" smashed="yes">
 <attribute name="NAME" x="566.42" y="198.12" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="JS15" gate="1" x="563.88" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="561.34" y="172.72" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
-<instance part="JD15" gate="1" x="581.66" y="236.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="233.68" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="DRAINB15" gate="G$1" x="566.42" y="215.9" smashed="yes">
 <attribute name="NAME" x="566.42" y="218.44" size="1.778" layer="95" rot="R180" align="bottom-right"/>
@@ -5950,9 +5893,6 @@ Transistor Cell</text>
 <instance part="JS16" gate="1" x="563.88" y="254" smashed="yes" rot="R90">
 <attribute name="NAME" x="561.34" y="254" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="JD16" gate="1" x="581.66" y="317.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="314.96" size="1.778" layer="95" rot="R180" align="bottom-center"/>
-</instance>
 <instance part="DRAINB16" gate="G$1" x="566.42" y="297.18" smashed="yes">
 <attribute name="NAME" x="566.42" y="299.72" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
@@ -6063,9 +6003,6 @@ Transistor Cell</text>
 </instance>
 <instance part="JS67" gate="1" x="563.88" y="335.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="561.34" y="335.28" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
-<instance part="JD67" gate="1" x="581.66" y="398.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="396.24" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="DRAINB67" gate="G$1" x="566.42" y="378.46" smashed="yes">
 <attribute name="NAME" x="566.42" y="381" size="1.778" layer="95" rot="R180" align="bottom-right"/>
@@ -6178,9 +6115,6 @@ Transistor Cell</text>
 <instance part="JS69" gate="1" x="563.88" y="416.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="561.34" y="416.56" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="JD69" gate="1" x="581.66" y="480.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="477.52" size="1.778" layer="95" rot="R180" align="bottom-center"/>
-</instance>
 <instance part="DRAINB69" gate="G$1" x="566.42" y="459.74" smashed="yes">
 <attribute name="NAME" x="566.42" y="462.28" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
@@ -6292,9 +6226,6 @@ Transistor Cell</text>
 <instance part="JS71" gate="1" x="563.88" y="497.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="561.34" y="497.84" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="JD71" gate="1" x="581.66" y="561.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="558.8" size="1.778" layer="95" rot="R180" align="bottom-center"/>
-</instance>
 <instance part="DRAINB71" gate="G$1" x="566.42" y="541.02" smashed="yes">
 <attribute name="NAME" x="566.42" y="543.56" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 </instance>
@@ -6405,9 +6336,6 @@ Transistor Cell</text>
 </instance>
 <instance part="JS73" gate="1" x="563.88" y="579.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="561.34" y="579.12" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
-<instance part="JD73" gate="1" x="581.66" y="642.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="581.66" y="640.08" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="DRAINB73" gate="G$1" x="566.42" y="622.3" smashed="yes">
 <attribute name="NAME" x="566.42" y="624.84" size="1.778" layer="95" rot="R180" align="bottom-right"/>
@@ -7208,7 +7136,6 @@ Transistor Cell</text>
 <wire x1="27.94" y1="195.58" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
 <junction x="27.94" y="195.58"/>
 <pinref part="SOURCEA18" gate="G$1" pin="S"/>
-<pinref part="JS18" gate="1" pin="2"/>
 <wire x1="33.02" y1="195.58" x2="35.56" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="195.58" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
 <junction x="33.02" y="195.58"/>
@@ -7287,7 +7214,6 @@ Transistor Cell</text>
 <wire x1="76.2" y1="195.58" x2="81.28" y2="195.58" width="0.1524" layer="91"/>
 <junction x="76.2" y="195.58"/>
 <pinref part="SOURCEA19" gate="G$1" pin="S"/>
-<pinref part="JS19" gate="1" pin="2"/>
 <wire x1="81.28" y1="195.58" x2="83.82" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="195.58" x2="81.28" y2="190.5" width="0.1524" layer="91"/>
 <junction x="81.28" y="195.58"/>
@@ -7366,7 +7292,6 @@ Transistor Cell</text>
 <wire x1="124.46" y1="195.58" x2="129.54" y2="195.58" width="0.1524" layer="91"/>
 <junction x="124.46" y="195.58"/>
 <pinref part="SOURCEA20" gate="G$1" pin="S"/>
-<pinref part="JS20" gate="1" pin="2"/>
 <wire x1="129.54" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="195.58" x2="129.54" y2="190.5" width="0.1524" layer="91"/>
 <junction x="129.54" y="195.58"/>
@@ -7445,7 +7370,6 @@ Transistor Cell</text>
 <wire x1="172.72" y1="195.58" x2="177.8" y2="195.58" width="0.1524" layer="91"/>
 <junction x="172.72" y="195.58"/>
 <pinref part="SOURCEA21" gate="G$1" pin="S"/>
-<pinref part="JS21" gate="1" pin="2"/>
 <wire x1="177.8" y1="195.58" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="195.58" x2="177.8" y2="190.5" width="0.1524" layer="91"/>
 <junction x="177.8" y="195.58"/>
@@ -7524,7 +7448,6 @@ Transistor Cell</text>
 <wire x1="220.98" y1="195.58" x2="226.06" y2="195.58" width="0.1524" layer="91"/>
 <junction x="220.98" y="195.58"/>
 <pinref part="SOURCEA22" gate="G$1" pin="S"/>
-<pinref part="JS22" gate="1" pin="2"/>
 <wire x1="226.06" y1="195.58" x2="228.6" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="195.58" x2="226.06" y2="190.5" width="0.1524" layer="91"/>
 <junction x="226.06" y="195.58"/>
@@ -7603,7 +7526,6 @@ Transistor Cell</text>
 <wire x1="269.24" y1="195.58" x2="274.32" y2="195.58" width="0.1524" layer="91"/>
 <junction x="269.24" y="195.58"/>
 <pinref part="SOURCEA23" gate="G$1" pin="S"/>
-<pinref part="JS23" gate="1" pin="2"/>
 <wire x1="274.32" y1="195.58" x2="276.86" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="195.58" x2="274.32" y2="190.5" width="0.1524" layer="91"/>
 <junction x="274.32" y="195.58"/>
@@ -7682,7 +7604,6 @@ Transistor Cell</text>
 <wire x1="317.5" y1="195.58" x2="322.58" y2="195.58" width="0.1524" layer="91"/>
 <junction x="317.5" y="195.58"/>
 <pinref part="SOURCEA24" gate="G$1" pin="S"/>
-<pinref part="JS24" gate="1" pin="2"/>
 <wire x1="322.58" y1="195.58" x2="325.12" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="195.58" x2="322.58" y2="190.5" width="0.1524" layer="91"/>
 <junction x="322.58" y="195.58"/>
@@ -7761,7 +7682,6 @@ Transistor Cell</text>
 <wire x1="365.76" y1="195.58" x2="370.84" y2="195.58" width="0.1524" layer="91"/>
 <junction x="365.76" y="195.58"/>
 <pinref part="SOURCEA25" gate="G$1" pin="S"/>
-<pinref part="JS25" gate="1" pin="2"/>
 <wire x1="370.84" y1="195.58" x2="373.38" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="195.58" x2="370.84" y2="190.5" width="0.1524" layer="91"/>
 <junction x="370.84" y="195.58"/>
@@ -10987,7 +10907,6 @@ Transistor Cell</text>
 <wire x1="414.02" y1="195.58" x2="419.1" y2="195.58" width="0.1524" layer="91"/>
 <junction x="414.02" y="195.58"/>
 <pinref part="SOURCEA2" gate="G$1" pin="S"/>
-<pinref part="JS2" gate="1" pin="2"/>
 <wire x1="419.1" y1="195.58" x2="421.64" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="195.58" x2="419.1" y2="190.5" width="0.1524" layer="91"/>
 <junction x="419.1" y="195.58"/>
@@ -11066,7 +10985,6 @@ Transistor Cell</text>
 <wire x1="462.28" y1="195.58" x2="467.36" y2="195.58" width="0.1524" layer="91"/>
 <junction x="462.28" y="195.58"/>
 <pinref part="SOURCEA3" gate="G$1" pin="S"/>
-<pinref part="JS3" gate="1" pin="2"/>
 <wire x1="467.36" y1="195.58" x2="469.9" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="467.36" y1="195.58" x2="467.36" y2="190.5" width="0.1524" layer="91"/>
 <junction x="467.36" y="195.58"/>
@@ -11933,7 +11851,6 @@ Transistor Cell</text>
 <wire x1="510.54" y1="195.58" x2="515.62" y2="195.58" width="0.1524" layer="91"/>
 <junction x="510.54" y="195.58"/>
 <pinref part="SOURCEA14" gate="G$1" pin="S"/>
-<pinref part="JS14" gate="1" pin="2"/>
 <wire x1="515.62" y1="195.58" x2="518.16" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="195.58" x2="515.62" y2="190.5" width="0.1524" layer="91"/>
 <junction x="515.62" y="195.58"/>
@@ -11982,7 +11899,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="210.82" x2="566.42" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="210.82" x2="563.88" y2="215.9" width="0.1524" layer="91"/>
 <junction x="563.88" y="210.82"/>
-<pinref part="JD15" gate="1" pin="2"/>
 <wire x1="563.88" y1="215.9" x2="563.88" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="220.98" x2="563.88" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="226.06" x2="563.88" y2="236.22" width="0.1524" layer="91"/>
@@ -12012,7 +11928,6 @@ Transistor Cell</text>
 <wire x1="558.8" y1="195.58" x2="563.88" y2="195.58" width="0.1524" layer="91"/>
 <junction x="558.8" y="195.58"/>
 <pinref part="SOURCEA15" gate="G$1" pin="S"/>
-<pinref part="JS15" gate="1" pin="2"/>
 <wire x1="563.88" y1="195.58" x2="566.42" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="195.58" x2="563.88" y2="190.5" width="0.1524" layer="91"/>
 <junction x="563.88" y="195.58"/>
@@ -12140,7 +12055,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="292.1" x2="566.42" y2="292.1" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="292.1" x2="563.88" y2="297.18" width="0.1524" layer="91"/>
 <junction x="563.88" y="292.1"/>
-<pinref part="JD16" gate="1" pin="2"/>
 <wire x1="563.88" y1="297.18" x2="563.88" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="302.26" x2="563.88" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="307.34" x2="563.88" y2="317.5" width="0.1524" layer="91"/>
@@ -12298,7 +12212,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="373.38" x2="566.42" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="373.38" x2="563.88" y2="378.46" width="0.1524" layer="91"/>
 <junction x="563.88" y="373.38"/>
-<pinref part="JD67" gate="1" pin="2"/>
 <wire x1="563.88" y1="378.46" x2="563.88" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="383.54" x2="563.88" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="388.62" x2="563.88" y2="398.78" width="0.1524" layer="91"/>
@@ -12456,7 +12369,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="454.66" x2="566.42" y2="454.66" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="454.66" x2="563.88" y2="459.74" width="0.1524" layer="91"/>
 <junction x="563.88" y="454.66"/>
-<pinref part="JD69" gate="1" pin="2"/>
 <wire x1="563.88" y1="459.74" x2="563.88" y2="464.82" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="464.82" x2="563.88" y2="469.9" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="469.9" x2="563.88" y2="480.06" width="0.1524" layer="91"/>
@@ -12614,7 +12526,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="535.94" x2="566.42" y2="535.94" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="535.94" x2="563.88" y2="541.02" width="0.1524" layer="91"/>
 <junction x="563.88" y="535.94"/>
-<pinref part="JD71" gate="1" pin="2"/>
 <wire x1="563.88" y1="541.02" x2="563.88" y2="546.1" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="546.1" x2="563.88" y2="551.18" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="551.18" x2="563.88" y2="561.34" width="0.1524" layer="91"/>
@@ -12771,7 +12682,6 @@ Transistor Cell</text>
 <wire x1="563.88" y1="617.22" x2="566.42" y2="617.22" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="617.22" x2="563.88" y2="622.3" width="0.1524" layer="91"/>
 <junction x="563.88" y="617.22"/>
-<pinref part="JD73" gate="1" pin="2"/>
 <wire x1="563.88" y1="622.3" x2="563.88" y2="627.38" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="627.38" x2="563.88" y2="632.46" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="632.46" x2="563.88" y2="642.62" width="0.1524" layer="91"/>
