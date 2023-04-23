@@ -43,7 +43,7 @@
       <pos x="100" y="-480"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_enablen.dig</elementName>
+      <elementName>nm_enableocn.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>

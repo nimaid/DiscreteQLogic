@@ -186,16 +186,6 @@
       <pos x="-840" y="680"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_enable8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="-320" y="340"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -264,16 +254,6 @@
         </entry>
       </elementAttributes>
       <pos x="820" y="800"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_enable8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="920" y="800"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -517,16 +497,6 @@
       <pos x="-300" y="740"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_enable8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="-320" y="780"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -540,21 +510,6 @@
       <elementName>nm_byte_resetn.dig</elementName>
       <elementAttributes/>
       <pos x="-100" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_reg8_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="400"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_reg8_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="620"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_reg8_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="560" y="780"/>
     </visualElement>
     <visualElement>
       <elementName>Button</elementName>
@@ -639,16 +594,6 @@
         </entry>
       </elementAttributes>
       <pos x="780" y="840"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_reg8_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="-740" y="860"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_reg8_resetn.dig</elementName>
-      <elementAttributes/>
-      <pos x="-740" y="740"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -858,6 +803,71 @@
         </entry>
       </elementAttributes>
       <pos x="300" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_enableoc8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-320" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_enableoc8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-320" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_enableoc8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="920" y="800"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_regoc8_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="-740" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_regoc8_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="-740" y="860"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_regoc8_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_regoc8_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_regoc8_resetn.dig</elementName>
+      <elementAttributes/>
+      <pos x="560" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>PullUp</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-180" y="300"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -1446,20 +1456,20 @@
       <p2 x="-660" y="860"/>
     </wire>
     <wire>
-      <p1 x="-340" y="740"/>
-      <p2 x="-340" y="800"/>
-    </wire>
-    <wire>
-      <p1 x="-340" y="300"/>
-      <p2 x="-340" y="360"/>
-    </wire>
-    <wire>
       <p1 x="-20" y="760"/>
       <p2 x="-20" y="820"/>
     </wire>
     <wire>
       <p1 x="-20" y="320"/>
       <p2 x="-20" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="740"/>
+      <p2 x="-340" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="300"/>
+      <p2 x="-340" y="360"/>
     </wire>
     <wire>
       <p1 x="660" y="740"/>
@@ -1474,20 +1484,16 @@
       <p2 x="280" y="480"/>
     </wire>
     <wire>
+      <p1 x="-540" y="820"/>
+      <p2 x="-540" y="940"/>
+    </wire>
+    <wire>
       <p1 x="-220" y="460"/>
       <p2 x="-220" y="940"/>
     </wire>
     <wire>
       <p1 x="-220" y="940"/>
       <p2 x="-220" y="1080"/>
-    </wire>
-    <wire>
-      <p1 x="-540" y="820"/>
-      <p2 x="-540" y="940"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="460"/>
-      <p2 x="220" y="480"/>
     </wire>
     <wire>
       <p1 x="540" y="580"/>
@@ -1500,6 +1506,10 @@
     <wire>
       <p1 x="540" y="740"/>
       <p2 x="540" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="460"/>
+      <p2 x="220" y="480"/>
     </wire>
     <wire>
       <p1 x="-800" y="840"/>
@@ -1530,16 +1540,16 @@
       <p2 x="-40" y="780"/>
     </wire>
     <wire>
+      <p1 x="40" y="480"/>
+      <p2 x="40" y="680"/>
+    </wire>
+    <wire>
       <p1 x="1000" y="360"/>
       <p2 x="1000" y="780"/>
     </wire>
     <wire>
       <p1 x="1000" y="780"/>
       <p2 x="1000" y="820"/>
-    </wire>
-    <wire>
-      <p1 x="40" y="480"/>
-      <p2 x="40" y="680"/>
     </wire>
     <wire>
       <p1 x="-300" y="840"/>
@@ -1558,6 +1568,10 @@
       <p2 x="300" y="480"/>
     </wire>
     <wire>
+      <p1 x="-560" y="800"/>
+      <p2 x="-560" y="960"/>
+    </wire>
+    <wire>
       <p1 x="-240" y="360"/>
       <p2 x="-240" y="720"/>
     </wire>
@@ -1566,24 +1580,24 @@
       <p2 x="-240" y="800"/>
     </wire>
     <wire>
-      <p1 x="-560" y="800"/>
-      <p2 x="-560" y="960"/>
-    </wire>
-    <wire>
       <p1 x="240" y="460"/>
       <p2 x="240" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="-180" y="300"/>
+      <p2 x="-180" y="320"/>
     </wire>
     <wire>
       <p1 x="-180" y="320"/>
       <p2 x="-180" y="360"/>
     </wire>
     <wire>
-      <p1 x="-500" y="400"/>
-      <p2 x="-500" y="440"/>
-    </wire>
-    <wire>
       <p1 x="-820" y="880"/>
       <p2 x="-820" y="920"/>
+    </wire>
+    <wire>
+      <p1 x="-500" y="400"/>
+      <p2 x="-500" y="440"/>
     </wire>
     <wire>
       <p1 x="500" y="440"/>
@@ -1598,16 +1612,16 @@
       <p2 x="500" y="1080"/>
     </wire>
     <wire>
-      <p1 x="-120" y="360"/>
-      <p2 x="-120" y="420"/>
-    </wire>
-    <wire>
       <p1 x="-440" y="460"/>
       <p2 x="-440" y="560"/>
     </wire>
     <wire>
       <p1 x="-440" y="740"/>
       <p2 x="-440" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="360"/>
+      <p2 x="-120" y="420"/>
     </wire>
     <wire>
       <p1 x="-760" y="780"/>
