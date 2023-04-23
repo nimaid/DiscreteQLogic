@@ -268,19 +268,13 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <packageinstance name="R1206"/>
 </packageinstances>
 </package3d>
-<package3d name="SJ_2S-NO" urn="urn:adsk.eagle:package:26612370/2" type="box" library_version="32">
+<package3d name="SJ_2S-NO" urn="urn:adsk.eagle:package:26612370/3" type="model" library_version="34">
 <description>Small solder jumper with no paste layer so it will open after reflow.</description>
 <packageinstances>
 <packageinstance name="SJ_2S-NO"/>
 </packageinstances>
 </package3d>
-<package3d name="SJ_2S-TRACE" urn="urn:adsk.eagle:package:26612371/2" type="box" library_version="32">
-<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
-<packageinstances>
-<packageinstance name="SJ_2S-TRACE"/>
-</packageinstances>
-</package3d>
-<package3d name="LEDC1608X60" urn="urn:adsk.eagle:package:7587825/3" type="model" library_version="32">
+<package3d name="LEDC1608X60" urn="urn:adsk.eagle:package:7587825/4" type="model" library_version="34">
 <description>Chip, 1.60 X 0.80 X 0.60 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.60 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -298,9 +292,15 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <packageinstance name="TP06R"/>
 </packageinstances>
 </package3d>
-<package3d name="TP_TH_WIRE" urn="urn:adsk.eagle:package:40139460/1" type="box" library_version="33">
+<package3d name="TP_TH_WIRE" urn="urn:adsk.eagle:package:40139460/2" type="model" library_version="34">
 <packageinstances>
 <packageinstance name="TP_TH_WIRE"/>
+</packageinstances>
+</package3d>
+<package3d name="SJ_2S-TRACE" urn="urn:adsk.eagle:package:26612371/3" type="model" library_version="34">
+<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
+<packageinstances>
+<packageinstance name="SJ_2S-TRACE"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -459,7 +459,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SJ" urn="urn:adsk.eagle:component:40097612/1" prefix="SJ" library_version="32">
+<deviceset name="SJ" urn="urn:adsk.eagle:component:40097612/2" prefix="SJ" library_version="34">
 <description>&lt;b&gt;Solder Jumper&lt;/b&gt;
 Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
 <gates>
@@ -472,7 +472,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <connect gate="1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:26612370/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26612370/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -484,7 +484,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <connect gate="1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:26612371/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26612371/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -492,7 +492,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" urn="urn:adsk.eagle:component:40086356/2" prefix="D" uservalue="yes" library_version="32">
+<deviceset name="LED" urn="urn:adsk.eagle:component:40086356/3" prefix="D" uservalue="yes" library_version="34">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -503,7 +503,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <connect gate="G$1" pin="K" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7587825/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7587825/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -537,7 +537,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP" urn="urn:adsk.eagle:component:40086357/4" prefix="TP" library_version="33">
+<deviceset name="TP" urn="urn:adsk.eagle:component:40086357/5" prefix="TP" library_version="34">
 <gates>
 <gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
 </gates>
@@ -569,7 +569,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <connect gate="G$1" pin="S" pad="TP"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40139460/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -591,22 +591,22 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <parts>
 <part name="Q1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="2N7002" device="" package3d_urn="urn:adsk.eagle:package:7587823/4"/>
 <part name="R1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="RES" device="0603" package3d_urn="urn:adsk.eagle:package:7587835/4"/>
-<part name="JP1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/2"/>
-<part name="D1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7587825/3"/>
+<part name="JP1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
+<part name="D1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7587825/4"/>
 <part name="GND2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="GND" device=""/>
 <part name="P+2" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="VCC" device=""/>
-<part name="JN1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/2"/>
-<part name="GATE1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="DRAINA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="SOURCEA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="JS1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/2"/>
-<part name="JD1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/2"/>
-<part name="DRAINB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="DRAINC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="DRAIND1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="SOURCEB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="SOURCEC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
-<part name="SOURCED1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1"/>
+<part name="JN1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
+<part name="GATE1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="DRAINA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="SOURCEA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="JS1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
+<part name="JD1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="SJ" device="_NO" package3d_urn="urn:adsk.eagle:package:26612370/3"/>
+<part name="DRAINB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="DRAINC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="DRAIND1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="SOURCEB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="SOURCEC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
+<part name="SOURCED1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" deviceset="TP" device="WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2"/>
 </parts>
 <sheets>
 <sheet>

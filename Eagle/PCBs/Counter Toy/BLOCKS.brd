@@ -143,7 +143,7 @@
 </layers>
 <board>
 <plain>
-<text x="0.254" y="1.651" size="0.8128" layer="22">G</text>
+<text x="0.254" y="1.651" size="0.8128" layer="22" rot="MR0" align="bottom-right">G</text>
 <text x="4.572" y="10.16" size="0.8128" layer="21">D</text>
 <text x="4.699" y="2.794" size="0.8128" layer="21">S</text>
 <wire x1="0" y1="0" x2="0" y2="13.335" width="0.1524" layer="21"/>
@@ -154,7 +154,7 @@
 <wire x1="0" y1="13.335" x2="5.588" y2="13.335" width="0.1524" layer="22"/>
 <wire x1="5.588" y1="0" x2="0" y2="0" width="0.1524" layer="22"/>
 <wire x1="5.588" y1="0" x2="5.588" y2="13.335" width="0.1524" layer="22"/>
-<text x="0.254" y="1.651" size="0.8128" layer="21" rot="MR0" align="bottom-right">G</text>
+<text x="0.254" y="1.651" size="0.8128" layer="21">G</text>
 <text x="4.699" y="2.794" size="0.8128" layer="22" rot="MR0" align="bottom-right">S</text>
 <text x="4.572" y="10.16" size="0.8128" layer="22" rot="MR0" align="bottom-right">D</text>
 <text x="5.461" y="13.208" size="0.8128" layer="21" rot="R270" align="top-left">#X</text>
@@ -242,20 +242,20 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <packageinstance name="R0603"/>
 </packageinstances>
 </package3d>
-<package3d name="SJ_2S-NO" urn="urn:adsk.eagle:package:26612370/2" type="box" library_version="32">
+<package3d name="SJ_2S-NO" urn="urn:adsk.eagle:package:26612370/3" type="model" library_version="34">
 <description>Small solder jumper with no paste layer so it will open after reflow.</description>
 <packageinstances>
 <packageinstance name="SJ_2S-NO"/>
 </packageinstances>
 </package3d>
-<package3d name="LEDC1608X60" urn="urn:adsk.eagle:package:7587825/3" type="model" library_version="32">
+<package3d name="LEDC1608X60" urn="urn:adsk.eagle:package:7587825/4" type="model" library_version="34">
 <description>Chip, 1.60 X 0.80 X 0.60 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.60 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CHIP-LED0603"/>
 </packageinstances>
 </package3d>
-<package3d name="TP_TH_WIRE" urn="urn:adsk.eagle:package:40139460/1" type="box" library_version="33">
+<package3d name="TP_TH_WIRE" urn="urn:adsk.eagle:package:40139460/2" type="model" library_version="34">
 <packageinstances>
 <packageinstance name="TP_TH_WIRE"/>
 </packageinstances>
@@ -457,27 +457,28 @@ design rules under a new name.</description>
 <elements>
 <element name="Q1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SOT23" package3d_urn="urn:adsk.eagle:package:7587823/4" value="2N7002" x="1.651" y="6.35" smashed="yes"/>
 <element name="R1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="R0603" package3d_urn="urn:adsk.eagle:package:7587835/4" value="" x="1.778" y="11.811" smashed="yes"/>
-<element name="JP1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/2" value="SJ_NO" x="1.016" y="9.398" smashed="yes" rot="R90"/>
-<element name="D1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:7587825/3" value="" x="2.794" y="9.525" smashed="yes" rot="R180"/>
-<element name="JN1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/2" value="SJ_NO" x="2.413" y="3.302" smashed="yes"/>
-<element name="GATE1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="0.762" y="3.302" smashed="yes"/>
-<element name="DRAINA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="3.937" y="12.446" smashed="yes"/>
-<element name="SOURCEA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="4.064" y="5.08" smashed="yes"/>
-<element name="JS1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/2" value="SJ_NO" x="2.286" y="1.143" smashed="yes" rot="R90"/>
-<element name="JD1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/2" value="SJ_NO" x="4.445" y="6.858" smashed="yes" rot="R180"/>
-<element name="DRAINB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="3.937" y="11.176" smashed="yes"/>
-<element name="DRAINC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="3.937" y="9.906" smashed="yes"/>
-<element name="DRAIND1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="3.937" y="8.636" smashed="yes"/>
-<element name="SOURCEB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="4.064" y="3.81" smashed="yes"/>
-<element name="SOURCEC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="4.064" y="2.54" smashed="yes"/>
-<element name="SOURCED1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/1" value="TPWIRE" x="4.064" y="1.27" smashed="yes"/>
+<element name="JP1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="1.016" y="9.398" smashed="yes" rot="R90"/>
+<element name="D1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:7587825/4" value="" x="2.794" y="9.525" smashed="yes" rot="R180"/>
+<element name="JN1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="2.413" y="3.302" smashed="yes"/>
+<element name="GATE1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="0.762" y="3.302" smashed="yes"/>
+<element name="DRAINA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="3.937" y="12.446" smashed="yes"/>
+<element name="SOURCEA1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="4.064" y="5.08" smashed="yes"/>
+<element name="JS1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="2.286" y="1.143" smashed="yes" rot="R90"/>
+<element name="JD1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="SJ_2S-NO" package3d_urn="urn:adsk.eagle:package:26612370/3" value="SJ_NO" x="4.445" y="6.858" smashed="yes" rot="R180"/>
+<element name="DRAINB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="3.937" y="11.176" smashed="yes"/>
+<element name="DRAINC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="3.937" y="9.906" smashed="yes"/>
+<element name="DRAIND1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="3.937" y="8.636" smashed="yes"/>
+<element name="SOURCEB1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="4.064" y="3.81" smashed="yes"/>
+<element name="SOURCEC1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="4.064" y="2.54" smashed="yes"/>
+<element name="SOURCED1" library="ellajameson-core" library_urn="urn:adsk.eagle:library:3740209" package="TP_TH_WIRE" package3d_urn="urn:adsk.eagle:package:40139460/2" value="TPWIRE" x="4.064" y="1.27" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="R1" pad="2"/>
-<wire x1="2.628" y1="11.811" x2="2.628" y2="12.661" width="0.3048" layer="1"/>
-<wire x1="2.628" y1="12.661" x2="2.921" y2="12.954" width="0.3048" layer="1"/>
-<via x="2.921" y="12.954" extent="1-16" drill="0.35"/>
+<wire x1="2.628" y1="11.811" x2="2.628" y2="12.612" width="0.3048" layer="1"/>
+<wire x1="2.628" y1="12.612" x2="2.286" y2="12.954" width="0.3048" layer="1"/>
+<wire x1="2.286" y1="12.954" x2="0.381" y2="12.954" width="0.3048" layer="1"/>
+<via x="0.381" y="12.954" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
