@@ -10,7 +10,7 @@ Each cell can be used in a different way based on which components/jumpers are p
 2. It can be used as a NOT gate with Q, R, JP, and JN populated.
 3. It can be used in chained NAND or NOR gates by using JD and JS.</description>
 <attributes>
-<attribute name="BOARDSIZE" value="251 x 561 mil"/>
+<attribute name="BOARDSIZE" value="261 x 561 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -931,7 +931,7 @@ Transistor Cell</text>
 </layers>
 <board>
 <plain>
-<text x="0.254" y="1.651" size="0.8128" layer="22">G</text>
+<text x="0.254" y="1.651" size="0.8128" layer="22" rot="MR0" align="bottom-right">G</text>
 <text x="4.572" y="10.16" size="0.8128" layer="21">D</text>
 <text x="4.699" y="2.794" size="0.8128" layer="21">S</text>
 <wire x1="0" y1="0" x2="0" y2="13.335" width="0.1524" layer="21"/>
@@ -942,7 +942,7 @@ Transistor Cell</text>
 <wire x1="0" y1="13.335" x2="5.588" y2="13.335" width="0.1524" layer="22"/>
 <wire x1="5.588" y1="0" x2="0" y2="0" width="0.1524" layer="22"/>
 <wire x1="5.588" y1="0" x2="5.588" y2="13.335" width="0.1524" layer="22"/>
-<text x="0.254" y="1.651" size="0.8128" layer="21" rot="MR0" align="bottom-right">G</text>
+<text x="0.254" y="1.651" size="0.8128" layer="21">G</text>
 <text x="4.699" y="2.794" size="0.8128" layer="22" rot="MR0" align="bottom-right">S</text>
 <text x="4.572" y="10.16" size="0.8128" layer="22" rot="MR0" align="bottom-right">D</text>
 <text x="5.461" y="13.208" size="0.8128" layer="21" rot="R270" align="top-left">#X</text>
@@ -1263,9 +1263,10 @@ design rules under a new name.</description>
 <signals>
 <signal name="VCC">
 <contactref element="R1" pad="2"/>
-<wire x1="2.628" y1="11.811" x2="2.628" y2="12.661" width="0.3048" layer="1"/>
-<wire x1="2.628" y1="12.661" x2="2.921" y2="12.954" width="0.3048" layer="1"/>
-<via x="2.921" y="12.954" extent="1-16" drill="0.35"/>
+<wire x1="2.628" y1="11.811" x2="2.628" y2="12.612" width="0.3048" layer="1"/>
+<wire x1="2.628" y1="12.612" x2="2.286" y2="12.954" width="0.3048" layer="1"/>
+<wire x1="2.286" y1="12.954" x2="0.381" y2="12.954" width="0.3048" layer="1"/>
+<via x="0.381" y="12.954" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
