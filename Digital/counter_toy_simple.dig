@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="1260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Size</string>
+          <int>0</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Out_0</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Size</string>
+          <int>0</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Out_1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="1320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Size</string>
+          <int>0</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Out_2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="1340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Size</string>
+          <int>0</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Out_3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="1360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>4</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1*4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Count</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1080" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Reset</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1080" y="1360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_counter4_resetn.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="1180" y="1280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="1100" y="1360"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="1160" y="1360"/>
+      <p2 x="1200" y="1360"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="1360"/>
+      <p2 x="1320" y="1360"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="1360"/>
+      <p2 x="1100" y="1360"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="1300"/>
+      <p2 x="1180" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1240" y="1300"/>
+      <p2 x="1260" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="1300"/>
+      <p2 x="1320" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="1300"/>
+      <p2 x="1280" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="1320"/>
+      <p2 x="1320" y="1320"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="1260"/>
+      <p2 x="1280" y="1260"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="1340"/>
+      <p2 x="1320" y="1340"/>
+    </wire>
+    <wire>
+      <p1 x="1200" y="1340"/>
+      <p2 x="1200" y="1360"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="1260"/>
+      <p2 x="1260" y="1300"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
