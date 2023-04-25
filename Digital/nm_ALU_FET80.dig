@@ -230,11 +230,6 @@
       <pos x="-160" y="-560"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_and8x.dig</elementName>
-      <elementAttributes/>
-      <pos x="-20" y="-700"/>
-    </visualElement>
-    <visualElement>
       <elementName>nm_adder8.dig</elementName>
       <elementAttributes/>
       <pos x="-20" y="-560"/>
@@ -258,6 +253,11 @@
         </entry>
       </elementAttributes>
       <pos x="320" y="-640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand8x.dig</elementName>
+      <elementAttributes/>
+      <pos x="-20" y="-700"/>
     </visualElement>
   </visualElements>
   <wires>
