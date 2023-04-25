@@ -46,7 +46,7 @@
       <pos x="380" y="-420"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_enablen8.dig</elementName>
+      <elementName>nm_enableocn8.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -63,16 +63,16 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="280" y="-420"/>
-      <p2 x="300" y="-420"/>
+      <p1 x="360" y="-420"/>
+      <p2 x="380" y="-420"/>
     </wire>
     <wire>
       <p1 x="200" y="-420"/>
       <p2 x="220" y="-420"/>
     </wire>
     <wire>
-      <p1 x="360" y="-420"/>
-      <p2 x="380" y="-420"/>
+      <p1 x="280" y="-420"/>
+      <p2 x="300" y="-420"/>
     </wire>
     <wire>
       <p1 x="320" y="-380"/>
