@@ -695,11 +695,6 @@
 <packageinstance name="PROTOPAD-THT"/>
 </packageinstances>
 </package3d>
-<package3d name="PROTOPAD-THT" urn="urn:adsk.eagle:package:40148802@2/7" type="model" library_version="55">
-<packageinstances>
-<packageinstance name="PROTOPAD-THT"/>
-</packageinstances>
-</package3d>
 <package3d name="SJ_2S-NO-THIN" urn="urn:adsk.eagle:package:40166046/5" type="model" library_version="62">
 <description>Small solder jumper with no paste layer so it will open after reflow.</description>
 <packageinstances>
@@ -1229,7 +1224,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </device>
 </devices>
 </deviceset>
-<deviceset name="PROTOPAD" urn="urn:adsk.eagle:component:40148767/8" library_version="55">
+<deviceset name="PROTOPAD" urn="urn:adsk.eagle:component:40148767/9" library_version="62">
 <gates>
 </gates>
 <devices>
@@ -1251,7 +1246,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </device>
 <device name="THT" package="PROTOPAD-THT">
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40148802@2/7"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40148802/7"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
