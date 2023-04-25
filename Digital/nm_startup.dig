@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>r*</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1900" y="1580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_tff_resetn.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="1880" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_nand.dig</elementName>
+      <elementAttributes/>
+      <pos x="1800" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and.dig</elementName>
+      <elementAttributes/>
+      <pos x="1980" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and.dig</elementName>
+      <elementAttributes/>
+      <pos x="1980" y="1400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>zero_bus</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2100" y="1320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>set_master</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2100" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_e</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1740" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_s</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1740" y="1400"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="1960" y="1440"/>
+      <p2 x="1980" y="1440"/>
+    </wire>
+    <wire>
+      <p1 x="1860" y="1520"/>
+      <p2 x="1880" y="1520"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1540"/>
+      <p2 x="1800" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1940" y="1540"/>
+      <p2 x="1960" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="1300"/>
+      <p2 x="1760" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1300"/>
+      <p2 x="1980" y="1300"/>
+    </wire>
+    <wire>
+      <p1 x="1780" y="1480"/>
+      <p2 x="1960" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1320"/>
+      <p2 x="2100" y="1320"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="1400"/>
+      <p2 x="1980" y="1400"/>
+    </wire>
+    <wire>
+      <p1 x="1780" y="1500"/>
+      <p2 x="1800" y="1500"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1420"/>
+      <p2 x="2100" y="1420"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1340"/>
+      <p2 x="1980" y="1340"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1300"/>
+      <p2 x="1760" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1780" y="1480"/>
+      <p2 x="1780" y="1500"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1340"/>
+      <p2 x="1960" y="1440"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1480"/>
+      <p2 x="1960" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1960" y="1440"/>
+      <p2 x="1960" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="1560"/>
+      <p2 x="1900" y="1580"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
