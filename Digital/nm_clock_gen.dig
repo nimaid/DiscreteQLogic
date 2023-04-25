@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes/>
+      <pos x="1620" y="1720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>clk_i clk_o clk_e clk_s r*
+X X X X 0
+0 0 0 0 1
+
+loop(a,100)
+  0 0 0 0 1
+  1 1 1 0 1
+  0 1 1 1 1
+  1 0 1 0 1
+end loop</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="1660" y="1580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_o</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2140" y="1700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_e</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2140" y="1520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_s</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2140" y="1620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_i</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1740" y="1540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERBOTTOM</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Mix
+Delayed
+Clock</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2080" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERBOTTOM</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Delayed
+Clock
+Generator</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1960" y="1440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERBOTTOM</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Clock
+Divider</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1800" y="1460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_tff_resetn.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="1780" y="1520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>r*</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1800" y="1620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_xor.dig</elementName>
+      <elementAttributes/>
+      <pos x="1920" y="1540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_or.dig</elementName>
+      <elementAttributes/>
+      <pos x="2060" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_and.dig</elementName>
+      <elementAttributes/>
+      <pos x="2060" y="1600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Delay</elementName>
+      <elementAttributes/>
+      <pos x="1940" y="1700"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="1880" y="1580"/>
+      <p2 x="1860" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="2020" y="1600"/>
+      <p2 x="2060" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1600"/>
+      <p2 x="1860" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="2120" y="1520"/>
+      <p2 x="2140" y="1520"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="1700"/>
+      <p2 x="2040" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="1700"/>
+      <p2 x="1940" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1700"/>
+      <p2 x="2140" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="1840" y="1540"/>
+      <p2 x="1900" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1540"/>
+      <p2 x="2060" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="1540"/>
+      <p2 x="1760" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1540"/>
+      <p2 x="1780" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="1540"/>
+      <p2 x="1920" y="1540"/>
+    </wire>
+    <wire>
+      <p1 x="2120" y="1620"/>
+      <p2 x="2140" y="1620"/>
+    </wire>
+    <wire>
+      <p1 x="1980" y="1560"/>
+      <p2 x="2020" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1640"/>
+      <p2 x="2060" y="1640"/>
+    </wire>
+    <wire>
+      <p1 x="2020" y="1500"/>
+      <p2 x="2060" y="1500"/>
+    </wire>
+    <wire>
+      <p1 x="1880" y="1580"/>
+      <p2 x="1920" y="1580"/>
+    </wire>
+    <wire>
+      <p1 x="1760" y="1540"/>
+      <p2 x="1760" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="2020" y="1500"/>
+      <p2 x="2020" y="1560"/>
+    </wire>
+    <wire>
+      <p1 x="2020" y="1560"/>
+      <p2 x="2020" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1540"/>
+      <p2 x="2040" y="1640"/>
+    </wire>
+    <wire>
+      <p1 x="2040" y="1640"/>
+      <p2 x="2040" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="1800" y="1580"/>
+      <p2 x="1800" y="1620"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="1540"/>
+      <p2 x="1900" y="1700"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
