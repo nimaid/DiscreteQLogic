@@ -37,11 +37,15 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>D_load</string>
         </entry>
       </elementAttributes>
-      <pos x="880" y="260"/>
+      <pos x="940" y="420"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -101,6 +105,10 @@
     </wire>
     <wire>
       <p1 x="920" y="320"/>
+      <p2 x="940" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="320"/>
       <p2 x="960" y="320"/>
     </wire>
     <wire>
@@ -110,10 +118,6 @@
     <wire>
       <p1 x="880" y="180"/>
       <p2 x="960" y="180"/>
-    </wire>
-    <wire>
-      <p1 x="880" y="260"/>
-      <p2 x="920" y="260"/>
     </wire>
     <wire>
       <p1 x="1020" y="200"/>
@@ -177,11 +181,11 @@
     </wire>
     <wire>
       <p1 x="920" y="60"/>
-      <p2 x="920" y="260"/>
+      <p2 x="920" y="320"/>
     </wire>
     <wire>
-      <p1 x="920" y="260"/>
-      <p2 x="920" y="320"/>
+      <p1 x="940" y="320"/>
+      <p2 x="940" y="420"/>
     </wire>
   </wires>
   <measurementOrdering/>

@@ -145,6 +145,21 @@
       </elementAttributes>
       <pos x="-320" y="140"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>zr ng    eqz gtz ltz   nez gez lez
+0  0      0   1   0     1   1   0
+1  0      1   0   0     0   1   1
+0  1      0   0   1     1   0   1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="-700" y="40"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>

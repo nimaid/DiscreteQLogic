@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="-880"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Out</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="-940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>8*2</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>16</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="-940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>D_load</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="-760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="-820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>16</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>8*2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-280" y="-820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_counter8_pc.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-200" y="-900"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_counter8_pc.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="-900"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk_out</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="-840"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-300" y="-820"/>
+      <p2 x="-280" y="-820"/>
+    </wire>
+    <wire>
+      <p1 x="-260" y="-820"/>
+      <p2 x="-240" y="-820"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="-840"/>
+      <p2 x="-100" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="-220" y="-840"/>
+      <p2 x="-200" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="-840"/>
+      <p2 x="-40" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="-840"/>
+      <p2 x="100" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="40" y="-920"/>
+      <p2 x="60" y="-920"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="-760"/>
+      <p2 x="-220" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="-220" y="-760"/>
+      <p2 x="-60" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="-940"/>
+      <p2 x="100" y="-940"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="-940"/>
+      <p2 x="60" y="-940"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-860"/>
+      <p2 x="-200" y="-860"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-860"/>
+      <p2 x="-40" y="-860"/>
+    </wire>
+    <wire>
+      <p1 x="-260" y="-800"/>
+      <p2 x="-80" y="-800"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="-880"/>
+      <p2 x="-200" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-880"/>
+      <p2 x="-40" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="-880"/>
+      <p2 x="-120" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="-880"/>
+      <p2 x="40" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-880"/>
+      <p2 x="-100" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="-940"/>
+      <p2 x="-120" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="40" y="-920"/>
+      <p2 x="40" y="-880"/>
+    </wire>
+    <wire>
+      <p1 x="-220" y="-840"/>
+      <p2 x="-220" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="-840"/>
+      <p2 x="-60" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-860"/>
+      <p2 x="-240" y="-820"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-860"/>
+      <p2 x="-80" y="-800"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
