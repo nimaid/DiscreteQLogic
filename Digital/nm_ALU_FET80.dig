@@ -207,6 +207,67 @@
       </elementAttributes>
       <pos x="160" y="-660"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>nx ny f no   X Y   Out
+
+# ADD
+loop(a,64)
+  loop(b, 64)
+  0 0 1 0  (a) (b)  (a+b)
+  end loop
+end loop
+
+# SUB
+loop(a,64)
+  loop(b, 64)
+  1 0 1 1  (a) (b)  (a-b)
+  end loop
+end loop
+
+# SUBR
+loop(a,64)
+  loop(b, 64)
+  0 1 1 1  (a) (b)  (b-a)
+  end loop
+end loop
+
+# AND
+loop(a,256)
+  loop(b, 256)
+  0 0 0 0  (a) (b)  (a&amp;b)
+  end loop
+end loop
+
+# NAND
+loop(a,256)
+  loop(b, 256)
+  0 0 0 1  (a) (b)  (~(a&amp;b))
+  end loop
+end loop
+
+# OR
+loop(a,256)
+  loop(b, 256)
+  1 1 0 1  (a) (b)  (a|b)
+  end loop
+end loop
+
+# NOR
+loop(a,256)
+  loop(b, 256)
+  1 1 0 0  (a) (b)  (~(a|b))
+  end loop
+end loop</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="-140" y="-660"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
