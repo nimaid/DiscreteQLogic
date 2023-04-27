@@ -6,3 +6,4 @@
 *.s#*
 *~renumsch.scr
 *.zip
+!*gerbers.zip

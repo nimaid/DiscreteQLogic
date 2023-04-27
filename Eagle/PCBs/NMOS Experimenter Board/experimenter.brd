@@ -195,7 +195,7 @@
 <text x="5.08" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="1.524" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">A1</text>
-<text x="1.524" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">A1</text>
 <text x="7.62" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -207,7 +207,7 @@
 <text x="10.16" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="6.604" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">B1</text>
-<text x="6.604" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">B1</text>
 <text x="12.7" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -219,7 +219,7 @@
 <text x="15.24" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="11.684" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">C1</text>
-<text x="11.684" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">C1</text>
 <text x="17.78" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -231,7 +231,7 @@
 <text x="20.32" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="16.764" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">D1</text>
-<text x="16.764" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">D1</text>
 <text x="22.86" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -243,7 +243,7 @@
 <text x="25.4" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="21.844" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">E1</text>
-<text x="21.844" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">E1</text>
 <text x="27.94" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -255,7 +255,7 @@
 <text x="30.48" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="26.924" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">F1</text>
-<text x="26.924" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
+<text x="26.924" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">F1</text>
 <text x="33.02" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="35.56" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -267,7 +267,7 @@
 <text x="35.56" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="32.004" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">G1</text>
-<text x="32.004" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">G1</text>
 <text x="38.1" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -279,7 +279,7 @@
 <text x="40.64" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="37.084" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">H1</text>
-<text x="37.084" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">H1</text>
 <text x="43.18" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -291,7 +291,7 @@
 <text x="45.72" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="42.164" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">I1</text>
-<text x="42.164" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">I1</text>
 <text x="48.26" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -303,7 +303,7 @@
 <text x="50.8" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="47.244" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">J1</text>
-<text x="47.244" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">J1</text>
 <text x="53.34" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -315,7 +315,7 @@
 <text x="55.88" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="52.324" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">K1</text>
-<text x="52.324" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">K1</text>
 <text x="58.42" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -327,7 +327,7 @@
 <text x="60.96" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="57.404" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">L1</text>
-<text x="57.404" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">L1</text>
 <text x="63.5" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -339,7 +339,7 @@
 <text x="66.04" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="62.484" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">M1</text>
-<text x="62.484" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">M1</text>
 <text x="68.58" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -351,7 +351,7 @@
 <text x="71.12" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="67.564" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">N1</text>
-<text x="67.564" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">N1</text>
 <text x="73.66" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -363,7 +363,7 @@
 <text x="76.2" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="72.644" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">O1</text>
-<text x="72.644" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">O1</text>
 <text x="78.74" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="11.43" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="3.81" size="0.8128" layer="21" align="center">S</text>
@@ -377,7 +377,7 @@
 <text x="81.28" y="3.81" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="11.43" size="0.8128" layer="22" rot="MR0" align="center">D</text>
 <text x="77.724" y="13.716" size="0.8128" layer="21" rot="R90" align="top-right">P1</text>
-<text x="77.724" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
+<text x="77.724" y="13.716" size="0.8128" layer="22" rot="MR270" align="top-left">P1</text>
 <text x="2.54" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="5.08" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="5.08" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -388,8 +388,8 @@
 <text x="2.54" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="5.08" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="1.524" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">A#</text>
-<text x="1.524" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">A2</text>
+<text x="1.524" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">A2</text>
 <text x="7.62" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -400,8 +400,8 @@
 <text x="7.62" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="10.16" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="6.604" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">B#</text>
-<text x="6.604" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">B2</text>
+<text x="6.604" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">B2</text>
 <text x="12.7" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -412,8 +412,8 @@
 <text x="12.7" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="15.24" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="11.684" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">C#</text>
-<text x="11.684" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">C2</text>
+<text x="11.684" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">C2</text>
 <text x="17.78" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -424,8 +424,8 @@
 <text x="17.78" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="20.32" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="16.764" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">D#</text>
-<text x="16.764" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">D2</text>
+<text x="16.764" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">D2</text>
 <text x="22.86" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -436,8 +436,8 @@
 <text x="22.86" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="25.4" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="21.844" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">E#</text>
-<text x="21.844" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">E2</text>
+<text x="21.844" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">E2</text>
 <text x="27.94" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -448,7 +448,7 @@
 <text x="27.94" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="30.48" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="26.924" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">F#</text>
+<text x="26.924" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">F2</text>
 <text x="26.924" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
 <text x="33.02" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="24.13" size="0.8128" layer="21" align="center">D</text>
@@ -460,8 +460,8 @@
 <text x="33.02" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="35.56" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="32.004" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">G#</text>
-<text x="32.004" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">G2</text>
+<text x="32.004" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">G2</text>
 <text x="38.1" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -472,8 +472,8 @@
 <text x="38.1" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="40.64" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="37.084" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">H#</text>
-<text x="37.084" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">H2</text>
+<text x="37.084" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">H2</text>
 <text x="43.18" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -484,8 +484,8 @@
 <text x="43.18" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="45.72" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="42.164" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">I#</text>
-<text x="42.164" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">I2</text>
+<text x="42.164" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">I2</text>
 <text x="48.26" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -496,8 +496,8 @@
 <text x="48.26" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="50.8" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="47.244" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">J#</text>
-<text x="47.244" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">J2</text>
+<text x="47.244" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">J2</text>
 <text x="53.34" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -508,8 +508,8 @@
 <text x="53.34" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="55.88" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="52.324" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">K#</text>
-<text x="52.324" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">K2</text>
+<text x="52.324" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">K2</text>
 <text x="58.42" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -520,8 +520,8 @@
 <text x="58.42" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="60.96" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="57.404" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">L#</text>
-<text x="57.404" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">L2</text>
+<text x="57.404" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">L2</text>
 <text x="63.5" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -532,8 +532,8 @@
 <text x="63.5" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="66.04" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="62.484" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">M#</text>
-<text x="62.484" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">M2</text>
+<text x="62.484" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">M2</text>
 <text x="68.58" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -544,8 +544,8 @@
 <text x="68.58" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="71.12" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="67.564" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">N#</text>
-<text x="67.564" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">N2</text>
+<text x="67.564" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">N2</text>
 <text x="73.66" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -556,8 +556,8 @@
 <text x="73.66" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="76.2" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="72.644" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">O#</text>
-<text x="72.644" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">O2</text>
+<text x="72.644" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">O2</text>
 <text x="78.74" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="24.13" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="16.51" size="0.8128" layer="21" align="center">S</text>
@@ -570,8 +570,8 @@
 <text x="78.74" y="16.51" size="0.8128" layer="21" align="center">G</text>
 <text x="81.28" y="16.51" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="24.13" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="77.724" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">P#</text>
-<text x="77.724" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
+<text x="77.724" y="26.416" size="0.8128" layer="21" rot="R90" align="top-right">P2</text>
+<text x="77.724" y="26.416" size="0.8128" layer="22" rot="MR270" align="top-left">P2</text>
 <text x="2.54" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="5.08" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="5.08" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -582,8 +582,8 @@
 <text x="2.54" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="5.08" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="1.524" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">A#</text>
-<text x="1.524" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">A3</text>
+<text x="1.524" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">A3</text>
 <text x="7.62" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -594,8 +594,8 @@
 <text x="7.62" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="10.16" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="6.604" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">B#</text>
-<text x="6.604" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">B3</text>
+<text x="6.604" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">B3</text>
 <text x="12.7" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -606,8 +606,8 @@
 <text x="12.7" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="15.24" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="11.684" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">C#</text>
-<text x="11.684" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">C3</text>
+<text x="11.684" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">C3</text>
 <text x="17.78" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -618,8 +618,8 @@
 <text x="17.78" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="20.32" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="16.764" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">D#</text>
-<text x="16.764" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">D3</text>
+<text x="16.764" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">D3</text>
 <text x="22.86" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -630,8 +630,8 @@
 <text x="22.86" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="25.4" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="21.844" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">E#</text>
-<text x="21.844" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">E3</text>
+<text x="21.844" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">E3</text>
 <text x="27.94" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -642,8 +642,8 @@
 <text x="27.94" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="30.48" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="26.924" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">F#</text>
-<text x="26.924" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
+<text x="26.924" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">F3</text>
+<text x="26.924" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">F3</text>
 <text x="33.02" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="35.56" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -654,8 +654,8 @@
 <text x="33.02" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="35.56" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="32.004" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">G#</text>
-<text x="32.004" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">G3</text>
+<text x="32.004" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">G3</text>
 <text x="38.1" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -666,8 +666,8 @@
 <text x="38.1" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="40.64" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="37.084" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">H#</text>
-<text x="37.084" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">H3</text>
+<text x="37.084" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">H3</text>
 <text x="43.18" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -678,8 +678,8 @@
 <text x="43.18" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="45.72" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="42.164" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">I#</text>
-<text x="42.164" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">I3</text>
+<text x="42.164" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">I3</text>
 <text x="48.26" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -690,8 +690,8 @@
 <text x="48.26" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="50.8" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="47.244" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">J#</text>
-<text x="47.244" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">J3</text>
+<text x="47.244" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">J3</text>
 <text x="53.34" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -702,8 +702,8 @@
 <text x="53.34" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="55.88" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="52.324" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">K#</text>
-<text x="52.324" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">K3</text>
+<text x="52.324" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">K3</text>
 <text x="58.42" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -714,8 +714,8 @@
 <text x="58.42" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="60.96" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="57.404" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">L#</text>
-<text x="57.404" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">L3</text>
+<text x="57.404" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">L3</text>
 <text x="63.5" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -726,8 +726,8 @@
 <text x="63.5" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="66.04" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="62.484" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">M#</text>
-<text x="62.484" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">M3</text>
+<text x="62.484" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">M3</text>
 <text x="68.58" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -738,8 +738,8 @@
 <text x="68.58" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="71.12" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="67.564" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">N#</text>
-<text x="67.564" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">N3</text>
+<text x="67.564" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">N3</text>
 <text x="73.66" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -750,8 +750,8 @@
 <text x="73.66" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="76.2" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="72.644" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">O#</text>
-<text x="72.644" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">O3</text>
+<text x="72.644" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">O3</text>
 <text x="78.74" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="36.83" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="29.21" size="0.8128" layer="21" align="center">S</text>
@@ -764,8 +764,8 @@
 <text x="78.74" y="29.21" size="0.8128" layer="21" align="center">G</text>
 <text x="81.28" y="29.21" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="36.83" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="77.724" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">P#</text>
-<text x="77.724" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
+<text x="77.724" y="39.116" size="0.8128" layer="21" rot="R90" align="top-right">P3</text>
+<text x="77.724" y="39.116" size="0.8128" layer="22" rot="MR270" align="top-left">P3</text>
 <text x="2.54" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="5.08" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="5.08" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -776,8 +776,8 @@
 <text x="2.54" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="5.08" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="1.524" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">A#</text>
-<text x="1.524" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">A4</text>
+<text x="1.524" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">A4</text>
 <text x="7.62" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -788,8 +788,8 @@
 <text x="7.62" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="10.16" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="6.604" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">B#</text>
-<text x="6.604" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">B4</text>
+<text x="6.604" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">B4</text>
 <text x="12.7" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -800,8 +800,8 @@
 <text x="12.7" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="15.24" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="11.684" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">C#</text>
-<text x="11.684" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">C4</text>
+<text x="11.684" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">C4</text>
 <text x="17.78" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -812,8 +812,8 @@
 <text x="17.78" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="20.32" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="16.764" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">D#</text>
-<text x="16.764" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">D4</text>
+<text x="16.764" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">D4</text>
 <text x="22.86" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -824,8 +824,8 @@
 <text x="22.86" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="25.4" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="21.844" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">E#</text>
-<text x="21.844" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">E4</text>
+<text x="21.844" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">E4</text>
 <text x="27.94" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -836,8 +836,8 @@
 <text x="27.94" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="30.48" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="26.924" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">F#</text>
-<text x="26.924" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
+<text x="26.924" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">F4</text>
+<text x="26.924" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">F4</text>
 <text x="33.02" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="35.56" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -848,8 +848,8 @@
 <text x="33.02" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="35.56" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="32.004" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">G#</text>
-<text x="32.004" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">G4</text>
+<text x="32.004" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">G4</text>
 <text x="38.1" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -860,8 +860,8 @@
 <text x="38.1" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="40.64" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="37.084" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">H#</text>
-<text x="37.084" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">H4</text>
+<text x="37.084" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">H4</text>
 <text x="43.18" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -872,8 +872,8 @@
 <text x="43.18" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="45.72" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="42.164" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">I#</text>
-<text x="42.164" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">I4</text>
+<text x="42.164" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">I4</text>
 <text x="48.26" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -884,8 +884,8 @@
 <text x="48.26" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="50.8" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="47.244" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">J#</text>
-<text x="47.244" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">J4</text>
+<text x="47.244" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">J4</text>
 <text x="53.34" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -896,8 +896,8 @@
 <text x="53.34" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="55.88" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="52.324" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">K#</text>
-<text x="52.324" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">K4</text>
+<text x="52.324" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">K4</text>
 <text x="58.42" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -908,8 +908,8 @@
 <text x="58.42" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="60.96" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="57.404" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">L#</text>
-<text x="57.404" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">L4</text>
+<text x="57.404" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">L4</text>
 <text x="63.5" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -920,8 +920,8 @@
 <text x="63.5" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="66.04" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="62.484" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">M#</text>
-<text x="62.484" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">M4</text>
+<text x="62.484" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">M4</text>
 <text x="68.58" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -932,8 +932,8 @@
 <text x="68.58" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="71.12" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="67.564" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">N#</text>
-<text x="67.564" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">N4</text>
+<text x="67.564" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">N4</text>
 <text x="73.66" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -944,8 +944,8 @@
 <text x="73.66" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="76.2" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="72.644" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">O#</text>
-<text x="72.644" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">O4</text>
+<text x="72.644" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">O4</text>
 <text x="78.74" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="49.53" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="41.91" size="0.8128" layer="21" align="center">S</text>
@@ -958,8 +958,8 @@
 <text x="78.74" y="41.91" size="0.8128" layer="21" align="center">G</text>
 <text x="81.28" y="41.91" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="49.53" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="77.724" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">P#</text>
-<text x="77.724" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
+<text x="77.724" y="51.816" size="0.8128" layer="21" rot="R90" align="top-right">P4</text>
+<text x="77.724" y="51.816" size="0.8128" layer="22" rot="MR270" align="top-left">P4</text>
 <text x="2.54" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="5.08" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="5.08" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -970,8 +970,8 @@
 <text x="2.54" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="5.08" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="1.524" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">A#</text>
-<text x="1.524" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">A5</text>
+<text x="1.524" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">A5</text>
 <text x="7.62" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -982,8 +982,8 @@
 <text x="7.62" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="10.16" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="6.604" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">B#</text>
-<text x="6.604" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">B5</text>
+<text x="6.604" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">B5</text>
 <text x="12.7" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -994,8 +994,8 @@
 <text x="12.7" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="15.24" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="11.684" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">C#</text>
-<text x="11.684" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">C5</text>
+<text x="11.684" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">C5</text>
 <text x="17.78" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1006,8 +1006,8 @@
 <text x="17.78" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="20.32" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="16.764" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">D#</text>
-<text x="16.764" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">D5</text>
+<text x="16.764" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">D5</text>
 <text x="22.86" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1018,8 +1018,8 @@
 <text x="22.86" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="25.4" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="21.844" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">E#</text>
-<text x="21.844" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">E5</text>
+<text x="21.844" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">E5</text>
 <text x="27.94" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1030,8 +1030,8 @@
 <text x="27.94" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="30.48" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="26.924" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">F#</text>
-<text x="26.924" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
+<text x="26.924" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">F5</text>
+<text x="26.924" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">F5</text>
 <text x="33.02" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="35.56" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1042,8 +1042,8 @@
 <text x="33.02" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="35.56" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="32.004" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">G#</text>
-<text x="32.004" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">G5</text>
+<text x="32.004" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">G5</text>
 <text x="38.1" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1054,8 +1054,8 @@
 <text x="38.1" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="40.64" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="37.084" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">H#</text>
-<text x="37.084" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">H5</text>
+<text x="37.084" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">H5</text>
 <text x="43.18" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1066,8 +1066,8 @@
 <text x="43.18" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="45.72" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="42.164" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">I#</text>
-<text x="42.164" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">I5</text>
+<text x="42.164" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">I5</text>
 <text x="48.26" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1078,8 +1078,8 @@
 <text x="48.26" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="50.8" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="47.244" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">J#</text>
-<text x="47.244" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">J5</text>
+<text x="47.244" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">J5</text>
 <text x="53.34" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1090,8 +1090,8 @@
 <text x="53.34" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="55.88" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="52.324" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">K#</text>
-<text x="52.324" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">K5</text>
+<text x="52.324" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">K5</text>
 <text x="58.42" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1102,8 +1102,8 @@
 <text x="58.42" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="60.96" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="57.404" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">L#</text>
-<text x="57.404" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">L5</text>
+<text x="57.404" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">L5</text>
 <text x="63.5" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1114,8 +1114,8 @@
 <text x="63.5" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="66.04" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="62.484" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">M#</text>
-<text x="62.484" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">M5</text>
+<text x="62.484" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">M5</text>
 <text x="68.58" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1126,8 +1126,8 @@
 <text x="68.58" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="71.12" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="67.564" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">N#</text>
-<text x="67.564" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">N5</text>
+<text x="67.564" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">N5</text>
 <text x="73.66" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1138,8 +1138,8 @@
 <text x="73.66" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="76.2" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="72.644" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">O#</text>
-<text x="72.644" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">O5</text>
+<text x="72.644" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">O5</text>
 <text x="78.74" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="62.23" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="54.61" size="0.8128" layer="21" align="center">S</text>
@@ -1152,8 +1152,8 @@
 <text x="78.74" y="54.61" size="0.8128" layer="21" align="center">G</text>
 <text x="81.28" y="54.61" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="62.23" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="77.724" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">P#</text>
-<text x="77.724" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
+<text x="77.724" y="64.516" size="0.8128" layer="21" rot="R90" align="top-right">P5</text>
+<text x="77.724" y="64.516" size="0.8128" layer="22" rot="MR270" align="top-left">P5</text>
 <text x="2.54" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="5.08" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="5.08" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1166,8 +1166,8 @@
 <text x="2.54" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="5.08" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="5.08" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="1.524" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">A#</text>
-<text x="1.524" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">A#</text>
+<text x="1.524" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">A6</text>
+<text x="1.524" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">A6</text>
 <text x="7.62" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="10.16" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="10.16" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1180,8 +1180,8 @@
 <text x="7.62" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="10.16" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="10.16" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="6.604" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">B#</text>
-<text x="6.604" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">B#</text>
+<text x="6.604" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">B6</text>
+<text x="6.604" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">B6</text>
 <text x="12.7" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="15.24" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="15.24" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1194,8 +1194,8 @@
 <text x="12.7" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="15.24" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="15.24" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="11.684" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">C#</text>
-<text x="11.684" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">C#</text>
+<text x="11.684" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">C6</text>
+<text x="11.684" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">C6</text>
 <text x="17.78" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="20.32" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="20.32" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1208,8 +1208,8 @@
 <text x="17.78" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="20.32" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="20.32" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="16.764" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">D#</text>
-<text x="16.764" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">D#</text>
+<text x="16.764" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">D6</text>
+<text x="16.764" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">D6</text>
 <text x="22.86" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="25.4" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="25.4" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1222,8 +1222,8 @@
 <text x="22.86" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="25.4" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="25.4" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="21.844" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">E#</text>
-<text x="21.844" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">E#</text>
+<text x="21.844" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">E6</text>
+<text x="21.844" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">E6</text>
 <text x="27.94" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="30.48" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="30.48" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1236,8 +1236,8 @@
 <text x="27.94" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="30.48" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="30.48" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="26.924" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">F#</text>
-<text x="26.924" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">F#</text>
+<text x="26.924" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">F6</text>
+<text x="26.924" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">F6</text>
 <text x="33.02" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="35.56" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="35.56" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1250,8 +1250,8 @@
 <text x="33.02" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="35.56" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="35.56" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="32.004" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">G#</text>
-<text x="32.004" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">G#</text>
+<text x="32.004" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">G6</text>
+<text x="32.004" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">G6</text>
 <text x="38.1" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="40.64" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="40.64" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1264,8 +1264,8 @@
 <text x="38.1" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="40.64" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="40.64" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="37.084" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">H#</text>
-<text x="37.084" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">H#</text>
+<text x="37.084" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">H6</text>
+<text x="37.084" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">H6</text>
 <text x="43.18" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="45.72" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="45.72" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1278,8 +1278,8 @@
 <text x="43.18" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="45.72" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="45.72" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="42.164" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">I#</text>
-<text x="42.164" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">I#</text>
+<text x="42.164" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">I6</text>
+<text x="42.164" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">I6</text>
 <text x="48.26" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="50.8" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="50.8" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1292,8 +1292,8 @@
 <text x="48.26" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="50.8" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="50.8" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="47.244" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">J#</text>
-<text x="47.244" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">J#</text>
+<text x="47.244" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">J6</text>
+<text x="47.244" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">J6</text>
 <text x="53.34" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="55.88" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="55.88" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1306,8 +1306,8 @@
 <text x="53.34" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="55.88" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="55.88" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="52.324" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">K#</text>
-<text x="52.324" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">K#</text>
+<text x="52.324" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">K6</text>
+<text x="52.324" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">K6</text>
 <text x="58.42" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="60.96" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="60.96" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1320,8 +1320,8 @@
 <text x="58.42" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="60.96" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="60.96" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="57.404" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">L#</text>
-<text x="57.404" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">L#</text>
+<text x="57.404" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">L6</text>
+<text x="57.404" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">L6</text>
 <text x="63.5" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="66.04" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="66.04" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1334,8 +1334,8 @@
 <text x="63.5" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="66.04" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="66.04" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="62.484" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">M#</text>
-<text x="62.484" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">M#</text>
+<text x="62.484" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">M6</text>
+<text x="62.484" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">M6</text>
 <text x="68.58" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="71.12" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="71.12" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1348,8 +1348,8 @@
 <text x="68.58" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="71.12" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="71.12" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="67.564" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">N#</text>
-<text x="67.564" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">N#</text>
+<text x="67.564" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">N6</text>
+<text x="67.564" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">N6</text>
 <text x="73.66" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="76.2" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="76.2" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1362,8 +1362,8 @@
 <text x="73.66" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="76.2" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="76.2" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="72.644" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">O#</text>
-<text x="72.644" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">O#</text>
+<text x="72.644" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">O6</text>
+<text x="72.644" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">O6</text>
 <text x="78.74" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">G</text>
 <text x="81.28" y="74.93" size="0.8128" layer="21" align="center">D</text>
 <text x="81.28" y="67.31" size="0.8128" layer="21" align="center">S</text>
@@ -1378,24 +1378,24 @@
 <text x="78.74" y="67.31" size="0.8128" layer="21" align="center">G</text>
 <text x="81.28" y="67.31" size="0.8128" layer="22" rot="MR0" align="center">S</text>
 <text x="81.28" y="74.93" size="0.8128" layer="22" rot="MR0" align="center">D</text>
-<text x="77.724" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">P#</text>
-<text x="77.724" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">P#</text>
-<text x="1.778" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L1</text>
-<text x="5.334" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L2</text>
-<text x="8.89" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L3</text>
-<text x="12.446" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L4</text>
-<text x="19.558" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L6</text>
-<text x="23.114" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L7</text>
-<text x="26.67" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L8</text>
-<text x="16.002" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L5</text>
-<text x="1.778" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L1</text>
-<text x="5.334" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L2</text>
-<text x="8.89" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L3</text>
-<text x="12.446" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L4</text>
-<text x="16.002" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L5</text>
-<text x="19.558" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L6</text>
-<text x="23.114" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L7</text>
-<text x="26.67" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L8</text>
+<text x="77.724" y="77.216" size="0.8128" layer="21" rot="R90" align="top-right">P6</text>
+<text x="77.724" y="77.216" size="0.8128" layer="22" rot="MR270" align="top-left">P6</text>
+<text x="1.778" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">A</text>
+<text x="5.334" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">B</text>
+<text x="8.89" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">C</text>
+<text x="12.446" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">D</text>
+<text x="19.558" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">F</text>
+<text x="23.114" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">G</text>
+<text x="26.67" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">H</text>
+<text x="16.002" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">E</text>
+<text x="1.778" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">A</text>
+<text x="5.334" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">B</text>
+<text x="8.89" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">C</text>
+<text x="12.446" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">D</text>
+<text x="16.002" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">E</text>
+<text x="19.558" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">F</text>
+<text x="23.114" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">G</text>
+<text x="26.67" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">H</text>
 <wire x1="32.893" y1="79.248" x2="29.337" y2="79.248" width="0.1524" layer="21"/>
 <wire x1="29.337" y1="86.741" x2="32.893" y2="86.741" width="0.1524" layer="21"/>
 <wire x1="29.337" y1="86.741" x2="29.337" y2="79.248" width="0.1524" layer="21"/>
@@ -1442,10 +1442,38 @@
 <wire x1="82.677" y1="79.248" x2="79.121" y2="79.248" width="0.1524" layer="21"/>
 <wire x1="79.121" y1="86.741" x2="82.677" y2="86.741" width="0.1524" layer="21"/>
 <wire x1="79.121" y1="86.741" x2="79.121" y2="79.248" width="0.1524" layer="21"/>
-<text x="30.226" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L9</text>
-<text x="30.226" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L9</text>
+<text x="30.226" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">I</text>
+<text x="30.226" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">I</text>
 <text x="41.656" y="85.344" size="1.778" layer="22" rot="MR180" align="center">NMOS Laboratory Board v1</text>
 <text x="41.91" y="81.153" size="1.778" layer="22" rot="MR180" align="center">by Ella Jameson (ellagjameson@gmail.com)</text>
+<text x="33.782" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">J</text>
+<text x="37.338" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">K</text>
+<text x="40.894" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">L</text>
+<text x="44.45" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">M</text>
+<text x="48.006" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">N</text>
+<text x="51.562" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">O</text>
+<text x="55.118" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">P</text>
+<text x="58.674" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">Q</text>
+<text x="62.23" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">R</text>
+<text x="65.786" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">S</text>
+<text x="69.342" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">T</text>
+<text x="72.898" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">U</text>
+<text x="76.454" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">V</text>
+<text x="80.01" y="78.359" size="0.8128" layer="21" distance="52" align="center-right">W</text>
+<text x="33.782" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">J</text>
+<text x="37.338" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">K</text>
+<text x="40.894" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">L</text>
+<text x="44.45" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">M</text>
+<text x="48.006" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">N</text>
+<text x="51.562" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">O</text>
+<text x="55.118" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">P</text>
+<text x="58.674" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">Q</text>
+<text x="62.23" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">R</text>
+<text x="65.786" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">S</text>
+<text x="69.342" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">T</text>
+<text x="72.898" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">U</text>
+<text x="76.454" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">V</text>
+<text x="80.01" y="78.359" size="0.8128" layer="22" distance="52" rot="MR180" align="center-right">W</text>
 </plain>
 <libraries>
 <library name="ellajameson-core" urn="urn:adsk.eagle:library:3740209">
