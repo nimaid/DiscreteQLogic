@@ -115,24 +115,6 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>no*</string>
-        </entry>
-        <entry>
-          <string>intFormat</string>
-          <intFormat>decSigned</intFormat>
-        </entry>
-      </elementAttributes>
-      <pos x="180" y="-580"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
           <string>Label</string>
           <string>c_in</string>
         </entry>
@@ -186,16 +168,6 @@
         </entry>
       </elementAttributes>
       <pos x="-20" y="-580"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_inverter8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="160" y="-660"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -267,6 +239,34 @@ end loop</dataString>
         </entry>
       </elementAttributes>
       <pos x="80" y="-660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_invertern8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="160" y="-660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>no</string>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="-580"/>
     </visualElement>
   </visualElements>
   <wires>

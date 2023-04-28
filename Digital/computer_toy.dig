@@ -386,11 +386,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>no*</string>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="1" z="false"/>
+          <string>no</string>
         </entry>
       </elementAttributes>
       <pos x="-120" y="660"/>
