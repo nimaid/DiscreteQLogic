@@ -120,7 +120,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>no</string>
+          <string>no*</string>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -128,16 +128,6 @@
         </entry>
       </elementAttributes>
       <pos x="180" y="-580"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_mux8.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="80" y="-660"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -267,6 +257,16 @@ end loop</dataString>
         </entry>
       </elementAttributes>
       <pos x="-140" y="-660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_muxn8.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="-660"/>
     </visualElement>
   </visualElements>
   <wires>

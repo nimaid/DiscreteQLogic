@@ -38,49 +38,49 @@ class ALU:
                 nx = False,
                 ny = False,
                 f  = True,
-                no = False
+                no = True
             )
         elif op == "SUB":
             self.set_flags(
                 nx = True,
                 ny = False,
                 f  = True,
-                no = True
+                no = False
             )
         elif op == "SUBR":
             self.set_flags(
                 nx = True,
                 ny = False,
                 f  = True,
-                no = True
+                no = False
             )
         elif op == "AND":
             self.set_flags(
                 nx = False,
                 ny = False,
                 f  = False,
-                no = False
+                no = True
             )
         elif op == "NAND":
             self.set_flags(
                 nx = False,
                 ny = False,
                 f  = False,
-                no = True
+                no = False
             )
         elif op == "OR":
             self.set_flags(
                 nx = True,
                 ny = True,
                 f  = False,
-                no = True
+                no = False
             )
         elif op == "NOR":
             self.set_flags(
                 nx = True,
                 ny = True,
                 f  = False,
-                no = False
+                no = True
             )
         else:
             raise Exception("\"{}\" is not a valid opcode!".format(op))
@@ -158,8 +158,8 @@ class ALU:
             # AND
             out = X & Y
         
-        # Invert out
-        if self.no:
+        # Invert out (active low, MUX output inverted)
+        if self.no == False:
             out = self.invert(out)
         
         self.unset = True
