@@ -11,7 +11,7 @@
           <string>A</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="160"/>
+      <pos x="780" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -21,7 +21,7 @@
           <string>B</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="200"/>
+      <pos x="780" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -51,7 +51,7 @@
           <string>c_in</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="240"/>
+      <pos x="780" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>nm_halfadder.dig</elementName>
@@ -64,56 +64,9 @@
       <pos x="960" y="240"/>
     </visualElement>
     <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>xor</string>
-        </entry>
-      </elementAttributes>
-      <pos x="900" y="140"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>nand</string>
-        </entry>
-      </elementAttributes>
-      <pos x="860" y="140"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nm_adder_nand.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="700" y="140"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>and</string>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="140"/>
+      <elementName>nm_halfadder.dig</elementName>
+      <elementAttributes/>
+      <pos x="820" y="160"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -130,23 +83,19 @@
       <p2 x="920" y="280"/>
     </wire>
     <wire>
-      <p1 x="660" y="160"/>
-      <p2 x="700" y="160"/>
+      <p1 x="780" y="160"/>
+      <p2 x="820" y="160"/>
     </wire>
     <wire>
-      <p1 x="760" y="160"/>
-      <p2 x="900" y="160"/>
+      <p1 x="880" y="160"/>
+      <p2 x="940" y="160"/>
     </wire>
     <wire>
       <p1 x="1000" y="160"/>
       <p2 x="1040" y="160"/>
     </wire>
     <wire>
-      <p1 x="900" y="160"/>
-      <p2 x="940" y="160"/>
-    </wire>
-    <wire>
-      <p1 x="660" y="240"/>
+      <p1 x="780" y="240"/>
       <p2 x="900" y="240"/>
     </wire>
     <wire>
@@ -154,8 +103,8 @@
       <p2 x="960" y="240"/>
     </wire>
     <wire>
-      <p1 x="680" y="180"/>
-      <p2 x="700" y="180"/>
+      <p1 x="800" y="180"/>
+      <p2 x="820" y="180"/>
     </wire>
     <wire>
       <p1 x="920" y="180"/>
@@ -166,11 +115,7 @@
       <p2 x="1020" y="180"/>
     </wire>
     <wire>
-      <p1 x="760" y="180"/>
-      <p2 x="820" y="180"/>
-    </wire>
-    <wire>
-      <p1 x="820" y="180"/>
+      <p1 x="880" y="180"/>
       <p2 x="900" y="180"/>
     </wire>
     <wire>
@@ -178,36 +123,16 @@
       <p2 x="1040" y="260"/>
     </wire>
     <wire>
-      <p1 x="660" y="200"/>
-      <p2 x="680" y="200"/>
+      <p1 x="780" y="200"/>
+      <p2 x="800" y="200"/>
     </wire>
     <wire>
       <p1 x="920" y="280"/>
       <p2 x="960" y="280"/>
     </wire>
     <wire>
-      <p1 x="720" y="220"/>
-      <p2 x="860" y="220"/>
-    </wire>
-    <wire>
-      <p1 x="720" y="200"/>
-      <p2 x="720" y="220"/>
-    </wire>
-    <wire>
-      <p1 x="900" y="140"/>
-      <p2 x="900" y="160"/>
-    </wire>
-    <wire>
-      <p1 x="820" y="140"/>
-      <p2 x="820" y="180"/>
-    </wire>
-    <wire>
-      <p1 x="680" y="180"/>
-      <p2 x="680" y="200"/>
-    </wire>
-    <wire>
-      <p1 x="860" y="140"/>
-      <p2 x="860" y="220"/>
+      <p1 x="800" y="180"/>
+      <p2 x="800" y="200"/>
     </wire>
     <wire>
       <p1 x="1020" y="180"/>
