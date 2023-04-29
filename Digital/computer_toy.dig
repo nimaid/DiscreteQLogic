@@ -345,7 +345,7 @@
           <string>Carry In</string>
         </entry>
       </elementAttributes>
-      <pos x="-120" y="480"/>
+      <pos x="-60" y="480"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -359,7 +359,7 @@
           <value v="1" z="false"/>
         </entry>
       </elementAttributes>
-      <pos x="-120" y="540"/>
+      <pos x="-60" y="520"/>
     </visualElement>
     <visualElement>
       <elementName>ROM</elementName>
@@ -1388,6 +1388,10 @@
       <p2 x="-880" y="520"/>
     </wire>
     <wire>
+      <p1 x="-60" y="520"/>
+      <p2 x="0" y="520"/>
+    </wire>
+    <wire>
       <p1 x="220" y="840"/>
       <p2 x="240" y="840"/>
     </wire>
@@ -1540,10 +1544,6 @@
       <p2 x="-320" y="600"/>
     </wire>
     <wire>
-      <p1 x="-120" y="540"/>
-      <p2 x="0" y="540"/>
-    </wire>
-    <wire>
       <p1 x="-420" y="540"/>
       <p2 x="-380" y="540"/>
     </wire>
@@ -1584,7 +1584,7 @@
       <p2 x="100" y="800"/>
     </wire>
     <wire>
-      <p1 x="-120" y="480"/>
+      <p1 x="-60" y="480"/>
       <p2 x="-40" y="480"/>
     </wire>
     <wire>
@@ -1845,7 +1845,7 @@
     </wire>
     <wire>
       <p1 x="0" y="440"/>
-      <p2 x="0" y="540"/>
+      <p2 x="0" y="520"/>
     </wire>
     <wire>
       <p1 x="-900" y="420"/>
