@@ -11,12 +11,14 @@ class ALU:
         self.cycles = 0
         self.unset = True
     
+    
     def set_flags(self, f):
         if type(f) != bool:
             raise Exception("Flag 'f' must be True or False, not {}".format(f))
         self.f = f
         
         self.unset = False
+    
     
     def set_op(self, op):
         op = op.upper()
@@ -30,6 +32,7 @@ class ALU:
             )
         else:
             raise Exception("\"{}\" is not a valid opcode!".format(op))
+    
     
     def invert(self, X):
         # Overflow inputs if needed
@@ -54,6 +57,7 @@ class ALU:
         
         return out
     
+    
     def add(self, A, B, cin):
         # Overflow inputs if needed
         A %= 2 ** self.bits
@@ -76,6 +80,7 @@ class ALU:
         sum %= 2 ** self.bits
         
         return sum, cout
+    
     
     def calc(self, X, Y, cin=False):
         if self.unset:
@@ -101,16 +106,23 @@ class ALU:
         self.cycles += 1
         return out, cout
     
+    
     def get_bit_width(self):
         return self.bits
     
+    
     def get_cycles(self):
         return self.cycles
+    
     
     def reset_cycles(self):
         self.cycles = 0
 
 
+
+
+
+'''
 # ALU Example Operations
 alu = ALU(8)
 print("ALU initialized, bit width is {}.".format(alu.get_bit_width()))
@@ -313,3 +325,5 @@ else:
     carry_string = "no carry"
 print("Out:\t{} ({}) + {}".format(dec2binstr( sub ), dec2twoC(sub), carry_string ))
 print("Cycles:\t{}".format( alu.get_cycles() ))
+'''
+
