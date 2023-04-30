@@ -33,6 +33,8 @@
 #   MOV A, MxFF01, 	--->
 #       MEM 0xFF01
 #       MOV A, M
+#   
+#   
 
 
 # To XOR, we have to use 4 NAND gates in 3 layers
