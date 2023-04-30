@@ -121,8 +121,18 @@ class AsmParser:
     def __init__(self, file_in):
         # Read source file
         with open(file_in, "r") as f:
-            self.source = f.readlines()
+            self.set_source(f.readlines())
         
+        # Set current line to -1
+        self.current_line_idx = -1
+        
+        # Set current program address (line, no loop commands) to -1
+        self.current_address = -1
+    
+    
+    # Helper to set the stripped source text of the parser (list of strings)
+    def set_source(self, source_text):
+        self.source = source_text
         # Strip source of newlines, whitespace, and comments
         self.stripped = []
         for x in self.source:
@@ -139,13 +149,6 @@ class AsmParser:
             
             if len(final_line) > 0:
                 self.stripped.append(final_line)
-        
-        # Set current line to -1
-        self.current_line_idx = -1
-        
-        # Set current program address (line, no loop commands) to -1
-        self.current_address = -1
-    
     
     # Helper function to "reset" the parser
     def reset(self):
@@ -356,11 +359,47 @@ class Assembler:
         self.assembled_code_objects = None
     
     
+    # Preliminary pass to replace `@` indirect memory addressing with 2 commands
+    def resolve_indirect_memory(self):
+        new_source = list()
+        while(self.asm.hasMoreLines()):
+            self.asm.advance()
+            
+            # We need to check T, and C instructions for using `@` (valid)
+            # We also should check for J and M instructions illegally using it here
+            # Ignore NOP I guess
+            
+            if self.asm.instructionType() in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
+                src_indirect = ( self.asm.src()[0] == "@" )
+                dest_indirect = ( self.asm.dest()[0] == "@" )
+                if src_indirect and dest_indirect:
+                    raise Exception("Only one memory location can be used per command!")
+                if src_indirect:
+                    new_source.append("MEM {}".format(self.asm.src()[1:]))
+                    new_source.append("{} {}, M".format(self.asm.opcode(), self.asm.dest()))
+                elif dest_indirect:
+                    new_source.append("MEM {}".format(self.asm.dest()[1:]))
+                    new_source.append("{} M, {}".format(self.asm.opcode(), self.asm.src()))
+                else:
+                    new_source.append(self.asm.instruction())
+            elif self.asm.instructionType() in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
+                if self.asm.symbol()[0] == "@":
+                    raise Exception("Cannot use `@` in this instruction: \"{}\"".format(self.asm.instruction()))
+                new_source.append(self.asm.instruction())
+            else:
+                new_source.append(self.asm.instruction())
+        
+        self.asm.set_source(new_source)
+        self.asm.reset()
+    
+    
     # Pre-assemble pass, add all L-instructions to the symbol table
     def resolve_loops(self):
         while(self.asm.hasMoreLines()):
             self.asm.advance()
             if self.asm.instructionType() == AsmCodes.InstructionType.L_INSTRUCTION:
+                if self.asm.symbol()[0] == "@" or self.asm.symbol() in ["A", "B", "M"]:
+                    raise Exception("\"{}\" is not a valid symbol name!".format(self.asm.symbol()))
                 # If it's an L-instruction, make a new symbol that is the index of the next line in the program
                 self.asmtable.addEntry(self.asm.symbol(), self.asm.address()+1)
         self.asm.reset()
@@ -368,6 +407,7 @@ class Assembler:
     
     # Main loop, where the assembly actually occurs
     def run(self):
+        self.resolve_indirect_memory()
         self.resolve_loops()
         self.assembled_code_objects = list()
         while(self.asm.hasMoreLines()):
@@ -736,7 +776,7 @@ reg_B = Register(bitwidth)
 ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
 # Make demo assembly parser for testing
-asm = Assembler("../FET-80 Development/Test Code/XOR_exp.FET80")
+asm = Assembler("../FET-80 Development/Test Code/XOR.FET80")
 asm.run()
 for x in asm.assembled_objects():
     print(x)

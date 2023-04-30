@@ -77,4 +77,4 @@ MOV @0xFF02, A		# It is finally in the output location
 
 # Do an infinite loop to halt
 (LOOP)
-JMP @LOOP
+JMP LOOP
