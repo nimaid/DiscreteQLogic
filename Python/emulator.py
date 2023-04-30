@@ -6,7 +6,7 @@ import helpers
 import assembler
 
 
-# ~~~~~~~~ Start Hardware Definition ~~~~~~~~
+# ~~~~~~~~ Begin Hardware Definition ~~~~~~~~
 # A class to implement an ALU object
 class ALU:
     def __init__(self, bits):
@@ -257,7 +257,7 @@ class ProgramROM:
 
 
 
-# A class to represent the complete FET-80 computer system
+# A class to represent the complete FET-80 hardware system
 class Fet80:
     def __init__(self):
         # Set bit widths
@@ -364,16 +364,28 @@ class Fet80:
 
 # ~~~~~~~~ Begin Emulator Definition ~~~~~~~~
 # The main emulator class
-#class Emulator:
+class Emulator:
+    def __init__(self):
+        # Make the FET-80 hardware system
+        self.fet80 = Fet80()
+        
+        # Make current program string variable
+        self.current_program = None
+        
+        # Make helpful decimal converters for printing and such
+        self.dec_data = helpers.Dec2(self.fet80.bits()["data"])
+        self.dec_address = helpers.Dec2(self.fet80.bits()["address"])
+    
+    
+    # load a program
+    def load_program(self, file_in):
+        self.current_program = file_in
+        self.fet80.program(self.current_program)
+# ~~~~~~~~ End Emulator Definition ~~~~~~~~
 
 
+# ~~~~~~~~ Begin Main Program ~~~~~~~~
+emu = Emulator()
 
-# Make the FET-80 system
-fet80 = Fet80()
-
-# Program the system
-fet80.program("../FET-80 Development/Test Code/Pointers.f80asm")
-
-# Make helpful decimal converters for printing and such
-dec_data = helpers.Dec2(fet80.bits()["data"])
-dec_address = helpers.Dec2(fet80.bits()["address"])
+# Load the test code
+emu.load_program("../FET-80 Development/Test Code/Pointers.f80asm")
