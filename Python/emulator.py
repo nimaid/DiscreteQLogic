@@ -9,19 +9,66 @@ class Dec2:
     def __init__(self, bits):
         self.bits = bits
     
+    
     # A helper function to turn integers into fixed-length binary strings
     def binary_string(self, n):
         # Get binary string
         binstring = "{0:b}".format(n)
         # Return padded
         return binstring.rjust(self.bits, "0")
-
+    
+    
     # A helper function to correct integers to represent their actual value in 2's complement
     def twos_compliment(self, n):
         if n >= (2 ** (self.bits-1) ):
             n -= (2 ** self.bits )
         return n
+    
+    
+    # A helper to overflow integers to be in range
+    def overflow(self, n):
+        return n % 2 ** self.bits
+    
+    
+    # A helper function which tries to find strings formatted correctly, and converts them to an appropriate integer
+    def int_from_formatted(self, n):
+        # Strip all whitespace
+        n = n.replace("\t", "").replace("\r", "").replace("\n", "").replace(" ", "")
+        # First, test if it is supposed to be a hex or binary string
+        if len(n) >= 3 and n[0] == "0":
+            # It starts with a zero and has at least 3 chars
+            if n[1].lower() == "x":
+                # It's supposed to be a hex string
+                try:
+                    value = int(n[2:], 16)
+                    value = self.overflow(value)
+                    return value
+                except ValueError:
+                    # Okay, that didn't work
+                    pass
+            elif n[1].lower() == "b":
+                # It's supposed to be a binary string
+                try:
+                    value = int(n[2:], 2)
+                    value = self.overflow(value)
+                    return value
+                except ValueError:
+                    # Okay, that didn't work
+                    pass
 
+        # Next, test if it is a literal integer (first char is a digit or minus)
+        if n[0].isdigit() or n[0] == "-":
+            # It is supposed to be a literal integer, read it in and overflow it
+            try:
+                value = int(n)
+                value = self.overflow(value)
+                return value
+            except ValueError:
+                # Okay, that didn't work
+                pass
+        
+        # If we got to this point, it is not a valid integer, and we will return False
+        return False
 
 # A helper class to provide assembly-related codes
 class AsmCodes:
@@ -269,6 +316,17 @@ class SymbolTable:
 class Assembler:
     def __init__(self, file_in):
         self.asm = AsmParser(file_in)
+        self.reset()
+        
+        self.dec8 = Dec2(8)
+        self.dec16 = Dec2(16)
+    
+    
+    # A helper to reset the assembler
+    def reset(self):
+        self.asm.reset()
+        
+        # Make new symbol table
         self.asmtable = SymbolTable()
         
         # Initialize symbol table with predefined constants
@@ -295,7 +353,7 @@ class Assembler:
         self.asmtable.addEntry("SCREEN", 0xFE00)
         self.asmtable.addEntry("IO", 0xFF00)
         
-        self.assembled_code_objects = list()
+        self.assembled_code_objects = None
     
     
     # Pre-assemble pass, add all L-instructions to the symbol table
@@ -311,6 +369,7 @@ class Assembler:
     # Main loop, where the assembly actually occurs
     def run(self):
         self.resolve_loops()
+        self.assembled_code_objects = list()
         while(self.asm.hasMoreLines()):
             self.asm.advance()
             
@@ -348,12 +407,12 @@ class Assembler:
                     instruction["src"] = AsmCodes.Src.M
                 else:
                     # It may be a direct value
-                    try:
-                        instruction["value"] = int(self.asm.src())
-                        instruction["src"] = AsmCodes.Src.DV
-                    except ValueError:
-                        raise Exception("\"{}\" from \"{}\"is not a valid destination or integer!".format(self.asm.src(), self.asm.instruction()))
-                self.assembled_code_objects += instruction
+                    value = self.dec8.int_from_formatted(self.asm.src())
+                    if value == False:
+                         raise Exception("\"{}\" from \"{}\"is not a valid destination or integer!".format(self.asm.src(), self.asm.instruction()))
+                    instruction["value"] = value
+                    instruction["src"] = AsmCodes.Src.DV   
+                self.assembled_code_objects.append(instruction)
             elif instruction["type"] in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
                 # Always either a `MEM` or a type of `JMP` instruction
                 # Format: `MEM symbol`
@@ -387,11 +446,35 @@ class Assembler:
                 # First, we will check to see if it is already in the symbol table
                 # If not, we will then check to see if it is a direct value,
                 # Finally, if it is a valid symbol name, add a new symbol to the table
-                #TODO
-
+                
+                symbol_value = self.dec16.int_from_formatted(self.asm.symbol())
+                
+                # Check the symbol table first
+                if self.asmtable.contains(self.asm.symbol()):
+                    # Use the symbol value
+                    instruction["value"] = self.asmtable.getAddress(self.asm.symbol())
+                # Check if it's a direct value then
+                elif symbol_value != False:
+                    instruction["value"] = symbol_value
+                # Finally, just add it to the symbol table if it is valid
+                else:
+                    if self.asm.symbol() in ["A", "B", "M"]
+                    self.asmtable.addEntry(self.asm.symbol(), self.free_mem_loc)
+                    self.free_mem_loc += 1
+                    instruction["value"] = self.asmtable.getAddress(self.asm.symbol())
+                self.assembled_code_objects.append(instruction)
             elif instruction["type"] == AsmCodes.InstructionType.D_INSTRUCTION:
-                #TODO
-            
+                # It is a `NOP`
+                instruction["opcode"] = AsmCodes.Opcode.NOP
+                self.assembled_code_objects.append(instruction)
+    
+    
+    # A helper to get the assembled objects
+    def assembled_objects(self):
+        if self.assembled_code_objects is None:
+            raise Exception("Assembler hasn't been run yet!")
+        return self.assembled_code_objects
+    
     
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
@@ -638,3 +721,4 @@ ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
 # Make demo assembly parser for testing
 asm = Assembler("../FET-80 Development/Test Code/XOR_exp.FET80")
+asm.run()

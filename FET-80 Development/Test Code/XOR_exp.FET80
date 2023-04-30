@@ -29,40 +29,40 @@
 # Finally, we use NAND#4 to take the outputs from NAND#2 and NAND#3, and hook it to the outputs
 
 # First, save operands into memory
-MEM R0
-MOV M, 123          # 123 (input A) is in R0 now
-MEM R1
-MOV M, 36			# 36(input B) is in R0 now
+MEM In1
+MOV M, 123          # 123 (input 1) is in M[In1] now
+MEM In2
+MOV M, 36			# 36(input 2) is in M[In2] now
 
 # Copy to A and B
-MEM R0
+MEM In1
 MOV A, M
-MEM R1
+MEM In2
 MOV B, M
 
 # Do NAND#1
 NAND A, B			# NAND(123, 36) (NAND#1) is in A now
 
 # Save NAND#1 for later
-MEM R2
-MOV M, A            # NAND#1 is in R2 now
+MEM Nand1
+MOV M, A            # NAND#1 is in M[Nand1] now
 
-# We have the output of NAND#1 and B available, lets get NAND#3 and store it in memory
+# We have the output of NAND#1 and In 2 available, lets get NAND#3 and store it in memory
 NAND A, B
-MEM R3
-MOV M, A			# NAND#3 is in R3 now
+MEM Nand3
+MOV M, A			# NAND#3 is in M[Nand3] now
 
-# We need NAND#2 now, we need to load A and NAND#1
-MEM R0
+# We need NAND#2 now, we need to load In 1 and NAND#1
+MEM In1
 MOV A, M
-MEM R2
+MEM Nand1
 MOV B, M
 
 # Get NAND#2
 NAND A, B			# NAND#2 is in A now
 
 # Load NAND#3 alongside NAND#2
-MEM R3
+MEM Nand3
 MOV B, M
 
 # Get NAND#4 (our XOR result)
