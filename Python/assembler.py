@@ -591,7 +591,7 @@ if __name__ == '__main__':
     # Print processed assembly for debugging
     #TODO: something useful
     print("~~~~~~~~ Processed Assembly for \"{}\" ~~~~~~~~".format(asm_file_nopath))
-    for line in asm.processed_assembly():
-        print("    " + line)
+    for i, line in enumerate(asm.processed_assembly()):
+        print("{}:\t{}".format(i, line))
     
     sys.exit()

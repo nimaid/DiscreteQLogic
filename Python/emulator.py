@@ -253,7 +253,7 @@ class ProgramROM:
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
-# ~~~~~~~~ Begin Hardware Setup ~~~~~~~~
+# ~~~~~~~~ Begin System Setup ~~~~~~~~
 bitwidth = 8
 
 # Make a helpful decimal converter for printing and such
@@ -273,7 +273,3 @@ ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 rom = ProgramROM(data_bits=bitwidth, address_bits=(bitwidth*2))
 # Program it
 rom.program("../FET-80 Development/Test Code/Pointers.FET80")
-# Print processed assembly for debugging
-print("~~~~~~~~ Processed Assembly ~~~~~~~~")
-for line in rom.asm.processed_assembly():
-    print("    " + line)
