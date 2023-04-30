@@ -375,6 +375,7 @@ class Assembler:
             
             # Init the instruction output dict
             instruction = { "type" : self.asm.instructionType(),
+                            "address" : self.asm.address(),
                             "opcode" : None,
                             "value" : None,
                             "src" : None,
@@ -458,7 +459,8 @@ class Assembler:
                     instruction["value"] = symbol_value
                 # Finally, just add it to the symbol table if it is valid
                 else:
-                    if self.asm.symbol() in ["A", "B", "M"]
+                    if (self.asm.symbol() in ["A", "B", "M"]) or self.asm.symbol()[0] =="@":
+                        raise Exception("\"{}\" is not a valid symbol name!".format(self.asm.symbol()))
                     self.asmtable.addEntry(self.asm.symbol(), self.free_mem_loc)
                     self.free_mem_loc += 1
                     instruction["value"] = self.asmtable.getAddress(self.asm.symbol())
@@ -474,8 +476,6 @@ class Assembler:
         if self.assembled_code_objects is None:
             raise Exception("Assembler hasn't been run yet!")
         return self.assembled_code_objects
-    
-    
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
 
@@ -722,3 +722,5 @@ ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 # Make demo assembly parser for testing
 asm = Assembler("../FET-80 Development/Test Code/XOR_exp.FET80")
 asm.run()
+for x in asm.assembled_objects():
+    print(x)
