@@ -25,7 +25,7 @@
 
 # To XOR, we have to use 4 NAND gates in 3 layers
 # First, we run each input through NAND#1
-# Next, we make a new NAND#2 gate, with inputs from A and NAND#1. NAND#3 uses B and NAND#1
+# Next, we make a new NAND#2 gate, with inputs from In 1 and NAND#1. NAND#3 uses In 2 and NAND#1
 # Finally, we use NAND#4 to take the outputs from NAND#2 and NAND#3, and hook it to the outputs
 
 # First, save operands into memory
