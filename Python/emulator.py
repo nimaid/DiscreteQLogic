@@ -136,6 +136,28 @@ class AssemblyParser:
             raise Exception("Current command isn't a known instruction type, no symbol to extract!")
     
     
+    # Helper function to get the current instruction, split at the chosen delimiter
+    def instruction_split(self, delimiter=" "):
+        return list(filter(None, self.instruction().split(delimiter)))
+    
+    
+    # If the current instruction is `(yyy)`, returns the symbol `yyy`.
+    # If the current instruction is `JMP yyy`, `MEM yyy`, `MOV A, Mxyyy`, returns the symbol or decimal yyy (as a string).
+    # Should be called only if instructionType is T_INSTRUCTION, M_INSTRUCTION, C_INSTRUCTION, J_INSTRUCTION, or L_INSTRUCTION
+    def symbol(self):
+        current_instruction_type = self.instructionType()
+        if current_instruction_type in [self.InstructionCode.M_INSTRUCTION, self.InstructionCode.J_INSTRUCTION]:
+            # Will always be in the format `OP yyy`, can just take last partition
+            split_instruction = self.instruction_split()
+            if len(split_instruction) != 2:
+                raise Exception("This instruction requires exactly 1 argument: \"{}\"".format(self.instruction()))
+            return self.instruction_split()[1]
+        elif current_instruction_type == self.InstructionCode.L_INSTRUCTION:
+            # Remove ( and ) in (yyy)
+            return self.instruction().replace("(", "").replace(")", "")
+        else:
+            raise Exception("Current command isn't a valid instruction, no symbol to extract!")
+    
     
     
     
@@ -390,4 +412,4 @@ reg_B = Register(bitwidth)
 ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
 # Make demo assembly parser for testing
-asmparser = AssemblyParser("../FET-80 Development/Test Code/XOR.FET80")
+asmparser = AssemblyParser("../FET-80 Development/Test Code/SUB.FET80")
