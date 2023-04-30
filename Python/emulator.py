@@ -285,7 +285,7 @@ class AsmParser:
     def opcode(self):
         # We just return the first part, always
         split_instruction = self.instruction_split()
-        return split_instruction[0]
+        return split_instruction[0].upper()
 
 
 
@@ -724,3 +724,7 @@ asm = Assembler("../FET-80 Development/Test Code/XOR_exp.FET80")
 asm.run()
 for x in asm.assembled_objects():
     print(x)
+    
+    
+    
+#TODO: Add @ preprocessing

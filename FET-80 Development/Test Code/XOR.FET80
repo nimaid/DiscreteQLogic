@@ -18,7 +18,6 @@
 #   R13 = 13
 #   R14 = 14
 #   R15 = 15
-#   R16 = 16
 #   
 # ~~~~ ASSEMBLER MACRO EXAMPLES ~~~~
 #   
@@ -30,7 +29,7 @@
 #       MEM 0xFF01
 #       MOV M, A
 #   
-#   MOV A, @1, 	--->
+#   MOV A, @1,   	--->
 #       MEM 1
 #       MOV A, M
 #   
