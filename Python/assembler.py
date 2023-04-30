@@ -600,19 +600,9 @@ class Assembler:
 
 
 
-if __name__ == '__main__':
-    # Parse arguments
-    
-    argparser = argparse.ArgumentParser(
-        description="Assembles a .f80asm file into machine code (.f80bin)",
-        formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    argparser.add_argument("-f", "--file", type=helpers.file_path, required=True,
-        help="the .f80asm file to assemble")
-    args = vars(argparser.parse_args())
-
+def main(asm_file):
     # Get .fet80 filename
-    asm_file = os.path.realpath(args["file"])
+    asm_file = os.path.realpath(asm_file)
     asm_file_nopath = os.path.split(asm_file)[1]
 
     # Make assembler
@@ -627,4 +617,18 @@ if __name__ == '__main__':
     for i, line in enumerate(asm.processed_assembly()):
         print("{}:\t{}".format(i, line))
     
-    sys.exit()
+    return 0
+    
+if __name__ == '__main__':
+    # Parse arguments
+    argparser = argparse.ArgumentParser(
+        description="Assembles a .f80asm file into machine code (.f80bin)",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    argparser.add_argument("-f", "--file", type=helpers.file_path, required=True,
+        help="the .f80asm file to assemble")
+    args = vars(argparser.parse_args())
+    
+    # Run main
+    exit_code = main(args["file"])
+    sys.exit(exit_code)
