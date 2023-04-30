@@ -1,40 +1,4 @@
-# This code will compute the eXclusive OR (XOR) of 123 and 36, and will return the result as a signed byte integer into memory location 0xFF02
-
-# ~~~~ ASSEMBLER CONSTANTS ~~~~
-#   
-#   R0 = 0
-#   R1 = 1
-#   R2 = 2
-#   R3 = 3
-#   R4 = 4
-#   R5 = 5
-#   R6 = 6
-#   R7 = 7
-#   R8 = 8
-#   R9 = 9
-#   R10 = 10
-#   R11 = 11
-#   R12 = 12
-#   R13 = 13
-#   R14 = 14
-#   R15 = 15
-#   
-# ~~~~ ASSEMBLER MACRO EXAMPLES ~~~~
-#   
-#   MOV @R0, A		--->
-#       MEM R0
-#       MOV M, A
-#   
-#   MOV @0xFF01, A	--->
-#       MEM 0xFF01
-#       MOV M, A
-#   
-#   MOV A, @1,   	--->
-#       MEM 1
-#       MOV A, M
-#   
-#   
-
+# This code will compute the eXclusive OR (XOR) of 123 and 36, and will return the result as a signed byte integer into the general purpose memory mapped IO location 1
 
 # To XOR, we have to use 4 NAND gates in 3 layers
 # First, we run each input through NAND#1
@@ -73,7 +37,7 @@ MOV B, @Nand3
 NAND A, B			# Final XOR result is in A now
 
 # Move to final location
-MOV @0xFF02, A		# It is finally in the output location
+MOV @IO1, A		# It is finally in the output location
 
 # Do an infinite loop to halt
 (LOOP)
