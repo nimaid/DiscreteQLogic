@@ -439,6 +439,9 @@ class Assembler:
                     instruction["dest"] = AsmCodes.Dest.B
                 elif self.asm.dest() == "M":
                     instruction["dest"] = AsmCodes.Dest.M
+                else:
+                    # Not a valid option
+                    raise Exception("{} is not a valid destination!".format(self.asm.dest()))
                 
                 if self.asm.src() == "A":
                     instruction["src"] = AsmCodes.Src.A
