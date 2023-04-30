@@ -7,7 +7,40 @@ import assembler
 
 
 # ~~~~~~~~ Begin Hardware Definition ~~~~~~~~
-# A class to implement an ALU object
+# A class to implement a simple register
+class Register:
+    def __init__(self, bits):
+        self.bits = bits
+        
+        self.value = None
+        
+        # Set status
+        self.set_flag = False
+    
+    
+    def set(self, value):
+        # Overflow inputs if needed
+        value %= 2 ** self.bits
+        
+        self.value = value
+        
+        if not self.set_flag:
+            self.set_flag = True
+    
+    
+    def is_set(self):
+        return self.set_flag
+    
+    
+    def get(self):
+        if not self.is_set():
+            raise Exception("The register has not been set yet, no value to get!")
+        
+        return self.value
+
+
+
+# A class to implement an ALU object, with flags and an accumulator
 class ALU:
     def __init__(self, bits):
         # Bit width
@@ -21,6 +54,9 @@ class ALU:
         self.gtz = None
         self.lez = None
         self.gez = None
+        
+        # Accumulator
+        self.acc = Register(self.bits)
         
         # Unset status
         self.unset = True
@@ -123,7 +159,8 @@ class ALU:
         if self.unset:
             self.unset = False
         
-        return out
+        # Set accumulator
+        self.acc.set(out)
     
     
     def bit_width(self):
@@ -140,35 +177,10 @@ class ALU:
                 "gtz"  : self.gtz,
                 "lez"  : self.lez,
                 "gez"  : self.gez}
-
-
-
-# A class to implement a simple register
-class Register:
-    def __init__(self, bits):
-        self.bits = bits
-        
-        self.value = None
-        
-        # Unset status
-        self.unset = True
     
     
-    def set(self, value):
-        # Overflow inputs if needed
-        value %= 2 ** self.bits
-        
-        self.value = value
-        
-        if self.unset:
-            self.unset = False
-    
-    
-    def get(self):
-        if self.unset:
-            raise Exception("The register has not been set yet, no value to get!")
-        
-        return self.value
+    def get_ACC(self):
+        return self.acc.get()
 
 
 
@@ -347,18 +359,33 @@ class Fet80:
     
     # Uses the ALU to compute a NAND operation
     def nand(self, x, y):
-        return self.alu.calc( f   = False,
-                              X   = x,
-                              Y   = y,
-                              cin = False )
+        self.alu.calc( f   = False,
+                       X   = x,
+                       Y   = y,
+                       cin = False )
     
     
     # Uses the ALU to compute an ADD operation
     def add(self, x, y, cin=False):
-        return self.alu.calc( f   = True,
-                              X   = x,
-                              Y   = y,
-                              cin = cin )
+        self.alu.calc( f   = True,
+                       X   = x,
+                       Y   = y,
+                       cin = cin )
+    
+    
+    # Reads the accumulator from the ALU
+    def get_ACC(self):
+        return self.alu.get_ACC()
+    
+    
+    # Reads the flags from the ALU
+    def flags(self):
+        return self.alu.flags()
+    
+    
+    # Returns the RAM register array
+    def get_RAM(self):
+        return self.ram.registers
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
@@ -381,6 +408,209 @@ class Emulator:
     def load_program(self, file_in):
         self.current_program = file_in
         self.fet80.program(self.current_program)
+    
+    
+    # Get the current instruction
+    def instruction(self):
+        return self.fet80.instruction()
+    
+    
+    # Read the A register
+    def get_A(self):
+        return self.fet80.get_A()
+    
+    
+    # Read the B register
+    def get_B(self):
+        return self.fet80.get_B()
+    
+    
+    # Read the current memory value
+    def get_M(self):
+        return self.fet80.get_M()
+    
+    
+    # Read the current memory address
+    def get_M_address(self):
+        return self.fet80.get_M_address()
+    
+    
+    # Read the PC
+    def get_PC(self):
+        return self.fet80.get_PC()
+    
+    
+    # Read the ACC
+    def get_ACC(self):
+        return self.fet80.get_ACC()
+    
+    
+    # Reads the flags from the ALU
+    def flags(self):
+        return self.fet80.flags()
+    
+    
+    # A helper function to get the source value from an instruction (register or direct)
+    def get_source_value(self, instruction):
+        if instruction["src"] == assembler.AsmCodes.Src.DV:
+            # A direct value for `src`
+            value = instruction["value"]
+        elif instruction["src"] == assembler.AsmCodes.Src.A:
+            # A register is `src`
+            value = self.get_A()
+        elif instruction["src"] == assembler.AsmCodes.Src.B:
+            # B register is `src`
+            value = self.get_B()
+        elif instruction["src"] == assembler.AsmCodes.Src.M:
+            # RAM is `src`
+            value = self.get_M()
+        else:
+            raise Exception("Invalid source! (address: {})".format(instruction["address"]))
+        return value
+    
+    
+    # A helper function to get the destination value from an instruction (register)
+    def get_destination_value(self, instruction):
+        if instruction["dest"] == assembler.AsmCodes.Dest.A:
+            # A register is `dest`
+            value = self.get_A()
+        elif instruction["dest"] == assembler.AsmCodes.Dest.B:
+            # B register is `dest`
+            value = self.get_B()
+        elif instruction["dest"] == assembler.AsmCodes.Dest.M:
+            # RAM is `dest`
+            value = self.get_M()
+        else:
+            raise Exception("Invalid destination! (address: {})".format(instruction["address"]))
+        return value
+    
+    
+    # A helper function to set a destination in an instruction to a value
+    def set_destination_value(self, instruction, value):
+        if instruction["dest"] == assembler.AsmCodes.Dest.A:
+            # A register is `dest`
+            self.fet80.set_A(value)
+        elif instruction["dest"] == assembler.AsmCodes.Dest.B:
+            # B register is `dest`
+            self.fet80.set_B(value)
+        elif instruction["dest"] == assembler.AsmCodes.Dest.M:
+            # RAM is `dest`
+            self.fet80.set_M(value)
+        else:
+            raise Exception("Invalid destination! (address: {})".format(instruction["address"]))
+    
+    
+    # Perform a T-instruction
+    def run_T(self, instruction):
+        # A `MOV` instruction, move `src` to `dest`
+        value = self.get_source_value(instruction)
+        self.set_destination_value(instruction, value)
+        
+        self.fet80.increment_PC()
+    
+    
+    # Perform an M-instruction
+    def run_M(self, instruction):
+        # A `MEM` instruction, to move `src` to the MAR
+        value = self.get_source_value(instruction)
+        self.fet80.set_M_address(value)
+        
+        self.fet80.increment_PC()
+    
+    
+    # Perform a C-instruction
+    def run_C(self, instruction):
+        # Either an `ADD` or `NAND` instruction
+        # Run the operands through the ALU
+        # Then, move the accumulator to `dest`
+        X = self.get_destination_value(instruction)
+        Y = self.get_source_value(instruction)
+        if instruction["opcode"] == assembler.AsmCodes.Opcode.ADD:
+            self.fet80.add(x=X, y=Y)
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.NAND:
+            self.fet80.nand(x=X, y=Y)
+        else:
+            raise Exception("Invalid opcode for a C instruction! (address: {})".format(instruction["address"]))
+        self.set_destination_value(instruction, self.get_ACC())
+        
+        self.fet80.increment_PC()
+    
+    
+    # Perform a J-instruction
+    def run_J(self, instruction):
+        # A jump instruction of some type
+        # First, we check the state of the ALU flags to see if we need to jump
+        # If we need to jump, move the src to the PC
+        # Otherwise, and ONLY otherwise, do we increment PC
+        if instruction["opcode"] == assembler.AsmCodes.Opcode.JMP:
+            # Always
+            jump = True
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JC:
+            jump = self.flags()["cout"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JNC:
+            jump = not self.flags()["cout"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JEQZ:
+            jump = self.flags()["eqz"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JNEZ:
+            jump = self.flags()["nez"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JGTZ:
+            jump = self.flags()["gtz"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JLTZ:
+            jump = self.flags()["ltz"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JGEZ:
+            jump = self.flags()["gez"]
+        elif instruction["opcode"] == assembler.AsmCodes.Opcode.JLEZ:
+            jump = self.flags()["lez"]
+        else:
+            raise Exception("Invalid opcode for a J instruction! (address: {})".format(instruction["address"]))
+        
+        if jump:
+            address = self.get_source_value(instruction)
+            self.fet80.set_PC(address)
+        else:
+            self.fet80.increment_PC()
+    
+    
+    # Perform a D-instruction
+    def run_D(self, instruction):
+        # `NOP`, do nothing
+        return
+    
+    
+    # Run a single full instruction cycle
+    def step(self):
+        # First, we run the actual command
+        # Each command updates the PC accordingly
+        instruction = self.instruction()
+        if instruction["type"] == assembler.AsmCodes.InstructionType.T_INSTRUCTION:
+            self.run_T(instruction)
+        elif instruction["type"] == assembler.AsmCodes.InstructionType.M_INSTRUCTION:
+            self.run_M(instruction)
+        elif instruction["type"] == assembler.AsmCodes.InstructionType.C_INSTRUCTION:
+            self.run_C(instruction)
+        elif instruction["type"] == assembler.AsmCodes.InstructionType.J_INSTRUCTION:
+            self.run_J(instruction)
+        elif instruction["type"] == assembler.AsmCodes.InstructionType.D_INSTRUCTION:
+            self.run_D(instruction)
+        else:
+            raise Exception("Invalid instruction type! (address: {})".format(instruction["address"]))
+    
+    
+    # Returns the RAM register array
+    def get_RAM(self):
+        return self.fet80.get_RAM()
+    
+    
+    # Returns the RAM as an integer array
+    def get_RAM_int(self, unset=None):
+        out = list()
+        for r in self.get_RAM():
+            if r.is_set():
+                out.append(r.get())
+            else:
+                out.append(unset)
+        
+        return out
 # ~~~~~~~~ End Emulator Definition ~~~~~~~~
 
 
