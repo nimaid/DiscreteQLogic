@@ -418,6 +418,7 @@ class Assembler:
                 # Always either a `MEM` or a type of `JMP` instruction
                 # Format: `MEM symbol`
                 # We must resolve either the symbol or direct value
+                # Additionally, `MEM` can have a non-direct `src`, like `A` or even `M`
                 # Hex and binary values are allowed with 0x and 0b
                 
                 if self.asm.opcode() == "MEM":
@@ -444,11 +445,26 @@ class Assembler:
                     instruction["opcode"] = AsmCodes.Opcode.JLEZ
                 
                 # Now we need to set the value
+                # Before anything, if it's `MEM`, check for non-direct values
                 # First, we will check to see if it is already in the symbol table
                 # If not, we will then check to see if it is a direct value,
                 # Finally, if it is a valid symbol name, add a new symbol to the table
                 
                 symbol_value = self.dec16.int_from_formatted(self.asm.symbol())
+                
+                # If it's MEM and also a valid non-direct symbol, just pass `src`
+                if instruction["type"] == AsmCodes.InstructionType.M_INSTRUCTION:
+                    if self.asm.symbol() in ["A", "B", "M"]:
+                        if self.asm.symbol() == "A":
+                            instruction["src"] = AsmCodes.Src.A
+                        elif self.asm.symbol() == "B":
+                            instruction["src"] = AsmCodes.Src.B
+                        elif self.asm.symbol() == "M":
+                            instruction["src"] = AsmCodes.Src.M
+                        self.assembled_code_objects.append(instruction)
+                        continue
+                # If not skipped, it's a direct value
+                instruction["src"] = AsmCodes.Src.DV
                 
                 # Check the symbol table first
                 if self.asmtable.contains(self.asm.symbol()):
