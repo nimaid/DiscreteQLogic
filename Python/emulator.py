@@ -250,6 +250,10 @@ class ProgramROM:
     
     def read(self):
         return self.instructions[self.pc.get()]
+    
+    
+    def address(self):
+        return self.pc.get()
 
 
 
@@ -284,6 +288,77 @@ class Fet80:
     def bits(self):
         return { "data"    : self.data_bits,
                  "address" : self.address_bits }
+    
+    
+    # Sets the A register data
+    def set_A(self, value):
+        self.registers["A"].set(value)
+        
+    
+    # Reads the A register data
+    def get_A(self):
+        return self.registers["A"].get()
+    
+    
+    # Sets the B register data
+    def set_B(self, value):
+        self.registers["B"].set(value)
+        
+    
+    # Reads the B register data
+    def get_B(self):
+        return self.registers["B"].get()
+    
+    
+    # Sets the RAM address
+    def set_M_address(self, value):
+        self.ram.set_address(value)
+    
+    
+    # Sets the RAM data (register M)
+    def set_M(self, value):
+        self.ram.write(value)
+    
+    
+    # Reads the RAM data (register M)
+    def get_M(self):
+        return self.ram.read()
+    
+    
+    # Sets the program counter (ROM address) for J instructions
+    def set_PC(self, value):
+        self.rom.set_address(value)
+    
+    
+    # Reads the PC
+    def get_PC(self):
+        return self.rom.address()
+    
+    
+    # Increments the program counter
+    def increment_PC(self):
+        self.rom.increment()
+    
+    
+    # Reads the current instruction from ROM
+    def instruction(self):
+        return self.rom.read()
+    
+    
+    # Uses the ALU to compute a NAND operation
+    def nand(self, x, y):
+        return self.alu.calc( f   = False,
+                              X   = x,
+                              Y   = y,
+                              cin = False )
+    
+    
+    # Uses the ALU to compute an ADD operation
+    def add(self, x, y, cin=False):
+        return self.alu.calc( f   = True,
+                              X   = x,
+                              Y   = y,
+                              cin = cin )
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
