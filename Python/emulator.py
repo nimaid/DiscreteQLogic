@@ -732,30 +732,51 @@ class RAM:
 
 # A class to implement the program ROM, with an integrated program counter register
 class ProgramROM:
-    
-    
     def __init__(self, data_bits, address_bits):
         self.data_bits = data_bits
         self.address_bits = address_bits
         
         self.words = 2**self.address_bits
-        self.instructions = [None for _ in range(self.words)]
+        self.clear()
         
         self.pc = Register(self.address_bits)
         self.pc.set(0)
     
+    
+    # Clear ROM
+    def clear(self):
+        self.instructions = [None for _ in range(self.words)]
+    
+    
     # Parse a text file into instructions
     def program(self, file_in):
-        #TODO: Do first pass first to resolve symbols first
-        # Make parser for assembly file
-        '''
-        asm = AssemblyParser(file_in)
+        # Erase
+        self.clear()
         
-        while asm.hasMoreLines():
-            asm.advance()
-        '''
+        # Make assembler for file
+        f_asm = Assembler(file_in)
         
+        # Run assembly
+        f_asm.run()
+        
+        # Program commands into ROM
+        for instruction in f_asm.assembled_objects():
+            self.instructions[instruction["address"]] = instruction
     
+    
+    def set_address(self, address):
+        # Overflow inputs if needed
+        address %= 2 ** self.address_bits
+        
+        self.pc.set(address)
+    
+    
+    def increment(self):
+        self.set_address(self.pc.get() + 1)
+    
+    
+    def read(self):
+        return self.instructions[self.pc.get()]
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
@@ -775,12 +796,7 @@ reg_B = Register(bitwidth)
 # Make the RAM
 ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
-# Make demo assembly parser for testing
-asm = Assembler("../FET-80 Development/Test Code/XOR.FET80")
-asm.run()
-for x in asm.assembled_objects():
-    print(x)
-    
-    
-    
-#TODO: Add @ preprocessing
+# Make the ROM
+rom = ProgramROM(data_bits=bitwidth, address_bits=(bitwidth*2))
+# Program it
+rom.program("../FET-80 Development/Test Code/XOR.FET80")
