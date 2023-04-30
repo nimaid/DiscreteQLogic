@@ -1,4 +1,4 @@
-# This code will subtract 123 from 36, and will return the result as a signed byte integer into memory location 0xFF01
+# This code will subtract 123 from 36, and will return the result as a signed byte integer into the general purpose memory mapped IO location 0
 
 # First, we need to invert the positive input with a NOT operation
 # This is done using a NAND with the same 2 inputs
@@ -9,8 +9,8 @@ MOV B, 36
 ADD A, B		# ADD(NOT(123), 36) is in A now
 # Finally, we negate the output, to get subtraction!
 NAND A, A		# NOT(ADD(NOT(123), 36)) is in A now, this is the same as SUB(123, 36)
-# Now we just need to write it into the 0x01 device memory register (starts at 0xFF00)
-MOV @0xFF01, A		# SUB(123, 36) is in M[0xFF01] now!
+# Now we just need to write it into the IO0 device memory register
+MOV @IO0, A		# SUB(123, 36) is in M[IO0] now!
 # Now do an infinite loop
 (LOOP)
 JMP LOOP		# Loop here forever, effectively a HALT()

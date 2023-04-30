@@ -8,7 +8,7 @@ from enum import Enum
 import helpers
 
 
-# A helper class to provide assembly-related codes
+# A class to provide assembly-related codes
 class AsmCodes:
     # A class to implement the various opcodes
     class Opcode(Enum):
@@ -51,6 +51,48 @@ class AsmCodes:
         J_INSTRUCTION = 3
         D_INSTRUCTION = 4
         L_INSTRUCTION = 5
+
+
+
+# A class to store FET-80 specific parameters
+class Fet80Params:
+    # Assembler constants
+    AsmConstants = [ {"name" : "R0", "value" : 0},
+                     {"name" : "R1", "value" : 1},
+                     {"name" : "R2", "value" : 2},
+                     {"name" : "R3", "value" : 3},
+                     {"name" : "R4", "value" : 4},
+                     {"name" : "R5", "value" : 5},
+                     {"name" : "R6", "value" : 6},
+                     {"name" : "R7", "value" : 7},
+                     {"name" : "R8", "value" : 8},
+                     {"name" : "R9", "value" : 9},
+                     {"name" : "R10", "value" : 10},
+                     {"name" : "R11", "value" : 11},
+                     {"name" : "R12", "value" : 12},
+                     {"name" : "R13", "value" : 13},
+                     {"name" : "R14", "value" : 14},
+                     {"name" : "R15", "value" : 15},
+                     {"name" : "SCREEN", "value" : 0xFFD0},
+                     {"name" : "IO0", "value" : 0xFFF0},
+                     {"name" : "IO1", "value" : 0xFFF1},
+                     {"name" : "IO2", "value" : 0xFFF2},
+                     {"name" : "IO3", "value" : 0xFFF3},
+                     {"name" : "IO4", "value" : 0xFFF4},
+                     {"name" : "IO5", "value" : 0xFFF5},
+                     {"name" : "IO6", "value" : 0xFFF6},
+                     {"name" : "IO7", "value" : 0xFFF7},
+                     {"name" : "IO8", "value" : 0xFFF8},
+                     {"name" : "IO9", "value" : 0xFFF9},
+                     {"name" : "IO10", "value" : 0xFFFA},
+                     {"name" : "IO11", "value" : 0xFFFB},
+                     {"name" : "IO12", "value" : 0xFFFC},
+                     {"name" : "IO13", "value" : 0xFFFD},
+                     {"name" : "IO14", "value" : 0xFFFE},
+                     {"name" : "IO15", "value" : 0xFFFF} ]
+    
+    # First free memory location (after virtual registers)
+    FirstFreeMemLoc = 16
 
 
 
@@ -257,6 +299,7 @@ class SymbolTable:
 # A class to assemble the commands to simple instructions and resolve symbols
 class Assembler:
     def __init__(self, file_in):
+        
         self.asm = AsmParser(file_in)
         self.reset()
         
@@ -272,28 +315,10 @@ class Assembler:
         self.asmtable = SymbolTable()
         
         # Initialize symbol table with predefined constants
-        # Virtual registers RAM 0-15
-        self.asmtable.addEntry("R0", 0)
-        self.asmtable.addEntry("R1", 1)
-        self.asmtable.addEntry("R2", 2)
-        self.asmtable.addEntry("R3", 3)
-        self.asmtable.addEntry("R4", 4)
-        self.asmtable.addEntry("R5", 5)
-        self.asmtable.addEntry("R6", 6)
-        self.asmtable.addEntry("R7", 7)
-        self.asmtable.addEntry("R8", 8)
-        self.asmtable.addEntry("R9", 9)
-        self.asmtable.addEntry("R10", 10)
-        self.asmtable.addEntry("R11", 11)
-        self.asmtable.addEntry("R12", 12)
-        self.asmtable.addEntry("R13", 13)
-        self.asmtable.addEntry("R14", 14)
-        self.asmtable.addEntry("R15", 15)
-        # Relevantly, set the first free RAM address to 16
-        self.free_mem_loc = 16
-        # SCREEN and IO
-        self.asmtable.addEntry("SCREEN", 0xFFD0)
-        self.asmtable.addEntry("IO", 0xFFF0)
+        for s in Fet80Params.AsmConstants:
+            self.asmtable.addEntry(s["name"], s["value"])
+        # Relevantly, set the first free RAM address
+        self.free_mem_loc = Fet80Params.FirstFreeMemLoc
         
         self.assembled_code_objects = None
     
@@ -507,7 +532,7 @@ class Assembler:
         return self.assembled_code_objects
     
     
-    # A helper function to return the processed assembly in it's original symbolic form
+    # A helper function to return the processed assembly in it's human-readable symbolic form
     def processed_assembly(self):
         processed_asm = list()
         for line in self.assembled_objects():
