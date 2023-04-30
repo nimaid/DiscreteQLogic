@@ -10,8 +10,7 @@ ADD A, B		# ADD(NOT(123), 36) is in A now
 # Finally, we negate the output, to get subtraction!
 NAND A, A		# NOT(ADD(NOT(123), 36)) is in A now, this is the same as SUB(123, 36)
 # Now we just need to write it into the 0x01 device memory register (starts at 0xFF00)
-MEM 0xFF01
-MOV M, A		# SUB(123, 36) is in M(0xFF00) now!
+MOV @0xFF01, A		# SUB(123, 36) is in M[0xFF01] now!
 # Now do an infinite loop
 (LOOP)
 JMP @LOOP		# Loop here forever, effectively a HALT()
