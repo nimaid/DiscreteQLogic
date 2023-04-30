@@ -137,26 +137,47 @@ class AssemblyParser:
     
     
     # Helper function to get the current instruction, split at the chosen delimiter
-    def instruction_split(self, delimiter=" "):
-        return list(filter(None, self.instruction().split(delimiter)))
+    def instruction_split(self, text=None, delimiter=" "):
+        if text is None:
+            text = self.instruction()
+        
+        if type(text) == list:
+            final_list = []
+            for part in text:
+                final_list += list(filter(None, part.split(delimiter)))
+            return final_list
+        else:
+            return list(filter(None, text.split(delimiter)))
     
     
     # If the current instruction is `(yyy)`, returns the symbol `yyy`.
-    # If the current instruction is `JMP yyy`, `MEM yyy`, `MOV A, Mxyyy`, returns the symbol or decimal yyy (as a string).
+    # If the current instruction is `JMP yyy`, `MEM yyy`, `MOV A, Mxyyy`, etc., returns the symbol or decimal yyy (as a string).
     # Should be called only if instructionType is T_INSTRUCTION, M_INSTRUCTION, C_INSTRUCTION, J_INSTRUCTION, or L_INSTRUCTION
     def symbol(self):
         current_instruction_type = self.instructionType()
-        if current_instruction_type in [self.InstructionCode.M_INSTRUCTION, self.InstructionCode.J_INSTRUCTION]:
-            # Will always be in the format `OP yyy`, can just take last partition
+        if current_instruction_type in [self.InstructionCode.T_INSTRUCTION, self.InstructionCode.C_INSTRUCTION]:
+            # Will always be in the format `OP xxx, yyy`, can just take the last portion
+            split_instruction = self.instruction_split()
+            split_instruction = self.instruction_split(split_instruction, ",")
+            if len(split_instruction) != 3:
+                raise Exception("This instruction requires exactly 2 arguments: \"{}\"".format(self.instruction()))
+            return split_instruction[2]
+        elif current_instruction_type in [self.InstructionCode.M_INSTRUCTION, self.InstructionCode.J_INSTRUCTION]:
+            # Will always be in the format `OP yyy`, can just take last portion
             split_instruction = self.instruction_split()
             if len(split_instruction) != 2:
                 raise Exception("This instruction requires exactly 1 argument: \"{}\"".format(self.instruction()))
-            return self.instruction_split()[1]
+            return split_instruction[1]
         elif current_instruction_type == self.InstructionCode.L_INSTRUCTION:
             # Remove ( and ) in (yyy)
             return self.instruction().replace("(", "").replace(")", "")
         else:
             raise Exception("Current command isn't a valid instruction, no symbol to extract!")
+    
+    
+    # Returns the symbolic `dest` part of the current instruction
+    # Should only be called if instructionType is T_INSTRUCTION or C_INSTRUCTION
+    #def dest(self):
     
     
     
