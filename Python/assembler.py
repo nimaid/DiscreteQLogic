@@ -604,11 +604,11 @@ if __name__ == '__main__':
     # Parse arguments
     
     argparser = argparse.ArgumentParser(
-        description="Assembles a .FET80 file into machine code",
+        description="Assembles a .f80asm file into machine code (.f80bin)",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     argparser.add_argument("-f", "--file", type=helpers.file_path, required=True,
-        help="the .FET80 file to translate")
+        help="the .f80asm file to assemble")
     args = vars(argparser.parse_args())
 
     # Get .fet80 filename
