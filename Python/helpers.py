@@ -3,6 +3,7 @@
 import os
 import sys
 
+
 # A helper class to convert decimals to more useful formats
 class Dec2:
     def __init__(self, bits):
@@ -79,4 +80,5 @@ def file_path(string):
         raise FileNotFoundError(string)
 
 if __name__ == '__main__':
+    print("This module is not meant to be run on it's own!")
     sys.exit()  # next section explains the use of sys.exit

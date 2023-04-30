@@ -7,6 +7,7 @@ from enum import Enum
 
 import helpers
 
+
 # A helper class to provide assembly-related codes
 class AsmCodes:
     # A class to implement the various opcodes
