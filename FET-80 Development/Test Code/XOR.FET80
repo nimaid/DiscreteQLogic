@@ -45,12 +45,11 @@
 MOV @In1, 123        # 123 (input A) is in M[In1] now
 MOV @In2, 36	     # 36(input B) is in M[In2] now
 
-# Copy to A and B
+# Copy to A
 MOV A, @In1
-MOV B, @In2
 
 # Do NAND#1
-NAND A, B			# NAND(123, 36) (NAND#1) is in A now
+NAND A, @In2		# NAND(123, 36) (NAND#1) is in A now
 
 # Save NAND#1 for later
 MOV @Nand1, A       # NAND#1 is in M[Nand1] now
