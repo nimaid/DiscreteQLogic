@@ -261,8 +261,8 @@ class ProgramROM:
 class Fet80:
     def __init__(self):
         # Set bit widths
-        self.data_bits = 8
-        self.address_bits = self.data_bits * 2
+        self.data_bits = assembler.Fet80Params.DataWidth
+        self.address_bits = assembler.Fet80Params.AddressWidth
 
         # Make an ALU
         self.alu = ALU(self.data_bits)
@@ -362,7 +362,12 @@ class Fet80:
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
-# ~~~~~~~~ Begin System Setup ~~~~~~~~
+# ~~~~~~~~ Begin Emulator Definition ~~~~~~~~
+# The main emulator class
+#class Emulator:
+
+
+
 # Make the FET-80 system
 fet80 = Fet80()
 

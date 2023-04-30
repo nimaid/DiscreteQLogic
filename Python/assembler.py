@@ -56,6 +56,10 @@ class AsmCodes:
 
 # A class to store FET-80 specific parameters
 class Fet80Params:
+    # Bit widths
+    DataWidth = 8
+    AddressWidth = DataWidth * 2
+    
     # Assembler constants
     AsmConstants = [ {"name" : "R0", "value" : 0},
                      {"name" : "R1", "value" : 1},
@@ -93,7 +97,10 @@ class Fet80Params:
     
     # First free memory location (after virtual registers)
     FirstFreeMemLoc = 16
-
+    
+    # Screen size
+    ScreenSize = { "x" : 16,
+                   "y" : 16 }
 
 
 # Define parser class to parse assembly files into a usable format
@@ -303,8 +310,8 @@ class Assembler:
         self.asm = AsmParser(file_in)
         self.reset()
         
-        self.dec8 = helpers.Dec2(8)
-        self.dec16 = helpers.Dec2(16)
+        self.dec_data = helpers.Dec2(Fet80Params.DataWidth)
+        self.dec_address = helpers.Dec2(Fet80Params.AddressWidth)
     
     
     # A helper to reset the assembler
@@ -437,7 +444,7 @@ class Assembler:
                     instruction["src"] = AsmCodes.Src.DV
                 else:
                     # It may be a direct value
-                    value = self.dec8.int_from_formatted(self.asm.src())
+                    value = self.dec_data.int_from_formatted(self.asm.src())
                     if type(value) == bool:
                          raise Exception("\"{}\" from \"{}\"is not a valid destination or integer!".format(self.asm.src(), self.asm.instruction()))
                     instruction["value"] = value
@@ -480,7 +487,7 @@ class Assembler:
                 # If not, we will then check to see if it is a direct value,
                 # Finally, if it is a valid symbol name, add a new symbol to the table
                 
-                symbol_value = self.dec16.int_from_formatted(self.asm.symbol())
+                symbol_value = self.dec_address.int_from_formatted(self.asm.symbol())
                 
                 # If it's MEM and also a valid non-direct symbol, just pass `src`
                 if instruction["type"] == AsmCodes.InstructionType.M_INSTRUCTION:
