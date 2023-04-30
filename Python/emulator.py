@@ -70,6 +70,8 @@ class Dec2:
         # If we got to this point, it is not a valid integer, and we will return False
         return False
 
+
+
 # A helper class to provide assembly-related codes
 class AsmCodes:
     # A class to implement the various opcodes
@@ -113,6 +115,7 @@ class AsmCodes:
         J_INSTRUCTION = 3
         D_INSTRUCTION = 4
         L_INSTRUCTION = 5
+
 
 
 # Define parser class to parse assembly files into a usable format
