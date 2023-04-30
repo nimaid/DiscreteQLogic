@@ -13,4 +13,4 @@ NAND A, A		# NOT(ADD(NOT(123), 36)) is in A now, this is the same as SUB(123, 36
 MOV @0xFF01, A		# SUB(123, 36) is in M[0xFF01] now!
 # Now do an infinite loop
 (LOOP)
-JMP @LOOP		# Loop here forever, effectively a HALT()
+JMP LOOP		# Loop here forever, effectively a HALT()
