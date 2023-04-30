@@ -369,5 +369,6 @@ fet80 = Fet80()
 # Program the system
 fet80.program("../FET-80 Development/Test Code/Pointers.FET80")
 
-# Make a helpful decimal converter for printing and such
-dec2 = helpers.Dec2(fet80.bits()["data"])
+# Make helpful decimal converters for printing and such
+dec_data = helpers.Dec2(fet80.bits()["data"])
+dec_address = helpers.Dec2(fet80.bits()["address"])
