@@ -38,36 +38,36 @@
 
 # To XOR, we have to use 4 NAND gates in 3 layers
 # First, we run each input through NAND#1
-# Next, we make a new NAND#2 gate, with inputs from A and NAND#1. NAND#3 uses B and NAND#1
+# Next, we make a new NAND#2 gate, with inputs from In 1 and NAND#1. NAND#3 uses In 2 and NAND#1
 # Finally, we use NAND#4 to take the outputs from NAND#2 and NAND#3, and hook it to the outputs
 
 # First, save operands into memory
-MOV @R0, 123        # 123 (input A) is in R0 now
-MOV @R1, 36			# 36(input B) is in R0 now
+MOV @In1, 123        # 123 (input A) is in M[In1] now
+MOV @In2, 36	     # 36(input B) is in M[In2] now
 
 # Copy to A and B
-MOV A, @R0
-MOV B, @R1
+MOV A, @In1
+MOV B, @In2
 
 # Do NAND#1
 NAND A, B			# NAND(123, 36) (NAND#1) is in A now
 
 # Save NAND#1 for later
-MOV @R2, A          # NAND#1 is in R2 now
+MOV @Nand1, A       # NAND#1 is in M[Nand1] now
 
-# We have the output of NAND#1 and B available, lets get NAND#3 and store it in memory
+# We have the output of NAND#1 and In 2 available, lets get NAND#3 and store it in memory
 NAND A, B
-MOV @R3, A			# NAND#3 is in R3 now
+MOV @Nand3, A	    # NAND#3 is in M[Nand3] now
 
-# We need NAND#2 now, we need to load A and NAND#1
-MOV A, @R0
-MOV B, @R2
+# We need NAND#2 now, we need to load In 1 and NAND#1
+MOV A, @In1
+MOV B, @Nand1
 
 # Get NAND#2
 NAND A, B			# NAND#2 is in A now
 
 # Load NAND#3 alongside NAND#2
-MOV B, @R3
+MOV B, @Nand3
 
 # Get NAND#4 (our XOR result)
 NAND A, B			# Final XOR result is in A now
