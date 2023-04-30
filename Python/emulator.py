@@ -266,6 +266,16 @@ class ProgramROM:
     
     def address(self):
         return self.pc.get()
+    
+    
+    # Return the processed assembly in it's human-readable symbolic form
+    def processed_assembly(self):
+        return self.asm.processed_assembly()
+    
+    
+    # Return the current instruction in human readable form
+    def instruction_asm(self):
+        return self.processed_assembly()[self.pc.get()]
 
 
 
@@ -386,6 +396,16 @@ class Fet80:
     # Returns the RAM register array
     def get_RAM(self):
         return self.ram.registers
+    
+    
+    # Return the processed assembly in it's human-readable symbolic form
+    def processed_assembly(self):
+        return self.rom.processed_assembly()
+    
+    
+    # Return the current instruction in human readable form
+    def instruction_asm(self):
+        return self.processed_assembly()[self.get_PC()]
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
@@ -611,6 +631,16 @@ class Emulator:
                 out.append(unset)
         
         return out
+    
+    
+    # Return the processed assembly in it's human-readable symbolic form
+    def processed_assembly(self):
+        return self.fet80.processed_assembly()
+    
+    
+    # Return the current instruction in human readable form
+    def instruction_asm(self):
+        return self.processed_assembly()[self.get_PC()]
 # ~~~~~~~~ End Emulator Definition ~~~~~~~~
 
 
