@@ -361,12 +361,13 @@ class Assembler:
     
     # Preliminary pass to replace `@` indirect memory addressing with 2 commands
     def resolve_indirect_memory(self):
+        fixed_indirect_memory = False
         new_source = list()
         while(self.asm.hasMoreLines()):
             self.asm.advance()
             
-            # We need to check T, and C instructions for using `@` (valid)
-            # We also should check for J and M instructions illegally using it here
+            # We need to check T, M, and C instructions for using `@` (valid)
+            # We also should check for J instructions illegally using it here
             # Ignore NOP I guess
             
             if self.asm.instructionType() in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
@@ -377,20 +378,39 @@ class Assembler:
                 if src_indirect:
                     new_source.append("MEM {}".format(self.asm.src()[1:]))
                     new_source.append("{} {}, M".format(self.asm.opcode(), self.asm.dest()))
+                    fixed_indirect_memory = True
                 elif dest_indirect:
                     new_source.append("MEM {}".format(self.asm.dest()[1:]))
                     new_source.append("{} M, {}".format(self.asm.opcode(), self.asm.src()))
+                    fixed_indirect_memory = True
                 else:
                     new_source.append(self.asm.instruction())
-            elif self.asm.instructionType() in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
+            elif self.asm.instructionType() == AsmCodes.InstructionType.M_INSTRUCTION:
+                symbol_indirect = ( self.asm.symbol()[0] == "@" )
+                if symbol_indirect:
+                    new_source.append("MEM {}".format(self.asm.symbol()[1:]))
+                    new_source.append("MEM M")
+                    fixed_indirect_memory = True
+                else:
+                    new_source.append(self.asm.instruction())
+            elif self.asm.instructionType() == AsmCodes.InstructionType.J_INSTRUCTION:
                 if self.asm.symbol()[0] == "@":
-                    raise Exception("Cannot use `@` in this instruction: \"{}\"".format(self.asm.instruction()))
+                    raise Exception("Cannot use `@` in a jump instruction: \"{}\"".format(self.asm.instruction()))
                 new_source.append(self.asm.instruction())
             else:
                 new_source.append(self.asm.instruction())
         
         self.asm.set_source(new_source)
         self.asm.reset()
+        
+        return fixed_indirect_memory
+    
+    
+    # Performs multiple levels of resolving indirect memory until it is all flat
+    def resolve_all_indirect_memory(self):
+        more_indirect_memory = True
+        while more_indirect_memory:
+            more_indirect_memory = self.resolve_indirect_memory()
     
     
     # Pre-assemble pass, add all L-instructions to the symbol table
@@ -405,10 +425,8 @@ class Assembler:
         self.asm.reset()
     
     
-    # Main loop, where the assembly actually occurs
-    def run(self):
-        self.resolve_indirect_memory()
-        self.resolve_loops()
+    # Assembles the objects for the final codes
+    def assemble_objects(self):
         self.assembled_code_objects = list()
         while(self.asm.hasMoreLines()):
             self.asm.advance()
@@ -449,13 +467,18 @@ class Assembler:
                     instruction["src"] = AsmCodes.Src.B
                 elif self.asm.src() == "M":
                     instruction["src"] = AsmCodes.Src.M
+                elif self.asmtable.contains(self.asm.src()):
+                    # It's a symbol
+                    instruction["value"] = self.asmtable.getAddress(self.asm.src())
+                    instruction["src"] = AsmCodes.Src.DV
                 else:
                     # It may be a direct value
                     value = self.dec8.int_from_formatted(self.asm.src())
-                    if value == False:
+                    if type(value) == bool:
                          raise Exception("\"{}\" from \"{}\"is not a valid destination or integer!".format(self.asm.src(), self.asm.instruction()))
                     instruction["value"] = value
-                    instruction["src"] = AsmCodes.Src.DV   
+                    instruction["src"] = AsmCodes.Src.DV
+                    
                 self.assembled_code_objects.append(instruction)
             elif instruction["type"] in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
                 # Always either a `MEM` or a type of `JMP` instruction
@@ -514,7 +537,7 @@ class Assembler:
                     # Use the symbol value
                     instruction["value"] = self.asmtable.getAddress(self.asm.symbol())
                 # Check if it's a direct value then
-                elif symbol_value != False:
+                elif type(symbol_value) != bool:
                     instruction["value"] = symbol_value
                 # Finally, just add it to the symbol table if it is valid
                 else:
@@ -528,6 +551,14 @@ class Assembler:
                 # It is a `NOP`
                 instruction["opcode"] = AsmCodes.Opcode.NOP
                 self.assembled_code_objects.append(instruction)
+        self.asm.reset()
+    
+    
+    # Main loop, where the assembly actually occurs
+    def run(self):
+        self.resolve_all_indirect_memory()
+        self.resolve_loops()
+        self.assemble_objects()
     
     
     # A helper to get the assembled objects
@@ -744,6 +775,8 @@ class ProgramROM:
         
         self.pc = Register(self.address_bits)
         self.pc.set(0)
+        
+        self.asm = None
     
     
     # Clear ROM
@@ -757,13 +790,13 @@ class ProgramROM:
         self.clear()
         
         # Make assembler for file
-        f_asm = Assembler(file_in)
+        self.asm = Assembler(file_in)
         
         # Run assembly
-        f_asm.run()
+        self.asm.run()
         
         # Program commands into ROM
-        for instruction in f_asm.assembled_objects():
+        for instruction in self.asm.assembled_objects():
             self.instructions[instruction["address"]] = instruction
     
     
@@ -802,4 +835,4 @@ ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 # Make the ROM
 rom = ProgramROM(data_bits=bitwidth, address_bits=(bitwidth*2))
 # Program it
-rom.program("../FET-80 Development/Test Code/XOR.FET80")
+rom.program("../FET-80 Development/Test Code/Pointers.FET80")

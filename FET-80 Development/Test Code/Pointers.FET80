@@ -1,0 +1,12 @@
+# This code is a demonstration of pointers
+# We store a relative memory location (screen + offset), and change the contents from that memory location
+
+# First, store the pointer address (upper right SCREEN area)
+MOV @corner, SCREEN
+ADD @corner, 16
+
+# Now, set it so the upper right corner is on
+MOV @@corner, 0b00000001
+
+# Now, set that pixel to off
+MOV @@corner, 0b00000000
