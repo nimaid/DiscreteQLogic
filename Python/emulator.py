@@ -22,8 +22,54 @@ class Dec2:
             n -= (2 ** self.bits )
         return n
 
+
+# A helper class to provide assembly-related codes
+class AsmCodes:
+    # A class to implement the various opcodes
+    class Opcode(Enum):
+        NOP = 0
+        MOV = 1
+        MEM = 2
+        ADD = 3
+        NAND = 4
+        JMP = 5
+        JC = 6
+        JNC = 7
+        JEQZ = 8
+        JNEZ = 9
+        JGTZ = 10
+        JLTZ = 11
+        JGEZ = 12
+        JLEZ = 13
+    
+    
+    # A class to implement the various sources
+    class Src(Enum):
+        A = 0
+        B = 1
+        M = 2
+        DV = 3
+    
+    
+    # A class to implement the various destinations
+    class Dest(Enum):
+        A = 0
+        B = 1
+        M = 2
+    
+    
+    # A class to implement the various instruction types
+    class InstructionType(Enum):
+        T_INSTRUCTION = 0
+        M_INSTRUCTION = 1
+        C_INSTRUCTION = 2
+        J_INSTRUCTION = 3
+        D_INSTRUCTION = 4
+        L_INSTRUCTION = 5
+
+
 # Define parser class to parse assembly files into a usable format
-class AssemblyParser:
+class AsmParser:
     # Opens the input file / stream and gets ready to parse it
     def __init__(self, file_in):
         # Read source file
@@ -54,16 +100,6 @@ class AssemblyParser:
         self.current_address = -1
     
     
-    # A class to implement the various types of instruction codes
-    class InstructionCode(Enum):
-        T_INSTRUCTION = 0
-        M_INSTRUCTION = 1
-        C_INSTRUCTION = 2
-        J_INSTRUCTION = 3
-        D_INSTRUCTION = 4
-        L_INSTRUCTION = 5
-    
-    
     # Helper function to "reset" the parser
     def reset(self):
         self.current_line_idx = -1
@@ -92,7 +128,7 @@ class AssemblyParser:
         if self.hasMoreLines():
             self.current_line_idx += 1
             # Also increment the address counter ONLY if it is not a loop instruction
-            if self.instructionType() != self.InstructionCode.L_INSTRUCTION:
+            if self.instructionType() != AsmCodes.InstructionType.L_INSTRUCTION:
                 self.current_address += 1
         else:
             raise Exception("No more lines left in program!")
@@ -110,6 +146,7 @@ class AssemblyParser:
     def address(self):
         return self.current_address
     
+    
     # Returns the type of the current instruction:
     # T_INSTRUCTION for a `MOV` command
     # M_INSTRUCTION for a `MEM` command
@@ -121,17 +158,17 @@ class AssemblyParser:
         first_char = self.instruction()[0]
         first_word = self.instruction().split(" ")[0].upper()
         if first_char == "(":
-            return self.InstructionCode.L_INSTRUCTION
+            return AsmCodes.InstructionType.L_INSTRUCTION
         elif first_word == "MOV":
-            return self.InstructionCode.T_INSTRUCTION
+            return AsmCodes.InstructionType.T_INSTRUCTION
         elif first_word == "MEM":
-            return self.InstructionCode.M_INSTRUCTION
+            return AsmCodes.InstructionType.M_INSTRUCTION
         elif first_word in ["ADD", "NAND"]:
-            return self.InstructionCode.C_INSTRUCTION
+            return AsmCodes.InstructionType.C_INSTRUCTION
         elif first_word in ["JMP", "JC", "JNC", "JEQZ", "JNEZ", "JGTZ", "JLTZ", "JGEZ", "JLEZ"]:
-            return self.InstructionCode.J_INSTRUCTION
+            return AsmCodes.InstructionType.J_INSTRUCTION
         elif first_word == "NOP":
-            return self.InstructionCode.D_INSTRUCTION
+            return AsmCodes.InstructionType.D_INSTRUCTION
         else:
             raise Exception("Current command isn't a known instruction type, no symbol to extract!")
     
@@ -150,35 +187,42 @@ class AssemblyParser:
             return list(filter(None, text.split(delimiter)))
     
     
-    # If the current instruction is `(yyy)`, returns the symbol `yyy`.
-    # If the current instruction is `JMP yyy`, `MEM yyy`, `MOV A, Mxyyy`, etc., returns the symbol or decimal yyy (as a string).
-    # Should be called only if instructionType is T_INSTRUCTION, M_INSTRUCTION, C_INSTRUCTION, J_INSTRUCTION, or L_INSTRUCTION
+    # If the current instruction is `(xxx)`, returns the symbol `xxx`.
+    # If the current instruction is `JMP xxx` or `MEM xxx`, returns the symbol or decimal xxx (as a string).
+    # Should be called only if instructionType is M_INSTRUCTION, J_INSTRUCTION, or L_INSTRUCTION
     def symbol(self):
         current_instruction_type = self.instructionType()
-        if current_instruction_type in [self.InstructionCode.T_INSTRUCTION, self.InstructionCode.C_INSTRUCTION]:
+        if current_instruction_type in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
+            # Will always be in the format `OP xxx`, can just take last portion
+            split_instruction = self.instruction_split()
+            if len(split_instruction) != 2:
+                raise Exception("This instruction requires exactly 1 argument: \"{}\"".format(self.instruction()))
+            return split_instruction[1]
+        elif current_instruction_type == AsmCodes.InstructionType.L_INSTRUCTION:
+            # Remove ( and ) in (xxx)
+            return self.instruction().replace("(", "").replace(")", "")
+        else:
+            raise Exception("Current command isn't a valid instruction, no symbol to extract!")
+    
+    
+    # Returns the symbolic `src` part of the current instruction (3 possibilities or an int.)
+    # Should only be called if instructionType is T_INSTRUCTION or C_INSTRUCTION
+    def src(self):
+        if self.instructionType() in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
             # Will always be in the format `OP xxx, yyy`, can just take the last portion
             split_instruction = self.instruction_split()
             split_instruction = self.instruction_split(split_instruction, ",")
             if len(split_instruction) != 3:
                 raise Exception("This instruction requires exactly 2 arguments: \"{}\"".format(self.instruction()))
             return split_instruction[2]
-        elif current_instruction_type in [self.InstructionCode.M_INSTRUCTION, self.InstructionCode.J_INSTRUCTION]:
-            # Will always be in the format `OP yyy`, can just take last portion
-            split_instruction = self.instruction_split()
-            if len(split_instruction) != 2:
-                raise Exception("This instruction requires exactly 1 argument: \"{}\"".format(self.instruction()))
-            return split_instruction[1]
-        elif current_instruction_type == self.InstructionCode.L_INSTRUCTION:
-            # Remove ( and ) in (yyy)
-            return self.instruction().replace("(", "").replace(")", "")
         else:
             raise Exception("Current command isn't a valid instruction, no symbol to extract!")
     
     
-    # Returns the symbolic `dest` part of the current instruction
+    # Returns the symbolic `dest` part of the current instruction (3 possibilities)
     # Should only be called if instructionType is T_INSTRUCTION or C_INSTRUCTION
     def dest(self):
-        if self.instructionType() in [self.InstructionCode.T_INSTRUCTION, self.InstructionCode.C_INSTRUCTION]:
+        if self.instructionType() in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
             # Will always be in the format `OP xxx, yyy`, can just take the middle part
             split_instruction = self.instruction_split()
             split_instruction = self.instruction_split(split_instruction, ",")
@@ -195,6 +239,160 @@ class AssemblyParser:
         # We just return the first part, always
         split_instruction = self.instruction_split()
         return split_instruction[0]
+
+
+
+# Define SymbolTable class for use in the pre-assembler
+class SymbolTable:
+    # Creates a new empty symbol table.
+    def __init__(self):
+        self.table = dict()
+    
+    # Adds <symbol,address> to the table
+    def addEntry(self, symbol, address):
+        self.table[symbol] = address
+    
+    # Does the symbol table contain the given symbol?
+    def contains(self, symbol):
+        if symbol in self.table.keys():
+            return True
+        else:
+            return False
+    
+    # Returns the address associated with the symbol.
+    def getAddress(self, symbol):
+        return self.table[symbol]
+
+
+
+# A class to assemble the commands to simple instructions and resolve symbols
+class Assembler:
+    def __init__(self, file_in):
+        self.asm = AsmParser(file_in)
+        self.asmtable = SymbolTable()
+        
+        # Initialize symbol table with predefined constants
+        # Virtual registers RAM 0-15
+        self.asmtable.addEntry("R0", 0)
+        self.asmtable.addEntry("R1", 1)
+        self.asmtable.addEntry("R2", 2)
+        self.asmtable.addEntry("R3", 3)
+        self.asmtable.addEntry("R4", 4)
+        self.asmtable.addEntry("R5", 5)
+        self.asmtable.addEntry("R6", 6)
+        self.asmtable.addEntry("R7", 7)
+        self.asmtable.addEntry("R8", 8)
+        self.asmtable.addEntry("R9", 9)
+        self.asmtable.addEntry("R10", 10)
+        self.asmtable.addEntry("R11", 11)
+        self.asmtable.addEntry("R12", 12)
+        self.asmtable.addEntry("R13", 13)
+        self.asmtable.addEntry("R14", 14)
+        self.asmtable.addEntry("R15", 15)
+        # Relevantly, set the first free RAM address to 16
+        self.free_mem_loc = 16
+        # SCREEN and IO
+        self.asmtable.addEntry("SCREEN", 0xFE00)
+        self.asmtable.addEntry("IO", 0xFF00)
+        
+        self.assembled_code_objects = list()
+    
+    
+    # Pre-assemble pass, add all L-instructions to the symbol table
+    def resolve_loops(self):
+        while(self.asm.hasMoreLines()):
+            self.asm.advance()
+            if self.asm.instructionType() == AsmCodes.InstructionType.L_INSTRUCTION:
+                # If it's an L-instruction, make a new symbol that is the index of the next line in the program
+                self.asmtable.addEntry(self.asm.symbol(), self.asm.address()+1)
+        self.asm.reset()
+    
+    
+    # Main loop, where the assembly actually occurs
+    def run(self):
+        self.resolve_loops()
+        while(self.asm.hasMoreLines()):
+            self.asm.advance()
+            
+            # Init the instruction output dict
+            instruction = { "type" : self.asm.instructionType(),
+                            "opcode" : None,
+                            "value" : None,
+                            "src" : None,
+                            "dest" : None }
+            
+            if instruction["type"] in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
+                # Always a `MOV`, `ADD`, or `NAND` instruction
+                # Format: `MOV dest, src`
+                # `src` can be a direct value
+                
+                if self.asm.opcode() == "MOV":
+                    instruction["opcode"] = AsmCodes.Opcode.MOV
+                elif self.asm.opcode() == "ADD":
+                    instruction["opcode"] = AsmCodes.Opcode.ADD
+                elif self.asm.opcode() == "NAND":
+                    instruction["opcode"] = AsmCodes.Opcode.NAND
+                
+                if self.asm.dest() == "A":
+                    instruction["dest"] = AsmCodes.Dest.A
+                elif self.asm.dest() == "B":
+                    instruction["dest"] = AsmCodes.Dest.B
+                elif self.asm.dest() == "M":
+                    instruction["dest"] = AsmCodes.Dest.M
+                
+                if self.asm.src() == "A":
+                    instruction["src"] = AsmCodes.Src.A
+                elif self.asm.src() == "B":
+                    instruction["src"] = AsmCodes.Src.B
+                elif self.asm.src() == "M":
+                    instruction["src"] = AsmCodes.Src.M
+                else:
+                    # It may be a direct value
+                    try:
+                        instruction["value"] = int(self.asm.src())
+                        instruction["src"] = AsmCodes.Src.DV
+                    except ValueError:
+                        raise Exception("\"{}\" from \"{}\"is not a valid destination or integer!".format(self.asm.src(), self.asm.instruction()))
+                self.assembled_code_objects += instruction
+            elif instruction["type"] in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
+                # Always either a `MEM` or a type of `JMP` instruction
+                # Format: `MEM symbol`
+                # We must resolve either the symbol or direct value
+                # Hex and binary values are allowed with 0x and 0b
+                
+                if self.asm.opcode() == "MEM":
+                    instruction["opcode"] = AsmCodes.Opcode.MEM
+                elif self.asm.opcode() == "JMP":
+                    instruction["opcode"] = AsmCodes.Opcode.JMP
+                elif self.asm.opcode() == "JC":
+                    instruction["opcode"] = AsmCodes.Opcode.JC
+                elif self.asm.opcode() == "JNC":
+                    instruction["opcode"] = AsmCodes.Opcode.JNC
+                elif self.asm.opcode() == "JEQZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JEQZ
+                elif self.asm.opcode() == "JNEZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JNEZ
+                elif self.asm.opcode() == "JGTZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JGTZ
+                elif self.asm.opcode() == "JGTZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JGTZ
+                elif self.asm.opcode() == "JLTZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JLTZ
+                elif self.asm.opcode() == "JGEZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JGEZ
+                elif self.asm.opcode() == "JLEZ":
+                    instruction["opcode"] = AsmCodes.Opcode.JLEZ
+                
+                # Now we need to set the value
+                # First, we will check to see if it is already in the symbol table
+                # If not, we will then check to see if it is a direct value,
+                # Finally, if it is a valid symbol name, add a new symbol to the table
+                #TODO
+
+            elif instruction["type"] == AsmCodes.InstructionType.D_INSTRUCTION:
+                #TODO
+            
+    
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
 
@@ -395,35 +593,28 @@ class RAM:
 
 # A class to implement the program ROM, with an integrated program counter register
 class ProgramROM:
-    # A class to implement the various opcodes
-    class Opcode(Enum):
-        NOP = 0
-        MOV = 1
-        MEM = 2
-        ADD = 3
-        NAND = 4
-        JMP = 5
-        JC = 6
-        JNC = 7
-        JEQZ = 8
-        JNEZ = 9
-        JGTZ = 10
-        JLTZ = 11
-        JGEZ = 12
-        JLEZ = 13
+    
     
     def __init__(self, data_bits, address_bits):
         self.data_bits = data_bits
         self.address_bits = address_bits
         
         self.words = 2**self.address_bits
-        self.instructions = [{"foo" : "bar"} for _ in range(self.words)]
+        self.instructions = [None for _ in range(self.words)]
         
         self.pc = Register(self.address_bits)
         self.pc.set(0)
     
-    #TODO: Parse a text file into commands
-    #def program(self, file_in):
+    # Parse a text file into instructions
+    def program(self, file_in):
+        #TODO: Do first pass first to resolve symbols first
+        # Make parser for assembly file
+        '''
+        asm = AssemblyParser(file_in)
+        
+        while asm.hasMoreLines():
+            asm.advance()
+        '''
         
     
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
@@ -446,4 +637,4 @@ reg_B = Register(bitwidth)
 ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
 # Make demo assembly parser for testing
-asm = AssemblyParser("../FET-80 Development/Test Code/SUB.FET80")
+asm = Assembler("../FET-80 Development/Test Code/XOR_exp.FET80")
