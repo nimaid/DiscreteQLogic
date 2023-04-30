@@ -566,6 +566,64 @@ class Assembler:
         if self.assembled_code_objects is None:
             raise Exception("Assembler hasn't been run yet!")
         return self.assembled_code_objects
+    
+    
+    # A helper function to print the processed assembly in it's original symbolic form
+    def assembled_symbols(self):
+        for line in self.assembled_objects():
+            if line["opcode"] == AsmCodes.Opcode.NOP:
+                opcode_text = "NOP"
+            elif line["opcode"] == AsmCodes.Opcode.MOV:
+                opcode_text = "MOV"
+            elif line["opcode"] == AsmCodes.Opcode.MEM:
+                opcode_text = "MEM"
+            elif line["opcode"] == AsmCodes.Opcode.ADD:
+                opcode_text = "ADD"
+            elif line["opcode"] == AsmCodes.Opcode.NAND:
+                opcode_text = "NAND"
+            elif line["opcode"] == AsmCodes.Opcode.JMP:
+                opcode_text = "JMP"
+            elif line["opcode"] == AsmCodes.Opcode.JC:
+                opcode_text = "JC"
+            elif line["opcode"] == AsmCodes.Opcode.JNC:
+                opcode_text = "JNC"
+            elif line["opcode"] == AsmCodes.Opcode.JEQZ:
+                opcode_text = "JEQZ"
+            elif line["opcode"] == AsmCodes.Opcode.JNEZ:
+                opcode_text = "JNEZ"
+            elif line["opcode"] == AsmCodes.Opcode.JGTZ:
+                opcode_text = "JGTZ"
+            elif line["opcode"] == AsmCodes.Opcode.JLTZ:
+                opcode_text = "JLTZ"
+            elif line["opcode"] == AsmCodes.Opcode.JGEZ:
+                opcode_text = "JGEZ"
+            elif line["opcode"] == AsmCodes.Opcode.JLEZ:
+                opcode_text = "JLEZ"
+            
+            if line["src"] == AsmCodes.Src.DV:
+                source_text = str(line["value"])
+            elif line["src"] == AsmCodes.Src.A:
+                source_text = "A"
+            elif line["src"] == AsmCodes.Src.B:
+                source_text = "B"
+            elif line["src"] == AsmCodes.Src.M:
+                source_text = "M"
+            
+            if line["dest"] == AsmCodes.Dest.A:
+                dest_text = "A"
+            elif line["dest"] == AsmCodes.Dest.B:
+                dest_text = "B"
+            elif line["dest"] == AsmCodes.Dest.M:
+                dest_text = "M"
+            
+            if line["type"] == AsmCodes.InstructionType.D_INSTRUCTION:
+                line_text = "{}".format(opcode_text)
+            elif line["type"] in [AsmCodes.InstructionType.T_INSTRUCTION, AsmCodes.InstructionType.C_INSTRUCTION]:
+                line_text = "{} {}, {}".format(opcode_text, dest_text, source_text)
+            elif line["type"] in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
+                line_text = "{} {}".format(opcode_text, source_text)
+                
+            print(line_text)
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
 
