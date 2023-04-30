@@ -177,11 +177,24 @@ class AssemblyParser:
     
     # Returns the symbolic `dest` part of the current instruction
     # Should only be called if instructionType is T_INSTRUCTION or C_INSTRUCTION
-    #def dest(self):
+    def dest(self):
+        if self.instructionType() in [self.InstructionCode.T_INSTRUCTION, self.InstructionCode.C_INSTRUCTION]:
+            # Will always be in the format `OP xxx, yyy`, can just take the middle part
+            split_instruction = self.instruction_split()
+            split_instruction = self.instruction_split(split_instruction, ",")
+            if len(split_instruction) != 3:
+                raise Exception("This instruction requires exactly 2 arguments: \"{}\"".format(self.instruction()))
+            return split_instruction[1]
+        else:
+            raise Exception("Current command isn't a valid instruction, no symbol to extract!")
     
     
-    
-    
+    # Returns the symbolic `opcode` part of the current instruction
+    # This can be called for any valid instruction
+    def opcode(self):
+        # We just return the first part, always
+        split_instruction = self.instruction_split()
+        return split_instruction[0]
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
 
@@ -433,4 +446,4 @@ reg_B = Register(bitwidth)
 ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 
 # Make demo assembly parser for testing
-asmparser = AssemblyParser("../FET-80 Development/Test Code/SUB.FET80")
+asm = AssemblyParser("../FET-80 Development/Test Code/SUB.FET80")
