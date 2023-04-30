@@ -367,7 +367,7 @@ class Fet80:
 fet80 = Fet80()
 
 # Program the system
-fet80.program("../FET-80 Development/Test Code/Pointers.FET80")
+fet80.program("../FET-80 Development/Test Code/Pointers.f80asm")
 
 # Make helpful decimal converters for printing and such
 dec_data = helpers.Dec2(fet80.bits()["data"])
