@@ -353,8 +353,8 @@ class Assembler:
         # Relevantly, set the first free RAM address to 16
         self.free_mem_loc = 16
         # SCREEN and IO
-        self.asmtable.addEntry("SCREEN", 0xFE00)
-        self.asmtable.addEntry("IO", 0xFF00)
+        self.asmtable.addEntry("SCREEN", 0xFFD0)
+        self.asmtable.addEntry("IO", 0xFFF0)
         
         self.assembled_code_objects = None
     
@@ -568,8 +568,9 @@ class Assembler:
         return self.assembled_code_objects
     
     
-    # A helper function to print the processed assembly in it's original symbolic form
-    def assembled_symbols(self):
+    # A helper function to return the processed assembly in it's original symbolic form
+    def processed_assembly(self):
+        processed_asm = list()
         for line in self.assembled_objects():
             if line["opcode"] == AsmCodes.Opcode.NOP:
                 opcode_text = "NOP"
@@ -623,7 +624,8 @@ class Assembler:
             elif line["type"] in [AsmCodes.InstructionType.M_INSTRUCTION, AsmCodes.InstructionType.J_INSTRUCTION]:
                 line_text = "{} {}".format(opcode_text, source_text)
                 
-            print(line_text)
+            processed_asm.append(line_text)
+        return processed_asm
 # ~~~~~~~~ End Helper Definitions ~~~~~~~~
 
 
@@ -894,3 +896,7 @@ ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
 rom = ProgramROM(data_bits=bitwidth, address_bits=(bitwidth*2))
 # Program it
 rom.program("../FET-80 Development/Test Code/Pointers.FET80")
+# Print processed assembly for debugging
+print("~~~~~~~~ Processed Assembly ~~~~~~~~")
+for line in rom.asm.processed_assembly():
+    print("    " + line)
