@@ -2,11 +2,10 @@
 # We store a relative memory location (screen + offset), and change the contents from that memory location
 
 # First, store the pointer address (upper right SCREEN area)
-MOV @corner, SCREEN
-ADD @corner, 16
+MOV @corner, SCREEN			# runs `MEM corner` first
+ADD M, 16
 
 # Now, set it so the upper right corner is on
-MOV @@corner, 0b00000001
-
-# Now, set that pixel to off
-MOV @@corner, 0b00000000
+MOV @@corner, 0b00000001	# runs `MEM corner` and `MEM M` first
+# Then, set that pixel to off
+MOV M, 0b00000000			# `M` is still set to the pointer
