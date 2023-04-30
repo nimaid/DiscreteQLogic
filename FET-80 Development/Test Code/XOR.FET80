@@ -22,16 +22,16 @@
 #   
 # ~~~~ ASSEMBLER MACRO EXAMPLES ~~~~
 #   
-#   MOV R0, A		--->
+#   MOV @R0, A		--->
 #       MEM R0
 #       MOV M, A
 #   
-#   MOV MxFF01, A	--->
+#   MOV @0xFF01, A	--->
 #       MEM 0xFF01
 #       MOV M, A
 #   
-#   MOV A, MxFF01, 	--->
-#       MEM 0xFF01
+#   MOV A, @1, 	--->
+#       MEM 1
 #       MOV A, M
 #   
 #   
@@ -43,38 +43,38 @@
 # Finally, we use NAND#4 to take the outputs from NAND#2 and NAND#3, and hook it to the outputs
 
 # First, save operands into memory
-MOV R0, 123         # 123 (input A) is in R0 now
-MOV R1, 36			# 36(input B) is in R0 now
+MOV @R0, 123        # 123 (input A) is in R0 now
+MOV @R1, 36			# 36(input B) is in R0 now
 
 # Copy to A and B
-MOV A, R0
-MOV B, R1
+MOV A, @R0
+MOV B, @R1
 
 # Do NAND#1
 NAND A, B			# NAND(123, 36) (NAND#1) is in A now
 
 # Save NAND#1 for later
-MOV R2, A           # NAND#1 is in R2 now
+MOV @R2, A          # NAND#1 is in R2 now
 
 # We have the output of NAND#1 and B available, lets get NAND#3 and store it in memory
 NAND A, B
-MOV R3, A			# NAND#3 is in R3 now
+MOV @R3, A			# NAND#3 is in R3 now
 
 # We need NAND#2 now, we need to load A and NAND#1
-MOV A, R0
-MOV B, R2
+MOV A, @R0
+MOV B, @R2
 
 # Get NAND#2
 NAND A, B			# NAND#2 is in A now
 
 # Load NAND#3 alongside NAND#2
-MOV B, R3
+MOV B, @R3
 
 # Get NAND#4 (our XOR result)
 NAND A, B			# Final XOR result is in A now
 
 # Move to final location
-MOV MxFF02, A		# It is finally in the output location
+MOV @0xFF02, A		# It is finally in the output location
 
 # Do an infinite loop to halt
 (LOOP)
