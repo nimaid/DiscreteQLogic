@@ -250,26 +250,49 @@ class ProgramROM:
     
     def read(self):
         return self.instructions[self.pc.get()]
+
+
+
+# A class to represent the complete FET-80 computer system
+class Fet80:
+    def __init__(self):
+        # Set bit widths
+        self.data_bits = 8
+        self.address_bits = self.data_bits * 2
+
+        # Make an ALU
+        self.alu = ALU(self.data_bits)
+
+        # Make the registers
+        self.registers = { "A" : Register(self.data_bits),
+                           "B" : Register(self.data_bits) }
+        
+        # Make the RAM
+        self.ram = RAM(data_bits=self.data_bits, address_bits=self.address_bits)
+
+        # Make the ROM
+        self.rom = ProgramROM(data_bits=self.data_bits, address_bits=self.address_bits)
+    
+    
+    #  A function to program the ROM with an assembly file
+    def program(self, file_in):
+        self.rom.program(file_in)
+        self.rom.program(file_in)
+    
+    
+    # A helper function to get the bit widths used in the system
+    def bits(self):
+        return { "data"    : self.data_bits,
+                 "address" : self.address_bits }
 # ~~~~~~~~ End Hardware Definition ~~~~~~~~
 
 
 # ~~~~~~~~ Begin System Setup ~~~~~~~~
-bitwidth = 8
+# Make the FET-80 system
+fet80 = Fet80()
+
+# Program the system
+fet80.program("../FET-80 Development/Test Code/Pointers.FET80")
 
 # Make a helpful decimal converter for printing and such
-dec2 = helpers.Dec2(bitwidth)
-
-# Make an ALU
-alu = ALU(bitwidth)
-
-# Make the registers
-reg_A = Register(bitwidth)
-reg_B = Register(bitwidth)
-    
-# Make the RAM
-ram = RAM(data_bits=bitwidth, address_bits=(bitwidth*2))
-
-# Make the ROM
-rom = ProgramROM(data_bits=bitwidth, address_bits=(bitwidth*2))
-# Program it
-rom.program("../FET-80 Development/Test Code/Pointers.FET80")
+dec2 = helpers.Dec2(fet80.bits()["data"])
