@@ -9,3 +9,7 @@ ADD M, 16
 MOV @@corner, 0b00000001	# runs `MEM corner` and `MEM M` first
 # Then, set that pixel to off
 MOV M, 0b00000000			# `M` is still set to the pointer
+
+# Do an infinite loop to halt
+(LOOP)
+JMP LOOP
