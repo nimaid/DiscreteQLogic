@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from enum import Enum
+import tkinter as tk
 
 import helpers
 import assembler
@@ -644,8 +645,42 @@ class Emulator:
 # ~~~~~~~~ End Emulator Definition ~~~~~~~~
 
 
+# ~~~~~~~~ Begin GUI Definition ~~~~~~~~
+# The main window
+class MainWindow:
+    def __init__(self):
+        self.root = None
+    
+    def run(self):
+        # Make window
+        self.root = tk.Tk()
+        
+        #TODO
+        greeting = tk.Label(text="Hello, world!")
+        greeting.pack()
+        
+        # Start main event loop
+        self.root.mainloop()
+        
+# ~~~~~~~~ End GUI Definition ~~~~~~~~
+
+
 # ~~~~~~~~ Begin Main Program ~~~~~~~~
 emu = Emulator()
 
 # Load the test code
 emu.load_program("../FET-80 Development/Test Code/Pointers.f80asm")
+
+
+# Make the main window
+main_window = MainWindow()
+
+'''
+def main():
+    return 0
+    
+if __name__ == '__main__':
+    # Run main
+    exit_code = main()
+    sys.exit(exit_code)
+'''
