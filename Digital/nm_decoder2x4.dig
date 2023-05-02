@@ -38,11 +38,6 @@
       <pos x="240" y="-280"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
-      <elementAttributes/>
-      <pos x="40" y="-500"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -77,27 +72,32 @@
       <pos x="-60" y="-460"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_Not.dig</elementName>
+      <elementName>nm_not.dig</elementName>
+      <elementAttributes/>
+      <pos x="40" y="-500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nm_not.dig</elementName>
       <elementAttributes/>
       <pos x="0" y="-420"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
+      <elementName>nm_and.dig</elementName>
       <elementAttributes/>
       <pos x="160" y="-400"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
+      <elementName>nm_and.dig</elementName>
       <elementAttributes/>
       <pos x="160" y="-300"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
+      <elementName>nm_and.dig</elementName>
       <elementAttributes/>
       <pos x="160" y="-200"/>
     </visualElement>
     <visualElement>
-      <elementName>nm_And.dig</elementName>
+      <elementName>nm_and.dig</elementName>
       <elementAttributes/>
       <pos x="160" y="-100"/>
     </visualElement>
