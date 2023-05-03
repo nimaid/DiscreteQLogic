@@ -102,10 +102,6 @@
           <string>Label</string>
           <string>Overflow</string>
         </entry>
-        <entry>
-          <string>Bits</string>
-          <int>4</int>
-        </entry>
       </elementAttributes>
       <pos x="140" y="-800"/>
     </visualElement>
