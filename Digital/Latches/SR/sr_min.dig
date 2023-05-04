@@ -10,14 +10,6 @@
           <string>Label</string>
           <string>S&apos;</string>
         </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="0" z="true"/>
-        </entry>
-        <entry>
-          <string>isHighZ</string>
-          <boolean>true</boolean>
-        </entry>
       </elementAttributes>
       <pos x="280" y="-40"/>
     </visualElement>
@@ -38,14 +30,6 @@
           <string>Label</string>
           <string>R&apos;</string>
         </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="0" z="true"/>
-        </entry>
-        <entry>
-          <string>isHighZ</string>
-          <boolean>true</boolean>
-        </entry>
       </elementAttributes>
       <pos x="280" y="0"/>
     </visualElement>
@@ -58,11 +42,6 @@
         </entry>
       </elementAttributes>
       <pos x="620" y="0"/>
-    </visualElement>
-    <visualElement>
-      <elementName>PullUp</elementName>
-      <elementAttributes/>
-      <pos x="400" y="-60"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
@@ -116,11 +95,6 @@
         </entry>
       </elementAttributes>
       <pos x="520" y="-40"/>
-    </visualElement>
-    <visualElement>
-      <elementName>PullUp</elementName>
-      <elementAttributes/>
-      <pos x="500" y="-60"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -221,20 +195,12 @@
       <p2 x="440" y="-40"/>
     </wire>
     <wire>
-      <p1 x="400" y="-60"/>
-      <p2 x="400" y="-40"/>
-    </wire>
-    <wire>
       <p1 x="400" y="20"/>
       <p2 x="400" y="40"/>
     </wire>
     <wire>
       <p1 x="400" y="-40"/>
       <p2 x="400" y="-20"/>
-    </wire>
-    <wire>
-      <p1 x="500" y="-60"/>
-      <p2 x="500" y="-40"/>
     </wire>
     <wire>
       <p1 x="500" y="20"/>
