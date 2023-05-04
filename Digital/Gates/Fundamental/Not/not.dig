@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>In</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Ground</elementName>
+      <elementAttributes/>
+      <pos x="520" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>PullUp</elementName>
+      <elementAttributes/>
+      <pos x="520" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Out</string>
+        </entry>
+      </elementAttributes>
+      <pos x="540" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>NFET</elementName>
+      <elementAttributes/>
+      <pos x="500" y="0"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="520" y="-20"/>
+      <p2 x="540" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="40"/>
+      <p2 x="500" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="-40"/>
+      <p2 x="520" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="40"/>
+      <p2 x="520" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="-20"/>
+      <p2 x="520" y="0"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
