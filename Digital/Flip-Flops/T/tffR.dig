@@ -34,16 +34,6 @@
       <pos x="860" y="380"/>
     </visualElement>
     <visualElement>
-      <elementName>dffR.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="760" y="320"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -52,10 +42,24 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>R</string>
+          <string>R&apos;</string>
+        </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
         </entry>
       </elementAttributes>
       <pos x="780" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>dffR.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="320"/>
     </visualElement>
   </visualElements>
   <wires>
