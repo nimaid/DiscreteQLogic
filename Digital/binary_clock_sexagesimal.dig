@@ -1550,6 +1550,66 @@
       </elementAttributes>
       <pos x="1180" y="240"/>
     </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>16</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1280" y="-240"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
