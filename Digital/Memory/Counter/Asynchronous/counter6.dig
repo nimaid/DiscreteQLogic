@@ -22,7 +22,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>8</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="700" y="280"/>
@@ -36,7 +36,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>8</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="700" y="340"/>
@@ -64,7 +64,11 @@
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>4*2</string>
+          <string>0-3,4-5</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>6</string>
         </entry>
       </elementAttributes>
       <pos x="660" y="280"/>
@@ -192,26 +196,6 @@
       <pos x="340" y="260"/>
     </visualElement>
     <visualElement>
-      <elementName>counter4.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="500" y="260"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Splitter</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Input Splitting</string>
-          <string>4*2</string>
-        </entry>
-      </elementAttributes>
-      <pos x="660" y="340"/>
-    </visualElement>
-    <visualElement>
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
@@ -224,6 +208,30 @@
         </entry>
       </elementAttributes>
       <pos x="460" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>0-3,4-5</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="660" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>counter2.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="260"/>
     </visualElement>
   </visualElements>
   <wires>
