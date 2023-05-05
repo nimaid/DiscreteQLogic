@@ -2770,46 +2770,8 @@
           <string>runRealTime</string>
           <boolean>true</boolean>
         </entry>
-        <entry>
-          <string>Frequency</string>
-          <int>2</int>
-        </entry>
       </elementAttributes>
-      <pos x="440" y="-20"/>
-    </visualElement>
-    <visualElement>
-      <elementName>tff.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="460" y="-40"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>NetName</string>
-          <string>Clk</string>
-        </entry>
-      </elementAttributes>
-      <pos x="520" y="-20"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>Clk</string>
-        </entry>
-      </elementAttributes>
-      <pos x="400" y="120"/>
+      <pos x="380" y="120"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -2824,10 +2786,6 @@
     <wire>
       <p1 x="680" y="160"/>
       <p2 x="700" y="160"/>
-    </wire>
-    <wire>
-      <p1 x="440" y="-20"/>
-      <p2 x="460" y="-20"/>
     </wire>
     <wire>
       <p1 x="1280" y="-120"/>
@@ -2848,6 +2806,10 @@
     <wire>
       <p1 x="1520" y="-120"/>
       <p2 x="1540" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="120"/>
+      <p2 x="400" y="120"/>
     </wire>
     <wire>
       <p1 x="460" y="120"/>
