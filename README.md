@@ -22,7 +22,7 @@ Resistor values should be chosen based on acceptable power dissipation and speed
 
 The simplest gate to construct is a NOT gate (also known as an inverter). This is simply a pullup resistor with a transistor configured to short the output to ground when voltage is applied to it's gate. Make sure you understand how this gate works, because this fundamental principal is the foundation which allows the systematic construction of every other NMOS gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_not.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_not.PNG" width="400px" />
 
 </details>
 
@@ -32,7 +32,7 @@ The simplest gate to construct is a NOT gate (also known as an inverter). This i
 
 The next step up in complexity is the NAND gate. This is essentially just a NOT gate with an extra transistor in series to ground. This has the effect of only shorting the output to ground if *both* transistors are conducting. This results in the behavior of a NAND gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_nand.PNG" width="400px" />
 
 </details>
 
@@ -42,7 +42,7 @@ The next step up in complexity is the NAND gate. This is essentially just a NOT 
 
 The NOR gate is almost exactly the same as the NAND gate, except the second transistor is connected in parallel as opposed to series. This has the effect of shorting the output to ground if *either* transistors are conducting. This results in the behavior of a NOR gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_nor.PNG" width="400px" />
 
 </details>
 
@@ -54,11 +54,11 @@ It is possible to efficiently make NAND and NOR gates that have more than 2 inpu
 
 Here is an 8-way NAND gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nand8.PNG" height="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_nand8.PNG" height="400px" />
 
 Here is an 8-way NOR gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_nor8.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_nor8.PNG" width="400px" />
 
 </details>
 
@@ -70,11 +70,11 @@ The best way to make AND and OR gates happens to be the most straightforward. Al
 
 AND:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_and.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_and.PNG" width="400px" />
 
 OR:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_or.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_or.PNG" width="400px" />
 
 </details>
 
@@ -91,13 +91,13 @@ AOI gates are defined by a series of numbers, which specify exactly how many set
 
 Here is an example of an AOI2-2 gate using conventional combinational logic.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/aoi2-2_function.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/aoi2-2_function.PNG" width="400px" />
 
 So why do we care about this odd gate as a single unit? Why don't we just use combinations of AND and NOR gates whenever we need to do these types of operations? The answer is that all of these logical operations can be easily implemented in a single NMOS logic block that uses far fewer transistors and resistors to achieve the same behavior.
 
 Here is that same AIO2-2 gate in NMOS logic, using 4Q1R.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_aoi2-2.PNG" width="400px" />
 
 The way this works is actually very clever. First, observe that this is still arranged with a pullup resistor and transistors that, with some combinations of inputs, shorts to ground. This is the same idea as the NOT gate, and this is where the "inversion" comes from.
 
@@ -107,11 +107,11 @@ Finally, observe that because the sets of series transistors are in parallel wit
 
 Here is an example of a 2-1 AOI gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-1.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_aoi2-1.PNG" width="400px" />
 
 And just to make sure it makes sense, here is a 2-2-2-2 AOI gate.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_aoi2-2-2-2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_aoi2-2-2-2.PNG" width="400px" />
 
 As you can see, you can customize the number of sets and their respective input count to fit your specific needs in the same way you can customize the number of inputs to a NAND or NOR gate.
 
@@ -125,7 +125,7 @@ The final transistor count of each AOI gate will be exactly equal to the total n
 
 It is possible to use an AOI2-2 gate and 2 NOT gates to make an extremely elegant XOR gate, as shown below.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xor.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_xor.PNG" width="400px" />
 
 To understand why this works, think about the AOI gate as "a gate that will set it's output to 0 only when a set of inputs is all 1". In this way, we can analyze the truth table of the XOR gate to find which input conditions result in a 0 and test for them with sets of AND gates that have their inputs set to 1 in those conditions.
 
@@ -154,7 +154,7 @@ We can see that the output is only 0 when both inputs are the same. Therefore, t
 
 We can implement the XNOR gate without using the classic XOR + NOT gate setup. To do so, we simply re-order the NOT gates in our XOR gate design so that the output goes to 0 in each case where the inputs are different, as opposed to the same.
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_xnor.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_xnor.PNG" width="400px" />
 
 </details>
 
@@ -168,7 +168,7 @@ This is extremely useful when you want to have 2 signals occupy the same wire at
 
 Before showing you the enabler circuit, it will be useful to first understand how a CMOS-based NOT gate works:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/cm_not.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/cm_not.PNG" width="400px" />
 
 The top transistor is P-channel, and the bottom one is N-channel. In the configuration shown, the N-channel MOSFET will conduct (to ground) when VCC (1) is applied to it's gate, and will act like an open switch when it is grounded (0). This works just like in the N-channel NOT gate. However, the P-channel MOSFET behaves in exactly the opposite way. When VCC (1) is applied to it's gate, it acts like an open switch, and it conducts (to VCC) when the gate is grounded (0).
 
@@ -176,7 +176,7 @@ With this understanding, we can see that when `In` is 0, the upper P-channel MOS
 
 Now, we are ready to look at the *inverted* enabler circuit (5Q1R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enablen.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_enablen.PNG" width="400px" />
 
 The top 2 transistors are P-channel, while the lower two are N-channel. *(This means the circuit uses 3 N-channel MOSFETs and 2 P-channel MOSFETs.)*
 
@@ -188,7 +188,7 @@ In situations where an inverted input signal is already available without adding
 
 Non-inverted Enabler (6Q2R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_enable.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_enable.PNG" width="400px" />
 
 </details>
 
@@ -200,17 +200,17 @@ Non-inverted Enabler (6Q2R):
 
 This functionality can be accomplished with the following combinational logic:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/mux.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/mux.PNG" width="400px" />
 
 [TODO: Explain how the AND gates only allow the respective `In` signal through if the other input to the AND gate is on. Explain that because of the NOT gate, only 1 of the AND gates will allow it's signal to pass to the OR gate, effectively discarding the signal not selected by `sel`. Note how because only 1 signal is let through, the output of the OR gate will be equal to the selected signal, which is the desired behavior.]
 
 Here is an efficient implementation of a multiplexer *with an inverted output* using an AOI2-2 gate (5Q2R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_muxn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_muxn.PNG" width="400px" />
 
 Note that the AOI2-2 gate is almost exactly what we nee to replace the 2 AND gates and 1 OR gate. The only issue is that the output of the OR gate is inverted. Sometimes you can leverage the inverting nature of this circuit to avoid using a NOT gate to invert the inputs/output. However, if you need a non-inverting multiplexer, you must use a NOT gate on the output, as shown (6Q3R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_mux.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_mux.PNG" width="400px" />
 
 </details>
 
@@ -220,15 +220,15 @@ Note that the AOI2-2 gate is almost exactly what we nee to replace the 2 AND gat
 
 [TODO]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dmux.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/dmux.PNG" width="400px" />
 
 [TODO]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dmuxn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dmuxn.PNG" width="400px" />
 
 [TODO]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dmux.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dmux.PNG" width="400px" />
 
 </details>
 
@@ -240,25 +240,25 @@ The RS latch is the basic form of memory. [TODO: Add API definition and explain 
 
 RS Latch Diagram:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/rs_latch.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/rs_latch.PNG" width="400px" />
 
 [TODO: Add a breakdown of why it works, step-by step. Also explain metastable (invalid) configurations. Also explain that the circuit starts up in a "random" state.]
 
 Here is the RS latch in the logic simulator, using our NMOS components:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_rs.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_rs.PNG" width="400px" />
 
 The SR latch is very similar to the RS latch, but it is made of NAND gates instead of NOR gates. In addition, it's inputs are both inverted (active low) and flipped (set on top and reset on bottom). [TODO: Add full API definition and explain why it's useful, especially compared to the RS latch. Note now the inverted inputs are actually useful later on.]
 
 SR Latch Diagram:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/sr_latch.PNG" width="400px" />
 
 [TODO: Add a step-by-step breakdown that references the RS latch breakdown. Explain that this also starts up in a "random" state.]
 
 Here is the SR latch in the logic simulator, using our NMOS components:
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_sr.PNG" width="400px" />
 
 </details>
 
@@ -270,11 +270,11 @@ Here is the SR latch in the logic simulator, using our NMOS components:
 
 Here is a 2-2 SR latch (6Q2R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr2-2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_sr2-2.PNG" width="400px" />
 
 And here is a 1-2 SR latch (5Q2R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_sr1-2.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_sr1-2.PNG" width="400px" />
 
 </details>
 
@@ -288,31 +288,31 @@ And here is a 1-2 SR latch (5Q2R):
 
 [TODO: Explain that to start, we need to control an SR latch with an enable signal. Explain the difference between transparent and opaque latches, and how opaque latches are useful as memory devices. Introduce the gated SR latch.]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/sr_latch_gated.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/sr_latch_gated.PNG" width="400px" />
 
 [TODO: Explain that in order to store a data bit coming in, we need to send exactly opposite signals to `!s` and `!r`. Explain that a NOT gate does this, and the result is called a gated D latch.]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/d_latch_gated.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/d_latch_gated.PNG" width="400px" />
 
 [TODO: Explain that while enable is high, then the output will always be allowed to change with the input. Explain that this can cause issues with oscillation (racing) inside of complex logic circuits like counters. Explain what an edge-triggered device is, and why this solves the problem of racing. Introduce the basic D flip-flop.]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/dff.PNG" width="400px" />
 
 [TODO: Explain how the 2 new SR latches replace the 2 NAND gates on the `!s` and `!r` inputs, and how this makes it edge-triggered instead of a simple opaque latch. Also explain how the lower left NAND gate effectively replaces the NOT gate in the gated D latch.]
 
 [TODO: Explain that because the SR latches start up in an undefined state, we need some way to reliably set and reset the flop-flops manually. Explain that by adding more inputs to the NAND gates allows us to do this, and introduce the final asynchronous DFF.]
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/dff_async.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/dff_async.PNG" width="400px" />
 
 [TODO: Explain how the set and reset inputs work, and that they are inverted.]
 
 Here is the equivalent circuit in the logic simulator, using our NMOS components (18Q6R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_asyncn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dff_asyncn.PNG" width="400px" />
 
 If you need a DFF that has non-inverted set and reset inputs, you will need to add NOT gates as shown (20Q8R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_async.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dff_async.PNG" width="400px" />
 
 </details>
 
@@ -324,11 +324,11 @@ Often, you don't need to be able to preset a DFF asynchronously. Often, you only
 
 Here is the schematic for such a DFF (16Q6R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff_resetn.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dff_resetn.PNG" width="400px" />
 
 As with the fully asynchronous DFF, the reset input is inverted. To get a non-inverted reset input, use a NOT gate (17Q7R):
 
-<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/Circuits/nm_dff.PNG" width="400px" />
+<img src="https://github.com/nimaid/DiscreteQLogic/raw/main/Images/nm_dff.PNG" width="400px" />
 
 </details>
 
