@@ -12,7 +12,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>4</int>
+          <int>3</int>
         </entry>
       </elementAttributes>
       <pos x="680" y="280"/>
@@ -26,7 +26,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>4</int>
+          <int>3</int>
         </entry>
       </elementAttributes>
       <pos x="680" y="380"/>
@@ -36,11 +36,11 @@
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>2*2</string>
+          <string>2,1</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>4</string>
+          <string>3</string>
         </entry>
       </elementAttributes>
       <pos x="640" y="280"/>
@@ -50,11 +50,11 @@
       <elementAttributes>
         <entry>
           <string>Input Splitting</string>
-          <string>2*2</string>
+          <string>2,1</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>4</string>
+          <string>3</string>
         </entry>
       </elementAttributes>
       <pos x="640" y="380"/>
@@ -224,7 +224,7 @@
       <pos x="320" y="260"/>
     </visualElement>
     <visualElement>
-      <elementName>counter2.dig</elementName>
+      <elementName>tffR.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
@@ -312,6 +312,10 @@
       <p2 x="560" y="280"/>
     </wire>
     <wire>
+      <p1 x="580" y="260"/>
+      <p2 x="580" y="280"/>
+    </wire>
+    <wire>
       <p1 x="420" y="340"/>
       <p2 x="420" y="360"/>
     </wire>
@@ -326,10 +330,6 @@
     <wire>
       <p1 x="500" y="320"/>
       <p2 x="500" y="340"/>
-    </wire>
-    <wire>
-      <p1 x="580" y="260"/>
-      <p2 x="580" y="280"/>
     </wire>
   </wires>
   <measurementOrdering/>
