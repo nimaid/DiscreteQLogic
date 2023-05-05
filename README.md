@@ -26,6 +26,14 @@ The simplest gate to construct is a NOT gate (also known as an inverter). This i
 
 </details>
 
+
+
+#### This section must be re-written.
+<details>
+<summary>Show it to me anyway!</summary>
+
+
+
 ### NAND (2Q1R)
 <details>
 <summary>Details</summary>
@@ -333,3 +341,7 @@ As with the fully asynchronous DFF, the reset input is inverted. To get a non-in
 </details>
 
 ### WIP
+
+
+
+</details>
