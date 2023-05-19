@@ -1,12 +1,12 @@
 /*
-  ATTiny85 1 Second Clokc Genereator with adjust
+  ATTiny85 1 Second Clock Genereator with adjust
            ______
       NC -|      |- VCC
      ADJ -|      |- NC
   EN_ADJ -|      |- Out'
      GND -|______|- Out
 
-  Be default the outputs have a clock signal of 1 Hz preprogrammed.
+  By default the outputs have a clock signal of 1 Hz preprogrammed.
   If EN_ADJ is tied to ground, then the voltage on ADJ will modify the frequency of the signal:
     At 0v, 0.1s will be added to the period for a total of 1.1 Hz
     At 5v, 0.1s will be subtracted from the period for a total of 0.9 Hz
