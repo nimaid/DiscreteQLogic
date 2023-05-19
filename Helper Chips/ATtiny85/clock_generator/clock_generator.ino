@@ -1,5 +1,5 @@
 /*
-  ATTiny85 1 Second Clock Genereator with adjust
+  ATTiny85 1 Second Clock Generator with adjust
            ______
       NC -|      |- VCC
      ADJ -|      |- NC
