@@ -52,7 +52,7 @@
       <pos x="780" y="400"/>
     </visualElement>
     <visualElement>
-      <elementName>dffR.dig</elementName>
+      <elementName>dffRopt.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>

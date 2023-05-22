@@ -34,7 +34,7 @@
       <pos x="860" y="380"/>
     </visualElement>
     <visualElement>
-      <elementName>dff.dig</elementName>
+      <elementName>dffOpt.dig</elementName>
       <elementAttributes>
         <entry>
           <string>shapeType</string>
