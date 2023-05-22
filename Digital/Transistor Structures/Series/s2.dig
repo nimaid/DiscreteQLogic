@@ -16,7 +16,7 @@
           <string>1</string>
         </entry>
       </elementAttributes>
-      <pos x="440" y="140"/>
+      <pos x="480" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>NFET</elementName>
@@ -31,7 +31,7 @@
           <string>2</string>
         </entry>
       </elementAttributes>
-      <pos x="440" y="180"/>
+      <pos x="480" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -69,7 +69,7 @@
           <string>1</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="140"/>
+      <pos x="480" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -79,7 +79,7 @@
           <string>2</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="180"/>
+      <pos x="480" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -93,7 +93,7 @@
           <string>1</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="140"/>
+      <pos x="560" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -107,26 +107,10 @@
           <string>2</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="200"/>
+      <pos x="560" y="200"/>
     </visualElement>
   </visualElements>
   <wires>
-    <wire>
-      <p1 x="440" y="180"/>
-      <p2 x="460" y="180"/>
-    </wire>
-    <wire>
-      <p1 x="540" y="200"/>
-      <p2 x="560" y="200"/>
-    </wire>
-    <wire>
-      <p1 x="440" y="140"/>
-      <p2 x="460" y="140"/>
-    </wire>
-    <wire>
-      <p1 x="540" y="140"/>
-      <p2 x="560" y="140"/>
-    </wire>
     <wire>
       <p1 x="580" y="80"/>
       <p2 x="580" y="100"/>

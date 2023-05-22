@@ -11,7 +11,7 @@
           <string>In_1</string>
         </entry>
       </elementAttributes>
-      <pos x="380" y="20"/>
+      <pos x="420" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
@@ -41,7 +41,7 @@
           <string>In_2</string>
         </entry>
       </elementAttributes>
-      <pos x="380" y="60"/>
+      <pos x="420" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -51,7 +51,7 @@
           <string>1</string>
         </entry>
       </elementAttributes>
-      <pos x="400" y="20"/>
+      <pos x="420" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -61,7 +61,7 @@
           <string>2</string>
         </entry>
       </elementAttributes>
-      <pos x="400" y="60"/>
+      <pos x="420" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -75,7 +75,7 @@
           <string>1</string>
         </entry>
       </elementAttributes>
-      <pos x="480" y="20"/>
+      <pos x="500" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -89,7 +89,7 @@
           <string>2</string>
         </entry>
       </elementAttributes>
-      <pos x="480" y="40"/>
+      <pos x="500" y="40"/>
     </visualElement>
     <visualElement>
       <elementName>s2.dig</elementName>
@@ -106,22 +106,6 @@
     <wire>
       <p1 x="520" y="-20"/>
       <p2 x="540" y="-20"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="20"/>
-      <p2 x="400" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="480" y="20"/>
-      <p2 x="500" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="480" y="40"/>
-      <p2 x="500" y="40"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="60"/>
-      <p2 x="400" y="60"/>
     </wire>
     <wire>
       <p1 x="520" y="-40"/>
