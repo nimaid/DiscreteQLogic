@@ -178,7 +178,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>S_R</string>
+          <string>S_R&apos;</string>
         </entry>
       </elementAttributes>
       <pos x="540" y="300"/>
@@ -362,16 +362,6 @@
         </entry>
       </elementAttributes>
       <pos x="820" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>NetName</string>
-          <string>M_R</string>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -823,72 +813,6 @@
         </entry>
       </elementAttributes>
       <pos x="1080" y="-80"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>S_2&apos;</string>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="280"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>S_3&apos;</string>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>S_4&apos;</string>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>S_5&apos;</string>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="340"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nor4.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -2266,6 +2190,10 @@
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
+        <entry>
+          <string>activeLow</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="940" y="-40"/>
     </visualElement>
@@ -2438,6 +2366,10 @@
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
+        <entry>
+          <string>activeLow</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="1040" y="-40"/>
     </visualElement>
@@ -2450,7 +2382,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>S_R</string>
+          <string>S_R&apos;</string>
         </entry>
       </elementAttributes>
       <pos x="480" y="140"/>
@@ -2498,40 +2430,6 @@
       <pos x="760" y="120"/>
     </visualElement>
     <visualElement>
-      <elementName>nor.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="100"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nor.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="760" y="100"/>
-    </visualElement>
-    <visualElement>
-      <elementName>nor3.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-      </elementAttributes>
-      <pos x="260" y="240"/>
-    </visualElement>
-    <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
@@ -2540,15 +2438,10 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>S_R</string>
+          <string>S_R&apos;</string>
         </entry>
       </elementAttributes>
       <pos x="280" y="240"/>
-    </visualElement>
-    <visualElement>
-      <elementName>not.dig</elementName>
-      <elementAttributes/>
-      <pos x="760" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -2562,7 +2455,37 @@
           <string>M_R&apos;</string>
         </entry>
       </elementAttributes>
-      <pos x="760" y="220"/>
+      <pos x="760" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nand.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nand.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>nand4.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -2573,10 +2496,66 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>M_R</string>
+          <string>S_2</string>
         </entry>
       </elementAttributes>
-      <pos x="760" y="140"/>
+      <pos x="480" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>S_3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>S_4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>S_5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>and3.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="240"/>
     </visualElement>
   </visualElements>
   <wires>

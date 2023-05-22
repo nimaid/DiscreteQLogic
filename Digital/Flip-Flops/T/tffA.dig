@@ -52,16 +52,6 @@
       <pos x="780" y="400"/>
     </visualElement>
     <visualElement>
-      <elementName>dffA.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>shapeType</string>
-          <shapeType>LAYOUT</shapeType>
-        </entry>
-      </elementAttributes>
-      <pos x="760" y="320"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -78,6 +68,16 @@
         </entry>
       </elementAttributes>
       <pos x="780" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>dffAopt.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="760" y="320"/>
     </visualElement>
   </visualElements>
   <wires>
